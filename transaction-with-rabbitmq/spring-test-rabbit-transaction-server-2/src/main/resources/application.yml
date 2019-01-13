@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: server-2
+  datasource:
+    url: jdbc:mysql://localhost/rt_server_2?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
+
+  
