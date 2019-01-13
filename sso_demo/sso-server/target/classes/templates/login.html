@@ -1,0 +1,29 @@
+<html>
+
+
+<body>
+<div class="container demo-1">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div>
+                <h3>欢迎你</h3>
+                <form name="userForm" action="/doLogin" name="f" method="post">
+                    <input type="hidden" name="returnUrl"value="${returnUrl}">
+                    <input name="realname" type="text"
+                           placeholder="请输入账户">
+                    <input name="password"
+                           value=""
+                           type="password" placeholder="请输入密码">
+                    <input type="submit" name="submit" value="登录">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /container -->
+
+</body>
+
+
+</html>
