@@ -14,3 +14,9 @@ product-buy-with-seckill
 ---
 *商品秒杀与普通购买的实现
 
+
+transaction-with-rabbitmq
+---
+
+* 通过mq实现分布式事务的acid
+
