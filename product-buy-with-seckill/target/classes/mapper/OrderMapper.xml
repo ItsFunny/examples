@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.dao.OrderDao">
+	<insert id="createOrder" parameterType="com.test.model.Order"
+		useGeneratedKeys="true" keyProperty="orderId">
+		insert into order_master values (null,#{userId},#{orderPayment},#{orderStatus})
+	</insert>
+	
+</mapper>

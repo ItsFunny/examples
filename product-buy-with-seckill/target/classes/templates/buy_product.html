@@ -1,0 +1,9 @@
+
+
+<form methd="get" action="/doBuy">
+商品id:<input type="text" name="productId" value="${product.productId?c}">
+商品名称:${product.productName}
+购买:<input type="text" name="buyNumber" value="${buyStock}">件商品
+<input type="hidden" name="token" value="${token?c}">
+<input type="submit" value="立即购买">
+</form>
