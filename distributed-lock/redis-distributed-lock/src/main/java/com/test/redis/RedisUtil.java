@@ -59,6 +59,9 @@ public class RedisUtil
 				getLock = true;
 			}
 		}
+		// 这里需要进行再次判断的,因为存在这种情况:
+		// 某个线程解锁失败导致了这个锁会一直等待然后自行销毁,这时候就需要设置2个过期时间
+		//
 		return getLock;
 	}
 

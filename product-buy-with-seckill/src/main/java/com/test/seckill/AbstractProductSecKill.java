@@ -59,6 +59,8 @@ public abstract class AbstractProductSecKill implements ProductBuyService
 		}
 		if (null == productDTO)
 			params.put("error", "商品部存在");
+		// 这里是有缺陷的,因为如果并发大的情况下,如果这里显示库存充足,但是刚好另外的线程消费完毕导致卖完了
+		// 就会导致超卖的问题
 		else if (productDTO.getProductStock() - buyNum < 1)
 			params.put("error", "库存不足");
 		else
