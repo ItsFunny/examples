@@ -14,6 +14,8 @@ TODO
 
 *   `WIP`   断点续传功能
 
+*   `WIP`   长链接的几种实现方式
+
 *   `WIP`   WebSocket实时推送功能
 
 
