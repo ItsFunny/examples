@@ -144,3 +144,95 @@ class AnimalServiceImpl extends AbstractObjectService
     }
 }
 ```
+
+### `FINISH`    责任链模式
+
+* 理解中的责任链模式的角色有:
+    -   接口: 用于分发具体外抛给外部的功能
+    -   抽象handler: 复写接口中的方法,并且这个抽象类是具有接口变量的引用充当nextHandler
+    -   具体的handler: 不同对象的handler具有不同的执行策略,执行之前会判断对象是否该交由这个handler处理
+    -   被执行的对象: 顾名思义,是被handler所执行的对象,同抽象handler会有一个唯一的标识标识这个应该由谁处理
+    
+    ```
+    
+    interface IUserService
+    {
+        void login(UserBO userBO);
+    }
+    
+    class UserBO
+    {
+        byte level;
+        String userName;
+        String passWord;
+    
+        public UserBO(byte level, String userName, String passWord)
+        {
+            this.level = level;
+            this.userName = userName;
+            this.passWord = passWord;
+        }
+    
+    
+    }
+    
+    
+    abstract class AbstractUserServiceHandler implements IUserService
+    {
+        protected byte level;    // 用于判断不同的实现类处理不同的角色
+        protected IUserService nextHandler;
+    
+        protected abstract void doLogin(String userName, String password);
+    
+        protected AbstractUserServiceHandler(byte level)
+        {
+            this.level = level;
+        }
+    
+        public void login(UserBO userBO)
+        {
+            if (userBO.level == this.level)
+            {
+                this.doLogin(userBO.userName, userBO.passWord);
+            } else if (null != this.nextHandler)
+            {
+                this.nextHandler.login(userBO);
+            } else
+            {
+                throw new RuntimeException("no concrete handler to handle the request");
+            }
+        }
+    }
+    
+    class NormalUserHandler extends AbstractUserServiceHandler
+    {
+    
+    
+        protected NormalUserHandler(byte level)
+        {
+            super(level);
+            this.level = level;
+        }
+    
+        protected void doLogin(String userName, String password)
+        {
+            System.out.println("normal user login:" + userName);
+        }
+    }
+    
+    class VIPUserHandler extends AbstractUserServiceHandler
+    {
+    
+        protected VIPUserHandler(byte level)
+        {
+            super(level);
+            this.level = level;
+        }
+    
+        protected void doLogin(String userName, String password)
+        {
+            System.out.println("vipUserLogin:" + userName);
+        }
+    }
+    
+    ```
