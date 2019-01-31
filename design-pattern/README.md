@@ -236,3 +236,32 @@ class AnimalServiceImpl extends AbstractObjectService
     }
     
     ```
+    
+### `FINISH` 策略模式
+
+* 自我理解中的策略模式具有的2个角色:
+    -   策略接口: 提供外部使用的方法
+    -   执行者: 不同的策略有不同的执行者
+    
+```
+
+interface FileStrategy
+{
+    boolean upload(File file);
+}
+
+public class StrategyPattern
+{
+    public static FileStrategy FTPFileStrategy = (file) ->
+    {
+        System.out.println("这是文件策略中的ftp策略,文件会上传到远程的ftp服务器");
+        return true;
+    };
+    public static FileStrategy LocalFileStrategy = (file) ->
+    {
+        System.out.println("本地策略:文件上传到本地");
+        return true;
+    };
+}
+
+```
