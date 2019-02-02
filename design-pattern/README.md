@@ -236,3 +236,189 @@ class AnimalServiceImpl extends AbstractObjectService
     }
     
     ```
+    
+### `FINISH` 策略模式
+
+* 自我理解中的策略模式具有的2个角色:
+    -   策略接口: 提供外部使用的方法
+    -   执行者: 不同的策略有不同的执行者
+    
+```
+
+interface FileStrategy
+{
+    boolean upload(File file);
+}
+
+public class StrategyPattern
+{
+    public static FileStrategy FTPFileStrategy = (file) ->
+    {
+        System.out.println("这是文件策略中的ftp策略,文件会上传到远程的ftp服务器");
+        return true;
+    };
+    public static FileStrategy LocalFileStrategy = (file) ->
+    {
+        System.out.println("本地策略:文件上传到本地");
+        return true;
+    };
+}
+
+```
+
+### `WIP`   工厂模式
+
+ 
+
+-   静态工厂模式(简单工厂模式)
+    * 自我理解中的静态工厂模式: `与生活中的相同,工厂是个大杂烩,啥都生成,而简单模式也类似,生产的都是一些相似,但又不同的对象`
+        - 抽象接口: 用于定义被生产者相同的特征
+        - 工厂者:  用于生成不同的对象,是个大杂烩,都经过他生产
+    ```
+     public static IHumanService CreateHuman(String type)
+        {
+            if ("student".equals(type))
+            {
+                return new Student("joker");
+            } else if ("teacher".equals(type))
+            {
+                return new Teacher("clown");
+            } else
+            {
+                return null;
+            }
+        }
+
+    ```
+-   普通工厂模式
+    * 自我理解中的普通工厂模式: `把工厂的职责细化了,这个工厂就专门生产这个,另外一个工厂专门生产其他的,各司其职`,**但是被生产的对象又是有相似的地方的**
+    -   被生产对象的公共抽象接口: 用于定义被生产对象的共性
+    -   工厂方法接口: 工厂之间的共性
+    -   不同的具体的工厂: 一个工厂生产具体的个体
+    ![](https://img-blog.csdnimg.cn/20190202075733754.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGVyX0pva2Vy,size_16,color_FFFFFF,t_70)
+    ```
+    interface IHumanFactoryService
+    {
+        IHumanService createHuman();
+    }
+    
+    class StudentFactory implements IHumanFactoryService
+    {
+    
+        @Override
+        public IHumanService createHuman()
+        {
+            return new Student("joker");
+        }
+    }
+    
+    class TeacherFactory implements IHumanFactoryService
+    {
+    
+        @Override
+        public IHumanService createHuman()
+        {
+            return new Teacher("clown");
+        }
+    }
+    ```
+-   抽象工厂模式
+    * 自我理解: 抽象工厂模式是基于**产品族的**,注意是一个族,也就是说创建的对象还是有关联的,如键鼠套装,键盘与鼠标是关联的,但是生产键鼠的有赛睿,有雷蛇,也有其他,而这些就是
+    工厂的概念,键鼠则是抽象概念
+    -   被生产对象的抽象接口
+    -   被生产对象的抽象接口的具体的实现类
+    -   抽象工厂: 用于定义统一的共性
+    -   抽象工厂具体实现类: 实现自个的个性
+    ```
+    interface  IHuman
+    {
+    
+    }
+    interface IStudent extends IHuman
+    {
+    
+    }
+    interface ITeacher extends IHuman
+    {
+    
+    }
+    
+    class ZheJiangStudent implements IStudent
+    {
+        String name;
+    
+        public ZheJiangStudent(String name)
+        {
+            this.name = name;
+        }
+    }
+    
+    class BeiJingStudent implements IStudent
+    {
+        String name;
+    
+        public BeiJingStudent(String name)
+        {
+            this.name = name;
+        }
+    }
+    
+    class ZheJiangTeacher implements ITeacher
+    {
+        String name;
+    
+        public ZheJiangTeacher(String name)
+        {
+            this.name = name;
+        }
+    }
+    
+    class BeiJingTeacher implements ITeacher
+    {
+        String name;
+    
+        public BeiJingTeacher(String name)
+        {
+            this.name = name;
+        }
+    }
+    
+    abstract class AbstractHumanServiceFactory
+    {
+        public abstract IStudent createStudent();
+    
+        public abstract ITeacher createTeacher();
+    }
+    
+    class ZheJiangHumanFactory extends AbstractHumanServiceFactory
+    {
+    
+        @Override
+        public IStudent createStudent()
+        {
+            return new ZheJiangStudent("joker");
+        }
+    
+        @Override
+        public ITeacher createTeacher()
+        {
+            return new ZheJiangTeacher("joker");
+        }
+    }
+    
+    class BeijingHumanFactory extends AbstractHumanServiceFactory
+    {
+    
+        @Override
+        public IStudent createStudent()
+        {
+            return new BeiJingStudent("clown");
+        }
+        @Override
+        public ITeacher createTeacher()
+        {
+            return new BeiJingTeacher("clown");
+        }
+    
+    }
+    ```
