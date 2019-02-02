@@ -266,7 +266,7 @@ public class StrategyPattern
 
 ```
 
-### `WIP`   工厂模式
+### `FINISH`   工厂模式
 
  
 
@@ -324,7 +324,8 @@ public class StrategyPattern
     ```
 -   抽象工厂模式
     * 自我理解: 抽象工厂模式是基于**产品族的**,注意是一个族,也就是说创建的对象还是有关联的,如键鼠套装,键盘与鼠标是关联的,但是生产键鼠的有赛睿,有雷蛇,也有其他,而这些就是
-    工厂的概念,键鼠则是抽象概念
+    工厂的概念,键鼠则是抽象概念; 附一张之前的图:
+    ![](https://img-blog.csdn.net/20180610104815911?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGVyX0pva2Vy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
     -   被生产对象的抽象接口
     -   被生产对象的抽象接口的具体的实现类
     -   抽象工厂: 用于定义统一的共性
