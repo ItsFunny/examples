@@ -1,7 +1,7 @@
 package com.demo.common.configuration;
 
+import com.demo.common.service.RegisterCallback;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Value;
 
 /**
  * @author joker
@@ -22,7 +22,6 @@ public class EurekaClientRequest
 
     private String clientUrl;
 
-
-
+    private RegisterCallback callback;
 
 }

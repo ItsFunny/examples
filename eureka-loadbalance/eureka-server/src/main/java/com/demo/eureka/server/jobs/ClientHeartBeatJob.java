@@ -21,5 +21,6 @@ public class ClientHeartBeatJob implements Runnable
     @Scheduled(cron = "")
     public void run()
     {
+
     }
 }

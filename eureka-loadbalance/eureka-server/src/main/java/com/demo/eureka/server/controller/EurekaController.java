@@ -4,6 +4,7 @@ import com.demo.common.configuration.EurekaClientRequest;
 import com.demo.eureka.server.common.CommonHolder;
 import com.demo.eureka.server.model.EurekaClient;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author joker
@@ -18,9 +19,10 @@ public class EurekaController
     @RequestMapping(method = RequestMethod.POST, path = "/myeureka/")
     public String registerClient(@RequestBody EurekaClientRequest request)
     {
-        EurekaClient client=new EurekaClient();
+        EurekaClient client = new EurekaClient();
         client.from(request);
         CommonHolder.CLIENTS.add(client);
+        request.getCallback().callBack(request);
         return "ok";
     }
 
@@ -30,6 +32,11 @@ public class EurekaController
         return "ok";
     }
 
-
-
+    @GetMapping(value = "/clients")
+    public ModelAndView testView()
+    {
+        ModelAndView modelAndView = new ModelAndView("clients");
+        modelAndView.addObject("clients", CommonHolder.CLIENTS);
+        return modelAndView;
+    }
 }

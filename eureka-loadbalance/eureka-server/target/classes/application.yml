@@ -1,0 +1,3 @@
+eureka:
+  server:
+    interval: 90  # 每隔90s发送一次心跳包

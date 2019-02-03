@@ -1,6 +1,9 @@
 package com.demo.eureka.server.configuration;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import javax.annotation.PostConstruct;
 
 /**
  * @author joker
@@ -16,6 +19,5 @@ import org.springframework.context.annotation.Configuration;
 //
 public class EurekaServerConfiguration
 {
-
 
 }
