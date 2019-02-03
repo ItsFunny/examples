@@ -423,3 +423,78 @@ public class StrategyPattern
     
     }
     ```
+    
+### `FINISH`    观察者模式
+
+- 核心角色
+    -   观察者:observer 这是一个接口,定义观察者的方法
+    -   被观察者: observerable,这个一个抽象类,用于复写特定的方法
+ 
+- 注意点:
+    -   被观察者实现的update方法需要传入观察者的引用,和一些额外的参数,关于这点,JDK其实已经帮我们自个儿实现了
+    ,JDK提供了Observer这个借口和Observable这个实现类,拿来主义即可,`当然如果想定制的话也是完全ok的`
+    
+    ```
+    interface Observer
+    {
+        // 这个用于当观察者检测到变化之后该如何响应
+        void update(Observable observable, Object... args);
+    }
+    
+    abstract class Observable
+    {
+        protected boolean changed;
+        protected Vector<Observer> observers;
+    
+        public Observable()
+        {
+            this.observers = new Vector<>();
+        }
+    
+        public void addObserver(Observer observer)
+        {
+            this.observers.add(observer);
+        }
+    
+        public void notifyWithChanged()
+        {
+            this.changed = true;
+            if (this.changed)
+            {
+                for (Observer observer : observers)
+                {
+    
+                    observer.update(this, null);
+                }
+            }
+        }
+    
+    
+        public void notifyWithChanged(Object... args)
+        {
+            this.changed = true;
+            if (this.changed)
+            {
+                for (Observer observer : observers)
+                {
+    
+                    observer.update(this, args);
+                }
+            }
+        }
+    }
+    
+    public class ObserverPattern extends Observable
+    {
+        public static final Observer OBSERVER_1 = (observable, args) -> System.out.println("观察者1号监听到了消息");
+        public static final Observer OBSERVER_2 = (observable, args) -> System.out.println("观察者2号收到了");
+    
+        public static void main(String[] args)
+        {
+            Observable observable = new ObserverPattern();
+            observable.addObserver(OBSERVER_1);
+            observable.addObserver(OBSERVER_2);
+            observable.notifyWithChanged(null);
+        }
+    }
+    ```
