@@ -498,3 +498,63 @@ public class StrategyPattern
         }
     }
     ```
+
+### `FINISH`    适配器模式(参考意义暂时不大,因为现阶段暂时还没特意为此想需求)
+![](https://img-blog.csdnimg.cn/20190204232728127.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGVyX0pva2Vy,size_16,color_FFFFFF,t_70)
+- 作用: 将两个不相关的接口进行兼容
+- 适用场景: 已经上线的产品,需求临时变更
+
+主要角色:
+- 原先的旧接口,及其实现类
+- 新增的需求接口
+- `如何将两个接口进行关联,可以使用继承或者组合模式,都是ok的`
+
+```
+interface IUserService
+{
+    String name();
+}
+
+class UserServiceImpl implements IUserService
+{
+
+    @Override
+    public String name()
+    {
+        return "joker";
+    }
+}
+
+// 1. 新增的需求,但是假设上方的IUserService不能发生变动了,则引入适配器类
+interface IUserAdapterService
+{
+    String ageWithName();
+}
+
+class UserServiceAdapter implements IUserAdapterService
+{
+    IUserService userService;
+
+    public UserServiceAdapter(IUserService userService)
+    {
+        this.userService = userService;
+    }
+
+    @Override
+    public String ageWithName()
+    {
+        return userService.name() + 20;
+    }
+}
+
+public class AdapterPattern
+{
+    public static void main(String[] args)
+    {
+        IUserAdapterService userAdapterService = new UserServiceAdapter(new UserServiceImpl());
+        System.out.println(userAdapterService.ageWithName());
+    }
+
+}
+
+```
