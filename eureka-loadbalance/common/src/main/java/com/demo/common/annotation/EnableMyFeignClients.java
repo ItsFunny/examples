@@ -7,14 +7,13 @@ import java.lang.annotation.*;
  * @When
  * @Description
  * @Detail
- * @date 创建时间：2019-02-03 17:29
+ * @date 创建时间：2019-02-05 21:39
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Documented
-public @interface EnableMyEurekaClientAnnotation
+public @interface EnableMyFeignClients
 {
-    String value() default "qwe";
-
+    String basepackages();
 }

@@ -1,6 +1,7 @@
 package com.demo.eureka.client1;
 
 import com.demo.common.annotation.EnableMyEurekaClientAnnotation;
+import com.demo.common.annotation.EnableMyFeignClients;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -17,6 +18,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication(exclude = {MybatisAutoConfiguration.class, DataSourceAutoConfiguration.class})
 @EnableMyEurekaClientAnnotation
 @EnableAspectJAutoProxy
+@EnableMyFeignClients(basepackages = "com.demo.eureka")
 public class Client1Application
 {
     public static void main(String[] args)

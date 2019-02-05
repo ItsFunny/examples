@@ -1,6 +1,8 @@
+com/demo/eureka/server/listeners/ContextRefreshListener.class
 com/demo/eureka/server/controller/EurekaController.class
 com/demo/eureka/server/model/EurekaClient.class
 com/demo/eureka/server/configuration/SpringConfiguration.class
+com/demo/eureka/server/service/EmptyService.class
 com/demo/eureka/server/configuration/EurekaServerConfiguration.class
 com/demo/eureka/server/common/CommonHolder.class
 com/demo/eureka/server/jobs/ClientHeartBeatJob.class

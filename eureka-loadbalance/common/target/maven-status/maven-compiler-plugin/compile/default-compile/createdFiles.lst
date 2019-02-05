@@ -1,4 +1,6 @@
 com/demo/common/annotation/EnableMyEurekaClientAnnotation.class
+com/demo/common/util/HttpUtil.class
+com/demo/common/model/HttpClientResult.class
 com/demo/common/service/RegisterCallback.class
 com/demo/common/configuration/EurekaClientRequest.class
 com/demo/common/configuration/EurekaConfiguration.class

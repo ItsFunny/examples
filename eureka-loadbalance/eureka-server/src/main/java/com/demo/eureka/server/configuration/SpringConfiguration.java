@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -30,6 +31,12 @@ import java.util.Locale;
 public class SpringConfiguration implements ServletContextAware
 {
     private ServletContext context;
+
+    @Bean
+    public RestTemplate restTemplate()
+    {
+        return new RestTemplate();
+    }
 
     // 视图解析器
     @Bean

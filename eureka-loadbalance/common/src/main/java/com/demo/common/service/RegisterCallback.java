@@ -1,6 +1,15 @@
 package com.demo.common.service;
 
 import com.demo.common.configuration.EurekaClientRequest;
+import com.joker.library.utils.HttpUtils;
+import com.joker.library.utils.UrlUtils;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author joker
@@ -17,7 +26,14 @@ public interface RegisterCallback
 
     RegisterCallback DEFAULT_CALLBACK = (request) ->
     {
-        // 最好是发送请求给原先的服务器,common中需要也添加controller,让client也自启动注册或者啥的
         System.out.println(request.getHostName() + "注册成功");
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> params = new HashMap<>();
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        javax.servlet.http.HttpServletRequest httpServletRequest = attributes.getRequest();
+        params.put("serverUrl", UrlUtils.getServerAddWithPort(httpServletRequest));
+        params.put("serverName", "eureka-server1");
+        String result = restTemplate.postForObject(request.getClientUrl() + "/eureka-callback", params, String.class);
+        System.out.println(result);
     };
 }
