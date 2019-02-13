@@ -14,6 +14,11 @@ product-buy-with-seckill
 ---
 *商品秒杀与普通购买的实现
 
+eureka-loadbalance
+---
+
+* 模仿Spring Cloud 实现服务注册于发现,以及负载均衡
+
 
 transaction-with-rabbitmq
 ---
