@@ -1,0 +1,11 @@
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/dto/UserDTO.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/service/IUserService.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/config/SpringTestDistirbutedDConfiguration.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/service/impl/UserServiceImpl.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/dao/user/db0/UserDao.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/dao/user/IUserBaseDao.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/dao/user/db1/UserDao.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/model/example/UserExample.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/model/User.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/SpringTestDistributedDB.java
+/Users/joker/Java/examples/distributed-db/src/main/java/com/test/dao/user/proxy/UserSQLExtentionProxyDaoImpl.java

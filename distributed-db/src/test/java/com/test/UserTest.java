@@ -7,9 +7,9 @@
 */
 package com.test;
 
-import java.util.Collections;
 import java.util.List;
 
+import com.test.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.joker.library.page.PageRequestDTO;
 import com.joker.library.page.PageResponseDTO;
-import com.test.model.User;
 import com.test.service.IUserService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -43,8 +42,8 @@ public class UserTest
 	public void testFindByPage()
 	{
 		PageRequestDTO pageRequestDTO=new PageRequestDTO();
-		pageRequestDTO.setPageNum(5);
-		pageRequestDTO.setPageSize(10);
+		pageRequestDTO.setPageNum(2);
+		pageRequestDTO.setPageSize(1);
 		PageResponseDTO<List<User>> pageResp = userService.findByPage(pageRequestDTO);
 		List<User> users = pageResp.getData();
 		for (User user : users)

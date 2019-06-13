@@ -6,3 +6,14 @@
 如果想看流程的话需要去查看我的library这个工程中的sqlextention包
 [点击传送门](https://github.com/ItsFunny/Tmall_MicroService/tree/master/library/src/main/java/com/joker/library/sqlextention) 
 sql 文件也一并上传了,只需要在本地创建多个库,然后复制,同时修改下配置文件(账户密码,以及一些关键的配置,具体可以看我的那个libray包README)
+
+
+BUG
+---
+* 当pageSize<10的时候,偏移量会<0,有空的时候再debug更改
+
+使用方式:
+---
+1. 修改config 下的数据库配置,主要是用户名和密码
+2. 在本地数据库中创建相关数据库,执行test_distribute.sql文件
+3. test目录下直接右键test即可
