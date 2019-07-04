@@ -43,7 +43,7 @@ public class UserTest
 	{
 		PageRequestDTO pageRequestDTO=new PageRequestDTO();
 		pageRequestDTO.setPageNum(2);
-		pageRequestDTO.setPageSize(1);
+		pageRequestDTO.setPageSize(5);
 		PageResponseDTO<List<User>> pageResp = userService.findByPage(pageRequestDTO);
 		List<User> users = pageResp.getData();
 		for (User user : users)
@@ -55,6 +55,7 @@ public class UserTest
 	@Test
 	public void testInsert()
 	{
+		// 忽略for 循环插入 :)
 		long startTime=System.currentTimeMillis();
 		log.info("[begin batch insert]");
 		for(int i=0;i<10000;i++)

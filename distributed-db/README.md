@@ -10,7 +10,10 @@ sql 文件也一并上传了,只需要在本地创建多个库,然后复制,同�
 
 BUG
 ---
-* 当pageSize<10的时候,偏移量会<0,有空的时候再debug更改
+* `DONE` 当pageSize<10的时候,偏移量会<0,有空的时候再debug更改
+    -   原因在于: sql脚本错误(导致2个库中的数据一模一样,id也一样,因而会发生错误)
+    
+
 
 TODO
 ---
@@ -20,5 +23,10 @@ TODO
 使用方式:
 ---
 1. 修改config 下的数据库配置,主要是用户名和密码
-2. 在本地数据库中创建相关数据库,执行test_distribute.sql文件
-3. test目录下直接右键test即可
+2. 在本地数据库中创建相关数据库
+    -   创建2个库:
+        -   test_distribute_db0:
+            -   创建3个表,结构相同: 执行test_distribute.sql文件创建3个表
+        -   test_distribute_db1:
+            -   创建3个表,结构相同: 执行test_distribute.sql文件创建3个表
+3. test目录下右键插入`testInsert初始化`->初始化完毕之后->`执行testFindByPage即可`
