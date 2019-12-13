@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-test-rabbit-transaction-server-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-test-rabbitmq-transaction-spi/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-test-rabbit-transaction-server-message/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-test-rabbitmq-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-test-rabbit-transaction-server-2/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

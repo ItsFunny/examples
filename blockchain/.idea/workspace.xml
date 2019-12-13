@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="807517c7-94e3-496e-afb8-dca38aee5617" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-container-base/peer-base.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/itemcc/ItemFacadedCC.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/paycc/PayFacadedCC.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/UserFacadedCC.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/alt_exit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/entry.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/exported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/hooks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/json_formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/logrus.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_appengine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_bsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_no_terminal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_notappengine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_solaris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/terminal_check_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/text_formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/Sirupsen/logrus/writer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/hosts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/hosts_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/hosts_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/ip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/opts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/opts_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/opts/opts_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/archive.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/archive_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/archive_other.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/archive_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/archive_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/changes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/changes_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/changes_other.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/changes_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/changes_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/copy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/copy_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/copy_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/diff.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/time_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/time_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/whiteouts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/archive/wrap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/fileutils/fileutils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/fileutils/fileutils_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/fileutils/fileutils_solaris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/fileutils/fileutils_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/fileutils/fileutils_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/homedir/homedir.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/idtools/idtools.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/idtools/idtools_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/idtools/idtools_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/idtools/usergroupadd_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/idtools/usergroupadd_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/buffer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/bytespipe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/fmt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/fswriters.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/multireader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/readers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/temp_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/temp_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/writeflusher.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/ioutils/writers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/longpath/longpath.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/pools/pools.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/promise/promise.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/chtimes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/chtimes_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/chtimes_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/events_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/filesys.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/filesys_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/lstat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/lstat_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/meminfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/meminfo_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/meminfo_solaris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/meminfo_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/meminfo_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/mknod.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/mknod_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/path_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/path_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_openbsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_solaris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/stat_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/syscall_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/syscall_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/umask.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/umask_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/utimes_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/utimes_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/utimes_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/utimes_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/xattrs_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/docker/pkg/system/xattrs_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/engine-api/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/engine-api/types/filters/parse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/engine-api/types/versions/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/engine-api/types/versions/compare.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/MAINTAINERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/circle.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/duration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/size.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/docker/go-units/ulimit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/fen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/fsnotify.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/inotify.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/inotify_poller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/kqueue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/open_mode_bsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/open_mode_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsnotify/fsnotify/windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/DOCKER-LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/cancelable.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/cancelable_go14.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/change.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/container.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/env.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/event.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/exec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/misc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/network.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/signal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/tar.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/tls.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/fsouza/go-dockerclient/volume.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/clone.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/deprecated.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/discard.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/equal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/extensions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/lib.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/message_set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/properties.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/table_marshal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/table_merge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/table_unmarshal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/text.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/proto/text_parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/any.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/any/any.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/any/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/duration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/duration/duration.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/duration/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/empty/empty.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/empty/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/timestamp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/go-cleanhttp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/go-cleanhttp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/go-cleanhttp/cleanhttp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/go-cleanhttp/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/decoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/ast/ast.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/ast/walk.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/parser/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/parser/parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/printer/nodes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/printer/printer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/scanner/scanner.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/strconv/quote.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/token/position.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/hcl/token/token.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/json/parser/flatten.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/json/parser/parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/json/scanner/scanner.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/json/token/position.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/json/token/token.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/lex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hashicorp/hcl/parse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/aesopts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/bccsp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/ecdsaopts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/factory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/nopkcs11.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/opts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/pkcs11.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/pkcs11factory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/pluginfactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/factory/swfactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/hashopts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/keystore.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/opts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/pkcs11/conf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/pkcs11/ecdsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/pkcs11/ecdsakey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/pkcs11/impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/pkcs11/pkcs11.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/rsaopts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/signer/signer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/aes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/aeskey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/conf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/dummyks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/ecdsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/ecdsakey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/fileks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/hash.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/internals.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/keyderiv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/keygen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/keyimport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/rsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/sw/rsakey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/ecdsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/errs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/io.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/keys.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/bccsp/utils/x509.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/crypto/expiration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/crypto/random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/crypto/signer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/flogging/grpclogger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/flogging/logging.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/ledger/ledger_interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/metadata/metadata.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/util/net.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/common/util/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/car/platform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/golang/env.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/golang/list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/golang/package.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/golang/platform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/java/hash.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/java/package.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/java/platform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/node/platform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/platforms.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/platforms/util/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/chaincode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/chaincode_experimental.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/inprocstream.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/interfaces_experimental.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/interfaces_stable.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/mockstub.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/chaincode/shim/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/creds.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/producer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/comm/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/common/ccprovider/metadata/validators.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/container/util/dockerutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/core/container/util/writer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/credential.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/credrequest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/idemix.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/issuerkey.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/nymsignature.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/signature.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/idemix/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/cert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/configbuilder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/factory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/idemixmsp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/identities.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/msp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/mspimpl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/mspimplsetup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/mspimplvalidate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/msp/mspmgrimpl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/block.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/collection.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/collection.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/common.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/common.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configtx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configtx.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configtx.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configuration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configuration.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/configuration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/ledger.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/ledger.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/policies.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/policies.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/policies.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/common/signed_data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/ledger/queryresult/kv_query_result.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/ledger/queryresult/kv_query_result.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/identities.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/identities.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_config.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_principal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_principal.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/msp/msp_principal.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/admin.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/admin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode_event.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode_event.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode_shim.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincode_shim.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/chaincodeunmarshall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/configuration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/configuration.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/configuration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/events.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/events.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/peer.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/peer.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal_response.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/proposal_response.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/query.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/query.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/resources.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/resources.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/resources.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/signed_cc_dep_spec.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/signed_cc_dep_spec.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/transaction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/transaction.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/peer/transaction.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/utils/blockutils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/utils/commonutils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/utils/proputils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/hyperledger/fabric/protos/utils/txutils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/event.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/fsm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/looplab/fsm/wercker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/integrate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/lex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/load.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/properties.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/magiconair/properties/rangecheck.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/const.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/hsm.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/pkcs11.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/pkcs11.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/pkcs11f.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/pkcs11go.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/pkcs11t.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/softhsm.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/miekg/pkcs11/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/LICENSE-2.0.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/AES.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/ARCH.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/BIG.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/DBIG.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/ECDH.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/ECP.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/ECP2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/FP.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/FP12.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/FP2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/FP4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/MPIN.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/PAIR.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/FP256BN/ROM.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/GCM.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/HASH256.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/HASH384.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/HASH512.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/NHS.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/RAND.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/milagro-crypto/amcl/version3/go/amcl/SHA3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/decode_hooks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/mitchellh/mapstructure/mapstructure.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/CONTRIBUTORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/backend.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/format.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/level.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/log_nix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/log_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/memory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/multi.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/syslog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/op/go-logging/syslog_fallback.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/libcontainer/user/MAINTAINERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/libcontainer/user/lookup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/libcontainer/user/lookup_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/libcontainer/user/lookup_unsupported.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/opencontainers/runc/libcontainer/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/benchmark.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/benchmark.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/benchmark.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/benchmark.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/example-crlf.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/example.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/fuzz.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/fuzz.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/keysparsing.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/lexer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/marshal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/marshal_OrderPreserve_Map_test.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/marshal_OrderPreserve_test.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/marshal_test.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/parser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/position.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/token.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/toml.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/tomltree_create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pelletier/go-toml/tomltree_write.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/pkg/errors/stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/afero.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/basepath.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/cacheOnReadFs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/const_bsds.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/const_win_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/copyOnWriteFs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/httpFs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/ioutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/lstater.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/match.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/mem/dir.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/mem/dirmap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/mem/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/memmap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/os.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/path.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/readonlyfs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/regexpfs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/unionFile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/afero/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/cast.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/caste.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/cast/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/default_notepad.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/log_counter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/jwalterweatherman/notepad.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/bool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/bool_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/bytes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/count.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/duration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/duration_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/flag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/float32.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/float32_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/float64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/float64_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/golangflag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int16.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int32.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int32_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int64_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int8.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/int_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/ip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/ip_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/ipmask.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/ipnet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/string_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/string_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/string_to_int.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/string_to_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint16.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint32.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint8.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/pflag/uint_slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/flags.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/spf13/viper/viper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/subosito/gotenv/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/subosito/gotenv/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/github.com/subosito/gotenv/gotenv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/PATENTS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/hashes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/hashes_generic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/keccakf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/keccakf_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/keccakf_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/register.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/sha3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/sha3_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/sha3_s390x.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/shake.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/shake_generic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/xor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/xor_generic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/crypto/sha3/xor_unaligned.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/PATENTS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/context/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/context/go17.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/context/go19.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/context/pre_go17.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/context/pre_go19.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http/httpguts/guts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http/httpguts/httplex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/ciphers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/client_conn_pool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/databuffer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/flow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/frame.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/go111.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/gotrack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/headermap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/hpack/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/hpack/hpack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/hpack/huffman.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/hpack/tables.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/http2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/not_go111.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/pipe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/write.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/writesched.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/writesched_priority.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/http2/writesched_random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/idna10.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/idna9.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/punycode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/tables10.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/tables11.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/tables9.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/trie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/idna/trieval.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/internal/timeseries/timeseries.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/trace/events.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/trace/histogram.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/net/trace/trace.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/PATENTS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_gc_x86.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_gccgo.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_gccgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_mips64x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_mipsx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_ppc64x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_x86.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/cpu/cpu_x86.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/affinity_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/aliases.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_aix_ppc64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_darwin_386.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_darwin_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_darwin_arm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_darwin_arm64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_dragonfly_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_freebsd_386.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_freebsd_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_freebsd_arm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_386.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_arm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_arm64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_mips64x.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_mipsx.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_ppc64x.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_linux_s390x.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_netbsd_386.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_netbsd_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_netbsd_arm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_openbsd_386.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_openbsd_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_openbsd_arm.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/asm_solaris_amd64.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/bluetooth_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/cap_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_aix_ppc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_aix_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_dragonfly.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_netbsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dev_openbsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/dirent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/endian_big.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/endian_little.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/env_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/errors_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/errors_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/errors_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/fcntl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/fcntl_linux_32bit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/gccgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/gccgo_c.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/gccgo_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ioctl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mkall.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mkerrors.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksyscall_aix_ppc.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksyscall_aix_ppc64.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksyscall_solaris.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysctl_openbsd.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysnum_darwin.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysnum_dragonfly.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysnum_freebsd.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysnum_netbsd.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/mksysnum_openbsd.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/openbsd_pledge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/openbsd_unveil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/pagesize_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/race.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/race0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/sockcmsg_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/sockcmsg_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/str.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_aix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_aix_ppc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_aix_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_bsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_darwin_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_darwin_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_darwin_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_darwin_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_dragonfly.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_dragonfly_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_amd64_gc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_gc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_gc_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_gccgo_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_gccgo_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_mips64x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_mipsx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_ppc64x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_riscv64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_linux_sparc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_netbsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_netbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_netbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_netbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_openbsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_solaris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_solaris_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_unix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_unix_gc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/syscall_unix_gc_ppc64x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/timestruct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/xattr_bsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_aix_ppc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_aix_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_darwin_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_darwin_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_darwin_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_darwin_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_dragonfly_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_mips.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_mips64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_mips64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_mipsle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_ppc64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_riscv64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_linux_sparc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_netbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_netbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_netbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zerrors_solaris_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zptrace386_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zptracearm_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zptracemips_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zptracemipsle_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_aix_ppc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_aix_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_aix_ppc64_gc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_aix_ppc64_gccgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_darwin_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_darwin_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_darwin_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_darwin_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_dragonfly_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_mips.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_mips64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_mips64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_mipsle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_ppc64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_riscv64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_linux_sparc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_netbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_netbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_netbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsyscall_solaris_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysctl_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysctl_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysctl_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_darwin_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_darwin_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_darwin_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_darwin_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_dragonfly_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_mips.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_mips64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_mips64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_mipsle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_ppc64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_riscv64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_linux_sparc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_netbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_netbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_netbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/zsysnum_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_aix_ppc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_aix_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_darwin_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_darwin_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_darwin_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_darwin_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_dragonfly_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_freebsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_freebsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_freebsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_arm64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_mips.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_mips64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_mips64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_mipsle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_ppc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_ppc64le.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_riscv64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_s390x.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_linux_sparc64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_netbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_netbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_netbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_openbsd_386.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_openbsd_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_openbsd_arm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/sys/unix/ztypes_solaris_amd64.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/PATENTS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/secure/bidirule/bidirule.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/secure/bidirule/bidirule10.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/secure/bidirule/bidirule9.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/transform/transform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/bidi.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/bracket.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/core.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/prop.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/tables10.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/tables9.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/bidi/trieval.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/composition.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/forminfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/input.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/iter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/normalize.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/readwriter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/tables10.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/tables9.0.0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/transform.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/golang.org/x/text/unicode/norm/trie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/genproto/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/genproto/googleapis/rpc/status/status.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/backoff.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer/balancer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer/base/balancer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer/base/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer/roundrobin/roundrobin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer_conn_wrappers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/balancer_v1_wrapper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/binarylog/grpc_binarylog_v1/binarylog.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/call.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/clientconn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/codec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/codegen.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/codes/code_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/codes/codes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/connectivity/connectivity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/credentials/credentials.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/credentials/internal/syscallconn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/credentials/internal/syscallconn_appengine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/credentials/tls13.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/dialoptions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/encoding/encoding.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/encoding/proto/proto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/grpclog/grpclog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/grpclog/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/grpclog/loggerv2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/install_gae.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/interceptor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/backoff/backoff.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/balancerload/load.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/binarylog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/binarylog_testutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/env_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/method_logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/regenerate.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/sink.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/binarylog/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/funcs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/types_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/types_nonlinux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/util_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/channelz/util_nonlinux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/envconfig/envconfig.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/grpcrand/grpcrand.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/grpcsync/event.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/internal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/syscall/syscall_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/syscall/syscall_nonlinux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/bdp_estimator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/controlbuf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/defaults.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/flowcontrol.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/handler_server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/http2_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/http2_server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/http_util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/internal/transport/transport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/keepalive/keepalive.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/metadata/metadata.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/naming/dns_resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/naming/naming.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/peer/peer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/picker_wrapper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/pickfirst.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/preloader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/proxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/resolver/dns/dns_resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/resolver/passthrough/passthrough.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/resolver/resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/resolver_conn_wrapper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/rpc_util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/service_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/serviceconfig/serviceconfig.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/stats/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/stats/stats.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/status/status.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/stream.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/tap/tap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/trace.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/version.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/vet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/LICENSE.libyaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/apic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/emitterc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/parserc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/readerc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/resolve.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/scannerc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/sorter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/writerc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/yaml.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/yamlh.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/gopkg.in/yaml.v2/yamlprivateh.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/vendor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/clean.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/configtx.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-order.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-peer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/docker-container-base/peer-base.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneorg_several_chaincodes/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../distributed-db/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../distributed-db/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../distributed-db/spring-test-distributed-db.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../distributed-db/spring-test-distributed-db.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-buy-with-seckill/spring-test-order-and-stock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../product-buy-with-seckill/spring-test-order-and-stock.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-buy-with-seckill/src/main/java/com/test/OrderTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-buy-with-seckill/src/main/java/com/test/OrderTestApplication.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>OrdererDefaults</find>
+      <find>DemoChannel</find>
+      <find>FABRIC_ARCH</find>
+      <find>FABRIC_DOCKER_REGISTRY</find>
+      <find>FABRIC_ORDERER_FIXTURE_IMAGE</find>
+      <find>FABRIC_BASE_DOCKER_REGISTRY</find>
+      <find>test.com</find>
+      <find>peer1.credit</find>
+      <find>pee0.credit.demo.com</find>
+      <find>SampleDevModeKafka</find>
+      <find>peer0.user.vlink.com</find>
+      <find>orderer0.vlink.com</find>
+      <find>/src/github.com/akkagao/citizens/fabric-service/v2</find>
+      <find>user.vlink.com</find>
+      <find>vlink.com</find>
+      <find>$PROJECT_DIR$/../../..</find>
+      <find>$PROJECT_DIR$/../../src</find>
+      <find>UserOrgMSP</find>
+      <find>orderer.demo</find>
+      <find>orderer.demo.com</find>
+      <find>orderer</find>
+      <find>${GOPATH}</find>
+      <find>github.com/akkagao/citizens/fabric-service/v2</find>
+      <find>akka</find>
+      <find>/etc</find>
+      <find>7050</find>
+      <find>8050</find>
+      <find>log.Debug</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>peer0.org1.demo.com</replace>
+      <replace>orderer.demo.com</replace>
+      <replace>/examples/blockchain/oneorg_several_chaincodes</replace>
+      <replace>org1.demo.com</replace>
+      <replace>demo.com</replace>
+      <replace>$PROJECT_DIR$/../..</replace>
+      <replace>Org1MSP</replace>
+      <replace>$PROJECT_DIR$/../../..</replace>
+      <replace>examples/blockchain/v2</replace>
+      <replace>/var</replace>
+      <replace>fmt.Println</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/v2</dir>
+      <dir>$PROJECT_DIR$/oneorg_several_chaincodes</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.9/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/chaincode_one/UserChainCodeServiceImpl.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/chaincode_one/UserChainCodeFacadedService.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/chaincode_two/CreditChainCodeServiceImpl.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/chaincode_two/CreditChainCodeFacadedService.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/README.md" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/docker-compose.yaml.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/README.md" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/blockchain-config.yaml" />
+        <option value="$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/context.go" />
+        <option value="$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/msp/getsigid.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/credit_chaincode/CreditChainCodeServiceImpl.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/user_chaincode/UserChainCodeFacadedService.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/base/docker-compose-peer-base.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/base/docker-compose-base.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/.env" />
+        <option value="$PROJECT_DIR$/multi-chaincode/blockchain-config.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/configtx.yaml" />
+        <option value="$PROJECT_DIR$/multi-chaincode/main.go" />
+        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/credit_chaincode/CreditChainCodeFacadedService.go" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/confixtx.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/build.sh" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/.env" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/README.md" />
+        <option value="$PROJECT_DIR$/v2/config.yaml" />
+        <option value="$PROJECT_DIR$/v2/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/v2/docker-compose-peer.yaml" />
+        <option value="$PROJECT_DIR$/v2/build.sh" />
+        <option value="$PROJECT_DIR$/v2/main.go" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/v2/configtx.yaml" />
+        <option value="$PROJECT_DIR$/docker-container-base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/docker-container-base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-peer.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-order.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/configtx.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/config.yaml" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/paycc/PayFacadedCC.go" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/itemcc/ItemFacadedCC.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/UserFacadedCC.go" />
+        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/main.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="docker-container-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="oneorg_several_chaincodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="oneorg_several_chaincodes" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="oneorg_several_chaincodes" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="usercc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode" />
+      <recent name="$PROJECT_DIR$/oneorg_several_chaincodes" />
+      <recent name="$PROJECT_DIR$/v2" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/multi-chaincode/fabric_docker_container" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/multi-chaincode" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/oneorg_several_chaincodes/main.go" />
+      <package value="examples/blockchain" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/v2/main.go" />
+      <package value="examples/blockchain" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/multi-chaincode/main.go" />
+      <package value="examples/blockchain" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3686747" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19518073" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" weight="0.32048193" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.19518073" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fab/ccpackager/gopackager/packager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beego/context/input.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="323" column="25" selection-start-line="323" selection-start-column="25" selection-end-line="323" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/channel/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beego/beego.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.9/libexec/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/context_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/msp/identitymgr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp/identity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt/opts.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="361" column="18" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fab/resource/resource.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="381" selection-start-line="381" selection-end-line="381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fab/txn/env.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/artifacts/org1.tx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/vendor/google.golang.org/grpc/vet.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/.env" />
+    <entry file="file://$PROJECT_DIR$/v2/config.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/build.sh" />
+    <entry file="file://$PROJECT_DIR$/v2/crypto-config.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/configtx.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/docker-compose-order.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/base/peer-base.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/docker-compose-peer.yaml" />
+    <entry file="file://$PROJECT_DIR$/v2/main.go" />
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-peer.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1191">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#9#12#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/fabsdk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt/resmgmt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="912" column="69" selection-start-line="912" selection-start-column="69" selection-end-line="912" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/msp/admincerts/Admin@demo.com-cert.pem">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.key">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/docker-container-base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.9/libexec/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="691" column="15" lean-forward="true" selection-start-line="691" selection-start-column="15" selection-end-line="691" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/artifacts/orderer.genesis.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="209" column="19" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-order.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/sirupsen/logrus/entry.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="275" column="20" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/prometheus/common/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="274" column="28" lean-forward="true" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="e#500#505#0" />
+            <element signature="e#2957#2960#0" />
+            <element signature="e#3112#3117#0" />
+            <element signature="e#4799#4803#0" />
+            <element signature="e#4987#4991#0" />
+            <element signature="e#5236#5240#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric/core/chaincode/shim/interfaces_stable.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/paycc/PayFacadedCC.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/itemcc/ItemFacadedCC.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beego/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="768" selection-start-line="768" selection-end-line="768" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-container-base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6048">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/channel/chclient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/UserFacadedCC.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/event/event.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3852">
+          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="169" column="42" selection-start-line="169" selection-start-column="42" selection-end-line="169" selection-end-column="42" />
+          <folding>
+            <element signature="e#142#945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

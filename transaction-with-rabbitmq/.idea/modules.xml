@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-test-rabbit-transaction-server-1/spring-test-rabbit-transaction-server-1.iml" filepath="$PROJECT_DIR$/spring-test-rabbit-transaction-server-1/spring-test-rabbit-transaction-server-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-rabbit-transaction-server-2/spring-test-rabbit-transaction-server-2.iml" filepath="$PROJECT_DIR$/spring-test-rabbit-transaction-server-2/spring-test-rabbit-transaction-server-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-rabbit-transaction-server-message/spring-test-rabbit-transaction-server-message.iml" filepath="$PROJECT_DIR$/spring-test-rabbit-transaction-server-message/spring-test-rabbit-transaction-server-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-rabbitmq-common/spring-test-rabbitmq-common.iml" filepath="$PROJECT_DIR$/spring-test-rabbitmq-common/spring-test-rabbitmq-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-rabbitmq-transaction-spi/spring-test-rabbitmq-transaction-spi.iml" filepath="$PROJECT_DIR$/spring-test-rabbitmq-transaction-spi/spring-test-rabbitmq-transaction-spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/transaction-with-rabbitmq.iml" filepath="$PROJECT_DIR$/.idea/transaction-with-rabbitmq.iml" />
+    </modules>
+  </component>
+</project>
