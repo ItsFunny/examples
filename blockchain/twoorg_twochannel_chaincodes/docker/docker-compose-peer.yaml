@@ -1,0 +1,92 @@
+version: '2'
+services:
+  UserOrgPeer0:
+    container_name: peer0.user.demo.com
+    extends:
+      file: ../../docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer0.user.demo.com
+      - CORE_PEER_ADDRESS=peer0.user.demo.com:7051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.user.demo.com:7052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.user.demo.com:7061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.user.demo.com:7051
+      - CORE_PEER_LOCALMSPID=UserOrgMSP
+    ports:
+      - "7051:7051"
+      - "7052:7052"
+    volumes:
+      - /var/run/:/var/run/
+      - ../crypto-config/peerOrganizations/user.demo.com/peers/peer0.user.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/user.demo.com/peers/peer0.user.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/user.demo.com/tlsca:/etc/hyperledger/orgs/user.demo.com/tlsca
+  UserOrgPee1:
+    container_name: peer1.user.demo.com
+    extends:
+      file: ../../docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer1.user.demo.com
+      - CORE_PEER_ADDRESS=peer1.user.demo.com:7061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.user.demo.com:7062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.user.demo.com:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.user.demo.com:7061
+      - CORE_PEER_LOCALMSPID=UserOrgMSP
+    ports:
+      - "7061:7061"
+      - "7062:7062"
+    volumes:
+      - /var/run/:/var/run/
+      - ../crypto-config/peerOrganizations/user.demo.com/peers/peer1.user.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/user.demo.com/peers/peer1.user.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/user.demo.com/tlsca:/etc/hyperledger/orgs/user.demo.com/tlsca
+
+  CoinOrgPeer0:
+    container_name: peer0.coin.demo.com
+    extends:
+      file: ../../docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer0.coin.demo.com
+      - CORE_PEER_ADDRESS=peer0.coin.demo.com:8051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.coin.demo.com:8052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.coin.demo.com:8061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.coin.demo.com:8051
+      - CORE_PEER_LOCALMSPID=CoinOrgMSP
+    ports:
+      - "8051:8051"
+      - "8052:8052"
+    volumes:
+      - /var/run/:/var/run/
+      - ../crypto-config/peerOrganizations/coin.demo.com/peers/peer0.coin.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/coin.demo.com/peers/peer0.coin.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/coin.demo.com/tlsca:/etc/hyperledger/orgs/coin.demo.com/tlsca
+
+  CoinOrgPeer1:
+    container_name: peer1.coin.demo.com
+    extends:
+      file: ../../docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer1.coin.demo.com
+      - CORE_PEER_ADDRESS=peer1.coin.demo.com:8061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.coin.demo.com:8062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.coin.demo.com:8051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.coin.demo.com:8061
+      - CORE_PEER_LOCALMSPID=CoinOrgMSP
+    ports:
+      - "8061:8061"
+      - "8062:8062"
+    volumes:
+      - /var/run/:/var/run/
+      - ../crypto-config/peerOrganizations/coin.demo.com/peers/peer1.coin.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/coin.demo.com/peers/peer1.coin.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/coin.demo.com/tlsca:/etc/hyperledger/orgs/coin.demo.com/tlsca
