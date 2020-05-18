@@ -1,0 +1,187 @@
+Organizations:
+  - &OrdererOrg
+    Name: Orderer0OrgMSP
+    ID: Orderer0OrgMSP
+    MSPDir: crypto-config/ordererOrganizations/vlink.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Orderer0OrgMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Orderer0OrgMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Orderer0OrgMSP.admin')"
+
+  - &VlinkOrg
+    Name: VlinkOrgMSP
+    ID: VlinkOrgMSP
+    MSPDir: crypto-config/peerOrganizations/vlink.com/msp
+    AnchorPeers:
+      - Host: user0.vlink.com
+        Port: 7051
+      - Host: coin0.vlink.com
+        Port: 8051
+      - Host: usercoin0.vlink.com
+        Port: 9051
+      - Host: copyright0.vlink.com
+        Port: 10051
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('VlinkOrgMSP.admin', 'VlinkOrgMSP.peer', 'VlinkOrgMSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('VlinkOrgMSP.admin', 'VlinkOrgMSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('VlinkOrgMSP.admin')"
+Capabilities:
+  Global: &ChannelCapabilities
+    V1_4_3: true
+    V1_3: false
+    V1_1: false
+  Orderer: &OrdererCapabilities
+    V1_4_2: true
+    V1_1: false
+  Application: &ApplicationCapabilities
+    V1_4_2: true
+    V1_3: true
+    V1_2: true
+    V1_1: true
+
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ChannelCapabilities
+Application: &ApplicationDefaults
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ApplicationCapabilities
+Orderer: &OrdererDefaults
+  OrdererType: solo
+
+  Addresses:
+    - orderer0.vlink.com:7050
+  BatchTimeout: 2s
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    BlockValidation:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+Profiles:
+  VlinkOrdererSoloGenesis:
+    <<: *ChannelDefaults
+    Orderer:
+      <<: *OrdererDefaults
+      Organizations:
+        - *OrdererOrg
+      Capabilities:
+        <<: *OrdererCapabilities
+    Consortiums:
+      SampleConsortium:
+        Organizations:
+          - *VlinkOrg
+  # 用户链
+  VlinkUserChannel:
+    <<: *ChannelDefaults
+    Consortium: SampleConsortium
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *VlinkOrg
+      Capabilities:
+        <<: *ApplicationCapabilities
+    Policies:
+      Readers:
+        Type: ImplicitMeta
+        Rule: "ANY Readers"
+      Writers:
+        Type: ImplicitMeta
+        Rule: "ANY Writers"
+      Admins:
+        Type: ImplicitMeta
+        Rule: "MAJORITY Admins"
+    Capabilities:
+      <<: *ChannelCapabilities
+
+  # 积分链
+  VlinkCoinChannel:
+    <<: *ChannelDefaults
+    Consortium: SampleConsortium
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *VlinkOrg
+      Capabilities:
+        <<: *ApplicationCapabilities
+    Policies:
+      Readers:
+        Type: ImplicitMeta
+        Rule: "ANY Readers"
+      Writers:
+        Type: ImplicitMeta
+        Rule: "ANY Writers"
+      Admins:
+        Type: ImplicitMeta
+        Rule: "MAJORITY Admins"
+    Capabilities:
+      <<: *ChannelCapabilities
+
+
+  # 版权链
+  VlinkCopyrightChannel:
+    <<: *ChannelDefaults
+    Consortium: SampleConsortium
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *VlinkOrg
+      Capabilities:
+        <<: *ApplicationCapabilities
+    Policies:
+      Readers:
+        Type: ImplicitMeta
+        Rule: "ANY Readers"
+      Writers:
+        Type: ImplicitMeta
+        Rule: "ANY Writers"
+      Admins:
+        Type: ImplicitMeta
+        Rule: "MAJORITY Admins"
+    Capabilities:
+      <<: *ChannelCapabilities

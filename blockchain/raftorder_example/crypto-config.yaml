@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# "OrdererOrgs" - Definition of organizations managing orderer nodes
+# ---------------------------------------------------------------------------
+OrdererOrgs:
+  # ---------------------------------------------------------------------------
+  # Orderer
+  # ---------------------------------------------------------------------------
+  - Name: Orderer
+    Domain: vlink.com
+    EnableNodeOUs: true
+    # ---------------------------------------------------------------------------
+    # "Specs" - See PeerOrgs below for complete description
+    # ---------------------------------------------------------------------------
+    Specs:
+      - Hostname: orderer0
+
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # Org1
+  # ---------------------------------------------------------------------------
+  - Name: VlinkOrg
+    Domain: vlink.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: user0
+      - Hostname: user1
+      - Hostname: coin0
+      - Hostname: coin1
+      - Hostname: usercoin0
+      - Hostname: usercoin1
+      - Hostname: copyright0
+      - Hostname: copyright1
+
+    Template:
+      Count: 0
+    Users:
+      Count: 2

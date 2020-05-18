@@ -1,0 +1,1 @@
+# coincc 下的相关公共model对象
