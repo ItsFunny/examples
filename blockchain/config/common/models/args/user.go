@@ -10,8 +10,8 @@ package args
 
 import (
 	"encoding/json"
-	error2 "vlink.com/v2/vlink-common/error"
-	"vlink.com/v2/vlink-common/models"
+	error2 "examples/blockchain/config/common/error"
+	"examples/blockchain/config/common/models"
 )
 
 var (

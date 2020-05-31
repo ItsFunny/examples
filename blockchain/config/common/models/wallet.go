@@ -10,7 +10,7 @@ package models
 
 import (
 	"myLibrary/go-library/go/wallet"
-	wallet2 "vlink.com/v2/vlink-common/constants/usercc/wallet"
+	wallet2 "examples/blockchain/config/common/constants/usercc/wallet"
 )
 
 // 用户钱包容器

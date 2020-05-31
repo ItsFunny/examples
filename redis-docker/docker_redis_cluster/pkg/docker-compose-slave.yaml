@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  slave-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: redis-slave-1
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      redis-slave:
+        ipv4_address: 172.20.0.21
+    ports:
+      - 17379:6379
+      - 27379:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/slave/redis.conf:/etc/redis/redis.conf
+
+networks:
+  redis-slave:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

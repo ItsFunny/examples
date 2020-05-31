@@ -11,7 +11,7 @@ package models
 import (
 	"errors"
 	"fmt"
-	"vlink.com/v2/vlink-common/parent"
+	"examples/blockchain/config/common/parent"
 )
 
 type ItemUpload2ChainReqBO struct {

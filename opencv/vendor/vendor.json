@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "PT/H4YhFXpIRuDF0YHu765q0VuM=",
+			"path": "gocv.io/x/gocv",
+			"revision": "a0e3403cfa575254bfb43d0f9999c6cfd2ea76c7",
+			"revisionTime": "2019-05-23T12:40:21Z"
+		}
+	],
+	"rootPath": "examples/opencv"
+}

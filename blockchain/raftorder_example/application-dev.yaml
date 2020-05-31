@@ -1,7 +1,7 @@
 blockchain:
   goPath: /Users/joker/go
   cryptVersion: 1
-  configPath: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/blockchain-config.yaml
+  configPath: /Users/joker/go/src/examples/blockchain/raftorder_example/blockchain-config.yaml
   channels:
     - channelId: userchannel
       channelConfigPath: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/artifacts/userchannel.tx
@@ -17,7 +17,7 @@ blockchain:
           peers:
             - anchorPeers:
                 - address: peer0.user.demo.com
-                  port: 7051
+                  port: 8051
               chainCodes:
                 - chainCodeId: usercc
                   chainCodePath: examples/blockchain/twoorg_twochannel_chaincodes/chaincodes/usercc

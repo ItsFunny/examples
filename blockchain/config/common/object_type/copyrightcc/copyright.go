@@ -8,7 +8,7 @@
 */
 package copyrightcc
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 const (
 	OT_COPYRIGHT_ID_DNA = base.ObjectType("OT_COPYRIGHT_ID_DNA")

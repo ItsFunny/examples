@@ -9,8 +9,8 @@
 package rpc
 
 import (
-	"vlink.com/v2/vlink-common/models"
-	"vlink.com/v2/vlink-common/parent"
+	"examples/blockchain/config/common/models"
+	"examples/blockchain/config/common/parent"
 )
 
 type RPCUserUploadReq struct {

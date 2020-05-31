@@ -8,7 +8,7 @@
 */
 package models
 
-import error2 "vlink.com/v2/vlink-common/error"
+import error2 "examples/blockchain/config/common/error"
 
 type ArgsChecker = func(args []string) error2.IVlinkError
 type ArgsConverter = func(args []string) (interface{}, error2.IVlinkError)

@@ -8,8 +8,7 @@
 */
 package usercc
 
-import "vlink.com/v2/vlink-common/base/fabric"
-
+import "examples/blockchain/config/common/base/fabric"
 const (
 	// 用户ID和DNA的映射
 	OT_USER_ID_DNA = base.ObjectType("OT_USER_ID_DNA")

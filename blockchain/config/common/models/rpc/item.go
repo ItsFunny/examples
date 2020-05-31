@@ -8,7 +8,7 @@
 */
 package rpc
 
-import "vlink.com/v2/vlink-common/parent"
+import "examples/blockchain/config/common/parent"
 
 type RPCItemUploadReq struct {
 	parent.ItemUploadReqParent

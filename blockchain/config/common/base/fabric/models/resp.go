@@ -8,7 +8,7 @@
 */
 package models
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 type BaseFacadedResp struct {
 	base.TXRecordInfo

@@ -22,19 +22,12 @@ version: 1.0.0
 
 organizations:
   UserOrgMSP:
-    mspid: UserOrgMSP
-    cryptoPath:  peerOrganizations/user.demo.com/users/{username}@user.demo.com/msp
+    mspid: Org0MSP
+    cryptoPath:  peerOrganizations/demo.com/users/{username}@demo.com/msp
     peers:
-      - peer0.user.demo.com
+      - peer0.demo.com
     certificateAuthorities:
-      - ca.user.demo.com
-  CoinOrgMSP:
-    mspid: CoinOrgMSP
-    cryptoPath:  peerOrganizations/coin.demo.com/users/{username}@coin.demo.com/msp
-    peers:
-      - peer0.coin.demo.com
-    certificateAuthorities:
-      - ca.coin.demo.com
+      - ca.demo.com
 #
 # The client section used by GO SDK.
 #
@@ -42,7 +35,7 @@ client:
 
   # Which organization does this application instance belong to? The value must be the name of an org
   # defined under "organizations"
-  organization: UserOrgMSP
+  organization: Org0MSP
 
   logging:
     level: info
@@ -52,7 +45,7 @@ client:
 
   # Root of the MSP directories with keys and certs.
   cryptoconfig:
-    path: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/crypto-config
+    path: /Users/joker/go/src/examples/blockchain/raftorder_example/crypto-config
 
   # Some SDKs support pluggable KV stores, the properties under "credentialStore"
   # are implementation specific
@@ -96,7 +89,7 @@ client:
 channels:
   #[Required if _default not defined; Optional if _default defined].
   # name of the channel
-  userchannel:
+  demochannel:
     # list of orderers designated by the application to use for transactions on this
     # channel. This list can be a result of access control ("FBI" can only access "ordererA"), or
     # operational decisions to share loads from applications among the orderers.  The values must
@@ -107,7 +100,7 @@ channels:
     #[Required if _default peers not defined; Optional if _default peers defined].
     # list of peers from participating orgs
     peers:
-      peer0.user.demo.com:
+      peer0.demo.com:
         # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
         # have the chaincode installed. The app can also use this property to decide which peers
         # to send the chaincode install request. Default: true
@@ -126,39 +119,6 @@ channels:
         # produce events but the app typically only needs to connect to one to listen to events.
         # Default: true
         eventSource: true
-
-  coinchannel:
-    # list of orderers designated by the application to use for transactions on this
-    # channel. This list can be a result of access control ("FBI" can only access "ordererA"), or
-    # operational decisions to share loads from applications among the orderers.  The values must
-    # be "names" of orgs defined under "organizations/peers"
-    # deprecated: not recommended, to override any orderer configuration items, entity matchers should be used.
-    #    orderers:
-    #      - orderer.citizens.com
-    #[Required if _default peers not defined; Optional if _default peers defined].
-    # list of peers from participating orgs
-    peers:
-      peer0.coin.demo.com:
-        # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
-        # have the chaincode installed. The app can also use this property to decide which peers
-        # to send the chaincode install request. Default: true
-        endorsingPeer: true
-
-        # [Optional]. will this peer be sent query proposals? The peer must have the chaincode
-        # installed. The app can also use this property to decide which peers to send the
-        # chaincode install request. Default: true
-        chaincodeQuery: true
-
-        # [Optional]. will this peer be sent query proposals that do not require chaincodes, like
-        # queryBlock(), queryTransaction(), etc. Default: true
-        ledgerQuery: true
-
-        # [Optional]. will this peer be the target of the SDK's listener registration? All peers can
-        # produce events but the app typically only needs to connect to one to listen to events.
-        # Default: true
-        eventSource: true
-
-
 
 #
 # List of orderers to send transaction and channel create/update requests to. For the time
@@ -166,15 +126,15 @@ channels:
 # SDK is implementation specific. Consult each SDK's documentation for its handling of orderers.
 #
 orderers:
-  orderer.demo.com:
+  orderer0.demo.com:
     #    url: localhost:7050
     #    url: 192.168.161.139:7050
-    url: orderer.demo.com:7050
+    url: orderer0.demo.com:7050
 
     # these are standard properties defined by the gRPC library
     # they will be passed in as-is to gRPC client constructor
     grpcOptions:
-      ssl-target-name-override: orderer.demo.com
+      ssl-target-name-override: orderer0.demo.com
       # These parameters should be set in coordination with the keepalive policy on the server,
       # as incompatible settings can result in closing of connection.
       # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
@@ -187,18 +147,40 @@ orderers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 
+  orderer1.demo.com:
+    #    url: localhost:7050
+    #    url: 192.168.161.139:7050
+    url: orderer1.demo.com:7060
+
+    # these are standard properties defined by the gRPC library
+    # they will be passed in as-is to gRPC client constructor
+    grpcOptions:
+      ssl-target-name-override: orderer1.demo.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: /Users/joker/go/src/examples/blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 #
 # List of peers to send various requests to, including endorsement, query
 # and event listener registration.
 #
 peers:
-  peer0.user.demo.com:
+  peer0.demo.com:
     # this URL is used to send endorsement and query requests
-    url: peer0.user.demo.com:7051
+    url: peer0.user.demo.com:8050
     grpcOptions:
-      ssl-target-name-override: peer0.user.demo.com
+      ssl-target-name-override: peer0.demo.com
       # These parameters should be set in coordination with the keepalive policy on the server,
       # as incompatible settings can result in closing of connection.
       # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
@@ -211,25 +193,7 @@ peers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/crypto-config/peerOrganizations/user.demo.com/tlsca/tlsca.user.demo.com-cert.pem
-  peer0.coin.demo.com:
-    # this URL is used to send endorsement and query requests
-    url: peer0.coin.demo.com:8051
-    grpcOptions:
-      ssl-target-name-override: peer0.coin.demo.com
-      # These parameters should be set in coordination with the keepalive policy on the server,
-      # as incompatible settings can result in closing of connection.
-      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-      keep-alive-time: 0s
-      keep-alive-timeout: 20s
-      keep-alive-permit: false
-      fail-fast: false
-      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-      allow-insecure: false
-
-    tlsCACerts:
-      # Certificate location absolute path
-      path: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/crypto-config/peerOrganizations/coin.demo.com/tlsca/tlsca.coin.demo.com-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 
 
 #
@@ -239,7 +203,7 @@ peers:
 #
 certificateAuthorities:
   ca.user.demo.com:
-    url: https://ca.user.demo.com:7054
+    url: https://ca.demo.com:7054
     tlsCACerts:
       # Comma-Separated list of paths
       path: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/crypto-config/peerOrganizations/user.demo.com/tlsca/tlsca.user.demo.com-cert.pem

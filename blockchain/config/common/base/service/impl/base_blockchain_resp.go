@@ -13,7 +13,7 @@ import (
 	"myLibrary/go-library/go/base/models"
 	"myLibrary/go-library/go/converters"
 	error2 "myLibrary/go-library/go/error"
-	"vlink.com/v2/vlink-common/base/fabric"
+	"examples/blockchain/config/common/base/fabric"
 )
 
 // Deprecated: use BaseFabricResp instead

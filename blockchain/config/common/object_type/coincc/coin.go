@@ -8,7 +8,7 @@
 */
 package coincc
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 const (
 	// 存储用户积分信息

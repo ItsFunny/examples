@@ -9,9 +9,9 @@
 package helper
 
 import (
-	"vlink.com/v2/vlink-common/constants"
-	error2 "vlink.com/v2/vlink-common/error"
-	"vlink.com/v2/vlink-common/models"
+	"examples/blockchain/config/common/constants"
+	error2 "examples/blockchain/config/common/error"
+	"examples/blockchain/config/common/models"
 )
 
 func GetErrorDesc(err error2.IVlinkError) string {

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5b39d67-46e9-4d2e-8910-3d329e8fc3b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../html2pdf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../html2pdf/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../html2pdf/tsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../html2pdf/tsa_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/blockchain/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/blockchain/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/controller/base_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/controller/base_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/cc/base_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/cc/base_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/cc/base_logic_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/cc/base_logic_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/cc/fabric_base_facaded_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/cc/fabric_base_facaded_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/coincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/coincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/coincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/coincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/copyrightcc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/copyrightcc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/copyrightcc/txbase/txbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/copyrightcc/txbase/txbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/models/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/models/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/models/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/models/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/service/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/service/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/service/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/service/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/service/impl/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/service/impl/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/service/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/service/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/usercc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/usercc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/fabric/usercoincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/base/service/impl/base_blockchain_resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/base/service/impl/base_blockchain_resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/error/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/error/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/helper/error_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/helper/error_helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/args/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/args/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/coincc/args/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/coincc/args/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/copyrightcc/models/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/copyrightcc/models/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/rpc/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/rpc/blockchain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/rpc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/rpc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/rpc/item.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/rpc/item.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/rpc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/rpc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/usercoincc/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/usercoincc/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/wallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/models/wallet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/models/wallet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/object_type/coincc/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/object_type/coincc/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/object_type/copyrightcc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/object_type/copyrightcc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/common/object_type/usercc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/common/object_type/usercc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/vlink_configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config/vlink_configuration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincodes/demo_chaincode.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincodes/demo_chaincode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/base/peer-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/containers/base/peer-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/docker-compose-orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/containers/docker-compose-orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/docker-compose-peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/containers/docker-compose-peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../opencv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../opencv/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/docker-compose-redis2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master1/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master2/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master3/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave1/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave2/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave3/redis.conf" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="e#142#219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/examples/blockchain/config/config.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/examples/blockchain/config/blockchain/setup.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1436">
+              <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application-dev.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>latest</find>
+      <find>examples/blockchain/config</find>
+      <find>peer-order</find>
+      <find>order-base</find>
+      <find>172.80.0.0.14</find>
+      <find>172.80.0.0</find>
+      <find>172.80.0.11</find>
+      <find>705</find>
+      <find>7051</find>
+      <find>查询已经存在的channel</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>1.4.4</replace>
+      <replace>order-base</replace>
+      <replace>orderer-base</replace>
+      <replace>172.80.0</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/containers/.env" />
+        <option value="$PROJECT_DIR$/containers/base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/containers/docker-compose-orderer.yaml" />
+        <option value="$PROJECT_DIR$/configtx.yaml" />
+        <option value="$PROJECT_DIR$/blockchain-config.yaml" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/application-dev.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="raftorder_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raftorder_example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raftorder_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raftorder_example" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raftorder_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raftorder_example" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="raftorder_example" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="examples/blockchain/raftorder_example" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5554217" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15542169" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.19277108" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/examples/blockchain/config/blockchain/setup.go</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/examples/blockchain/config/blockchain/setup.go</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/orderer.genesis.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config/blockchain/setup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config/vlink_configuration.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincodes/demo_chaincode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#152#267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/docker-compose-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/docker-compose-peer.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/docker-compose-orderer.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3359">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-899">
+          <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/hyperledger/fabric-sdk-go@v1.0.0-beta1/internal/github.com/hyperledger/fabric/core/operations/system.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/docker/docker@v1.4.2-0.20180625184442-8e610b2b55bf/opts/address_pools.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370">
+          <caret line="252" column="26" selection-start-line="252" selection-start-column="26" selection-end-line="252" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#142#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="850" column="20" lean-forward="true" selection-start-line="850" selection-start-column="20" selection-end-line="850" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/examples/blockchain/config/vlink_configuration.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/examples/blockchain/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/examples/blockchain/config/blockchain/setup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1436">
+          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -9,8 +9,8 @@
 package service
 
 import (
-	"vlink.com/v2/vlink-common/base/fabric"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	error2 "examples/blockchain/config/common/error"
 )
 
 type TransactionHelper interface {

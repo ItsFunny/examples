@@ -11,10 +11,10 @@ package cc
 import (
 	"encoding/json"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/base/service/impl"
-	"vlink.com/v2/vlink-common/constants"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/base/service/impl"
+	"examples/blockchain/config/common/constants"
+	error2 "examples/blockchain/config/common/error"
 )
 
 type ArgeChecker func(name base.MethodName) (interface{}, error2.IVlinkError)

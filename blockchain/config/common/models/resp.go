@@ -9,8 +9,8 @@
 package models
 
 import (
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/constants"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/constants"
 )
 
 type ILogicBaseService interface {

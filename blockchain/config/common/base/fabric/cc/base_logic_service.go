@@ -15,10 +15,10 @@ import (
 	"myLibrary/go-library/go/converters"
 	"net/http"
 	"strconv"
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/base/service/impl"
-	"vlink.com/v2/vlink-common/constants"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/base/service/impl"
+	"examples/blockchain/config/common/constants"
+	error2 "examples/blockchain/config/common/error"
 )
 
 type IVlinkChainCodeLogicServiceHelper interface {

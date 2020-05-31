@@ -11,8 +11,8 @@ package controller
 import (
 	"myLibrary/go-library/go/base/controller"
 	"net/http"
-	"vlink.com/v2/vlink-common/constants"
-	"vlink.com/v2/vlink-common/models"
+	"examples/blockchain/config/common/constants"
+	"examples/blockchain/config/common/models"
 )
 
 type VlinkBaseController struct {

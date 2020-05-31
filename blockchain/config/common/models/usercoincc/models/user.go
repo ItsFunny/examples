@@ -10,7 +10,7 @@ package models
 
 import (
 	"fmt"
-	"vlink.com/v2/vlink-common/parent"
+	"examples/blockchain/config/common/parent"
 )
 
 type BCUserCoinUpdateUserInfoReq struct {

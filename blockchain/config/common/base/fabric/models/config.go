@@ -14,9 +14,9 @@ import (
 	"myLibrary/go-library/go/crypt"
 	"myLibrary/go-library/go/utils"
 	"strconv"
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/base/service"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/base/service"
+	error2 "examples/blockchain/config/common/error"
 )
 
 var (

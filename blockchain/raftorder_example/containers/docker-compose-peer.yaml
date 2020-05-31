@@ -1,181 +1,48 @@
 version: '2'
 services:
-  VlinkOrgUser0:
-    container_name: user0.vlink.com
+  Org0Peer0:
+    container_name: peer0.demo.com
     extends:
       file: ./base/peer-base.yaml
       service: peer-base
     environment:
-      - CORE_PEER_ID=user0.vlink.com
-      - CORE_PEER_ADDRESS=user0.vlink.com:7051
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
-      - CORE_PEER_CHAINCODEADDRESS=user0.vlink.com:7052
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=user1.vlink.com:7061
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=user0.vlink.com:7051
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "7051:7051"
-      - "7052:7052"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/user0.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/user0.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-  VlinkOrgUser1:
-    container_name: user1.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=user1.vlink.com
-      - CORE_PEER_ADDRESS=user1.vlink.com:7061
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:7061
-      - CORE_PEER_CHAINCODEADDRESS=user1.vlink.com:7062
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7062
-      - CORE_PEER_GOSSIP_BOOTSTRAP=user0.vlink.com:7051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=user1.vlink.com:7061
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "7061:7061"
-      - "7062:7062"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/user1.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/user1.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-
-  VlinkOrgCoin0:
-    container_name: coin0.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=coin0.vlink.com
-      - CORE_PEER_ADDRESS=coin0.vlink.com:8051
+      - CORE_PEER_ID=peer0.demo.com
+      - CORE_PEER_ADDRESS=peer0.demo.com:8051
       - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
-      - CORE_PEER_CHAINCODEADDRESS=coin0.vlink.com:8052
+      - CORE_PEER_CHAINCODEADDRESS=peer0.demo.com:8052
       - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=coin1.vlink.com:8061
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=coin0.vlink.com:8051
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.demo.com:8061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.demo.com:8051
+      - CORE_PEER_LOCALMSPID=OrdererOrgMSP
     ports:
       - "8051:8051"
       - "8052:8052"
     volumes:
       - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/coin0.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/coin0.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-  VlinkOrgCoin1:
-    container_name: coin1.vlink.com
+      - ../crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.demo.com/tlsca
+
+
+  Org0Peer1:
+    container_name: peer1.demo.com
     extends:
       file: ./base/peer-base.yaml
       service: peer-base
     environment:
-      - CORE_PEER_ID=coin1.vlink.com
-      - CORE_PEER_ADDRESS=coin1.vlink.com:8061
+      - CORE_PEER_ID=peer1.demo.com
+      - CORE_PEER_ADDRESS=peer1.demo.com:8061
       - CORE_PEER_LISTENADDRESS=0.0.0.0:8061
-      - CORE_PEER_CHAINCODEADDRESS=coin1.vlink.com:8062
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=coin0.vlink.com:8051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=coin1.vlink.com:8061
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
+      - CORE_PEER_CHAINCODEADDRESS=peer1.demo.com:8062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.demo.com:8051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.demo.com:8061
+      - CORE_PEER_LOCALMSPID=OrdererOrgMSP
     ports:
       - "8061:8061"
       - "8062:8062"
     volumes:
       - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/coin1.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/coin1.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-
-  VlinkOrgUserCoin0:
-    container_name: usercoin0.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=usercoin0.vlink.com
-      - CORE_PEER_ADDRESS=usercoin0.vlink.com:9051
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:9051
-      - CORE_PEER_CHAINCODEADDRESS=usercoin0.vlink.com:9052
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=usercoin1.vlink.com:9061
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=usercoin0.vlink.com:9051
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "9051:9051"
-      - "9052:9052"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/usercoin0.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/usercoin0.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-  VlinkOrgUserCoin1:
-    container_name: usercoin1.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=usercoin1.vlink.com
-      - CORE_PEER_ADDRESS=usercoin1.vlink.com:9061
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:9061
-      - CORE_PEER_CHAINCODEADDRESS=usercoin1.vlink.com:9062
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9062
-      - CORE_PEER_GOSSIP_BOOTSTRAP=usercoin0.vlink.com:9051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=usercoin0.vlink.com:9061
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "9061:9061"
-      - "9062:9062"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/usercoin1.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/usercoin1.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-
-  VlinkOrgCopyright0:
-    container_name: copyright0.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=copyright0.vlink.com
-      - CORE_PEER_ADDRESS=copyright0.vlink.com:10051
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:10051
-      - CORE_PEER_CHAINCODEADDRESS=copyright0.vlink.com:10052
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:10052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=copyright1.vlink.com:10061
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=copyright0.vlink.com:10051
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "10051:10051"
-      - "10052:10052"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/copyright0.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/copyright0.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
-  VlinkOrgCopyright1:
-    container_name: copyright1.vlink.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: peer-base
-    environment:
-      - CORE_PEER_ID=copyright1.vlink.com
-      - CORE_PEER_ADDRESS=copyright1.vlink.com:10061
-      - CORE_PEER_LISTENADDRESS=0.0.0.0:10061
-      - CORE_PEER_CHAINCODEADDRESS=copyright1.vlink.com:10062
-      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:10062
-      - CORE_PEER_GOSSIP_BOOTSTRAP=copyright0.vlink.com:10051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=copyright1.vlink.com:10061
-      - CORE_PEER_LOCALMSPID=VlinkOrgMSP
-    ports:
-      - "10061:10061"
-      - "10062:10062"
-    volumes:
-      - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/vlink.com/peers/copyright1.vlink.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/vlink.com/peers/copyright1.vlink.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/vlink.com/tlsca:/etc/hyperledger/orgs/user.vlink.com/tlsca
+      - ../crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ../crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer1.demo.com/tlsca

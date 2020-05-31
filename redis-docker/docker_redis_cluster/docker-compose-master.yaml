@@ -1,0 +1,50 @@
+version: '3.6'
+services:
+  master-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: redis-master-1
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      redis-master:
+        ipv4_address: 172.10.0.11
+    ports:
+      - 16379:6379
+      - 26379:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master/redis.conf:/etc/redis/redis.conf
+#  master-2:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: redis-master-2
+#    command: redis-server /etc/redis/redis.conf
+#    networks:
+#      redis-master:
+#        ipv4_address: 172.10.0.12
+#    ports:
+#      - 16379:6379
+#      - 26379:16379
+#    volumes:
+#      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master/redis.conf:/etc/redis/redis.conf
+#  master-3:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: redis-master-3
+#    command: redis-server /etc/redis/redis.conf
+#    networks:
+#      redis-master:
+#        ipv4_address: 172.10.0.13
+#    ports:
+#      - 16379:6379
+#      - 26379:16379
+#    volumes:
+#      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master/redis.conf:/etc/redis/redis.conf
+networks:
+  redis-master:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.10.0.0/16

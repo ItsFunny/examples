@@ -11,7 +11,7 @@ package models
 import (
 	"fmt"
 	"testing"
-	"vlink.com/v2/vlink-common/constants/usercc/wallet"
+	"examples/blockchain/config/common/constants/usercc/wallet"
 	"myLibrary/go-library/go/crypt"
 )
 

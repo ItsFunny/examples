@@ -8,7 +8,7 @@
 */
 package txbase
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 const (
 	USERCOIN_TX_BASE_UPLOAD_USER_WITH_INIT_COIN = (base.TX_BASE_NEED_RECORD << 1) | base.TX_BASE_NEED_RECORD

@@ -9,7 +9,7 @@
 package impl
 
 import (
-	"vlink.com/v2/vlink-common/base/fabric"
+	"examples/blockchain/config/common/base/fabric"
 )
 
 type BaseTransactionImpl struct {

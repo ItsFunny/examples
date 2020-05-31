@@ -9,9 +9,9 @@
 package service
 
 import (
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/base/fabric/models"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/base/fabric/models"
+	error2 "examples/blockchain/config/common/error"
 )
 
 type IVlinkBlockChainBaseConfiger interface {

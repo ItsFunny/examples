@@ -8,7 +8,7 @@
 */
 package service
 
-import error2 "vlink.com/v2/vlink-common/error"
+import error2 "examples/blockchain/config/common/error"
 
 
 

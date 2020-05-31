@@ -8,7 +8,7 @@
 */
 package method
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 const (
 	USERCC_METHOD_UPLOAD_USER_TO_CHAIN = base.MethodName("UploadUserToChain")

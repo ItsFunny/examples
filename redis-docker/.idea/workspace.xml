@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03d5b90c-12f8-4358-81d6-7b091940b329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html2pdf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html2pdf/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html2pdf/tsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html2pdf/tsa_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/blockchain/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/blockchain/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/controller/base_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/controller/base_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/base_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/base_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/base_logic_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/base_logic_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/fabric_base_facaded_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/cc/fabric_base_facaded_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/coincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/coincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/coincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/coincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/copyrightcc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/copyrightcc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/copyrightcc/txbase/txbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/copyrightcc/txbase/txbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/impl/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/impl/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/service/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/fabric/usercoincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/base/service/impl/base_blockchain_resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/base/service/impl/base_blockchain_resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/error/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/error/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/helper/error_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/helper/error_helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/args/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/args/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/coincc/args/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/coincc/args/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/copyrightcc/models/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/copyrightcc/models/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/blockchain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/item.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/item.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/rpc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/usercoincc/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/usercoincc/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/wallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/models/wallet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/models/wallet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/object_type/coincc/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/object_type/coincc/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/object_type/copyrightcc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/object_type/copyrightcc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/common/object_type/usercc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/common/object_type/usercc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/config/vlink_configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/config/vlink_configuration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/blockchain-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/blockchain-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/chaincodes/demo_chaincode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/chaincodes/demo_chaincode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/base/peer-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/base/peer-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opencv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../opencv/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/master1/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/master2/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/master3/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/slave1/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/slave2/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker_redis_cluster/slave3/redis.conf" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-master.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>protected</find>
+      <find>master1</find>
+      <find>slave1</find>
+      <find>23</find>
+      <find>'</find>
+      <find>192.168.0</find>
+      <find>192.168.1</find>
+      <find>192.168.2</find>
+      <find>172.28.9</find>
+      <find>network_mode: host</find>
+      <find>network: host</find>
+      <find>$PROJECT_DIR$/docker_redis_cluster</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>master</replace>
+      <replace>slave</replace>
+      <replace>192.168.1</replace>
+      <replace>192.168.2</replace>
+      <replace>172.28.9</replace>
+      <replace>172.28.0</replace>
+      <replace />
+      <replace>/usr/local/docker/redis-docker/docker_redis_cluster</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/docker_redis_cluster/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/clean.sh" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/README.md" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/master/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis2.yaml" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/master2/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/master1/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/master3/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/slave/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/slave1/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/slave2/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/slave3/redis.conf" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis.yaml" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/docker-compose-master.yaml" />
+        <option value="$PROJECT_DIR$/docker_redis_cluster/docker-compose-slave.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="redis-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-docker" type="462c0819:PsiDirectoryNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker_redis_cluster/pkg" />
+      <recent name="$PROJECT_DIR$/docker_redis_cluster" />
+      <recent name="$PROJECT_DIR$/docker_redis_cluster/master3" />
+      <recent name="$PROJECT_DIR$/docker_redis_cluster/slave3" />
+      <recent name="$PROJECT_DIR$/docker_redis_cluster/slave2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="798" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.40084985" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/redis-6.0.0/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="87" column="9" selection-start-line="87" selection-end-line="87" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="7" column="21" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/master/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/master1/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/master2/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/slave/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/master3/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/slave3/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/slave2/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/slave1/redis.conf" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis2.yaml" />
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-slave.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/pkg/docker-compose-master.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/pkg/docker-compose-slave.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/pkg/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/pkg/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-redis.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker_redis_cluster/docker-compose-master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

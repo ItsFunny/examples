@@ -1,0 +1,7 @@
+wechat:
+  payAppId: 'ww51012454413c4402'
+  payMchId: '1544956201'
+  payApiKey: '9facbf452def2d7efc5b5c48cdb837fa'
+  payCallBack: 'http://api.vlink.link/v1/wechat/pay/callback'
+  payNotify: 'http://api.vlink.link/v1/wechat/pay/notify'
+  payApiv3Key: '9facbf452def2d7efc5b5c48cdb837fa'

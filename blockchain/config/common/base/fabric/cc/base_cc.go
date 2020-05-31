@@ -11,9 +11,9 @@ package cc
 import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/hyperledger/fabric/protos/peer"
-	"vlink.com/v2/vlink-common/base/fabric"
-	"vlink.com/v2/vlink-common/base/service/impl"
-	error2 "vlink.com/v2/vlink-common/error"
+	"examples/blockchain/config/common/base/fabric"
+	"examples/blockchain/config/common/base/service/impl"
+	error2 "examples/blockchain/config/common/error"
 )
 
 type IVlinkChaincode interface {

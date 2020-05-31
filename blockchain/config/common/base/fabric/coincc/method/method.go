@@ -8,7 +8,7 @@
 */
 package method
 
-import "vlink.com/v2/vlink-common/base/fabric"
+import "examples/blockchain/config/common/base/fabric"
 
 const (
 	// 更新用户积分

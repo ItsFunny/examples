@@ -6,4 +6,33 @@
 # @Description : 
 # @Attention : 
 */
-package chaincodes
+package main
+
+import (
+	"fmt"
+	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/hyperledger/fabric/protos/peer"
+)
+
+type DemoChainCode struct {
+}
+
+func (this *DemoChainCode) Init(stub shim.ChaincodeStubInterface) peer.Response {
+	fmt.Println("init")
+	return shim.Success(nil)
+}
+
+func (this *DemoChainCode) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
+	args := stub.GetStringArgs()
+	for _, str := range args {
+		fmt.Println(str)
+	}
+	return shim.Success([]byte("success"))
+}
+
+func main() {
+	u := new(DemoChainCode)
+	if err := shim.Start(u); nil != err {
+		panic(err)
+	}
+}

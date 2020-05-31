@@ -11,8 +11,8 @@ package args
 import (
 	"encoding/json"
 	"fmt"
-	error2 "vlink.com/v2/vlink-common/error"
-	"vlink.com/v2/vlink-common/models/coincc"
+	error2 "examples/blockchain/config/common/error"
+	"examples/blockchain/config/common/models/coincc"
 )
 
 var (

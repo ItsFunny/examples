@@ -2,24 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="807517c7-94e3-496e-afb8-dca38aee5617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/blockchain/setup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/vlink_configuration.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/blockchain-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/coincc/coincc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/usercc/usercc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/configtx.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/clean.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/docker-compose-order.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/docker-compose-peer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raftorder_example/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/blockchain/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/blockchain/setup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/controller/base_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/controller/base_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/cc/base_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/cc/base_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/cc/base_logic_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/cc/base_logic_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/cc/fabric_base_facaded_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/cc/fabric_base_facaded_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/coincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/coincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/coincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/coincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/copyrightcc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/copyrightcc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/copyrightcc/txbase/txbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/copyrightcc/txbase/txbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/models/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/models/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/models/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/models/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/service/args.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/service/args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/service/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/service/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/service/impl/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/service/impl/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/service/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/service/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/usercc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/usercc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/method/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/method/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/txbase/tx_desc.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/fabric/usercoincc/txbase/tx_desc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/base/service/impl/base_blockchain_resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/base/service/impl/base_blockchain_resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/error/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/error/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/helper/error_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/helper/error_helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/args/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/args/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/args/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/args/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/coincc/args/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/coincc/args/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/copyrightcc/models/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/copyrightcc/models/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/rpc/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/rpc/blockchain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/rpc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/rpc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/rpc/item.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/rpc/item.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/rpc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/rpc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/usercoincc/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/usercoincc/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/wallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/models/wallet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/models/wallet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/object_type/coincc/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/object_type/coincc/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/object_type/copyrightcc/copyright.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/object_type/copyrightcc/copyright.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/common/object_type/usercc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/common/object_type/usercc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/vlink_configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/vlink_configuration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/blockchain-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/blockchain-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/chaincodes/demo_chaincode.go" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/chaincodes/demo_chaincode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/containers/base/peer-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/containers/base/peer-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/containers/docker-compose-peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/containers/docker-compose-peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raftorder_example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/raftorder_example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opencv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../opencv/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +67,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/go.mod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/raftorder_example/go.mod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="13" column="98" selection-start-line="13" selection-start-column="98" selection-end-line="13" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/raftorder_example/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#142#219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/raftorder_example/go.sum">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,21 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FABRIC_ARCH</find>
-      <find>FABRIC_DOCKER_REGISTRY</find>
-      <find>FABRIC_ORDERER_FIXTURE_IMAGE</find>
-      <find>FABRIC_BASE_DOCKER_REGISTRY</find>
-      <find>test.com</find>
-      <find>peer1.credit</find>
-      <find>pee0.credit.demo.com</find>
-      <find>SampleDevModeKafka</find>
-      <find>peer0.user.vlink.com</find>
-      <find>orderer0.vlink.com</find>
-      <find>/src/github.com/akkagao/citizens/fabric-service/v2</find>
-      <find>user.vlink.com</find>
-      <find>$PROJECT_DIR$/../../..</find>
-      <find>$PROJECT_DIR$/../../src</find>
-      <find>UserOrgMSP</find>
       <find>orderer.demo</find>
       <find>orderer.demo.com</find>
       <find>orderer</find>
@@ -64,11 +133,26 @@
       <find>7050</find>
       <find>8050</find>
       <find>log.Debug</find>
-      <find>example.com</find>
       <find>Org1MSP</find>
       <find>$PROJECT_DIR$/../../demo.com/v2/vlink-blockchain-network</find>
-      <find>vlink.com</find>
       <find>orderer0.demo.com</find>
+      <find>Orderer0OrgMSP</find>
+      <find>example.com</find>
+      <find>OrdererMSP</find>
+      <find>user0</find>
+      <find>channel-artifacts</find>
+      <find>./artifacts</find>
+      <find>./crypto-config</find>
+      <find>vlink.com</find>
+      <find>vlink</find>
+      <find>vlink.com/v2/vlink-common</find>
+      <find>examples/blockchain/config/common/error</find>
+      <find>user.demo.com</find>
+      <find>../crypto-config</find>
+      <find>OrdererOrgMSP</find>
+      <find>networ</find>
+      <find>demo</find>
+      <find>Org0MSP</find>
     </findStrings>
     <replaceStrings>
       <replace>peer0.org1.demo.com</replace>
@@ -84,44 +168,32 @@
       <replace>UserOrgMSP</replace>
       <replace>$PROJECT_DIR$/twoorg_twochannel_chaincodes</replace>
       <replace>demo.com</replace>
+      <replace>peer0</replace>
+      <replace>artifacts</replace>
+      <replace>../artifacts</replace>
+      <replace>../crypto-config</replace>
+      <replace>examples/blockchain/config/common</replace>
+      <replace>org0.demo.com</replace>
+      <replace>./crypto-config</replace>
+      <replace>Org0MSP</replace>
+      <replace>OrdererOrgMSP</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/v2</dir>
       <dir>$PROJECT_DIR$/oneorg_several_chaincodes</dir>
       <dir>$PROJECT_DIR$/twoorg_twochannel_chaincodes</dir>
+      <dir>$PROJECT_DIR$/config</dir>
+      <dir>$PROJECT_DIR$/config/blockchain</dir>
+      <dir>$PROJECT_DIR$/raftorder_example</dir>
     </dirStrings>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.9/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/README.md" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/blockchain-config.yaml" />
-        <option value="$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/context.go" />
-        <option value="$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/msp/getsigid.go" />
-        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/credit_chaincode/CreditChainCodeServiceImpl.go" />
-        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/user_chaincode/UserChainCodeFacadedService.go" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/base/docker-compose-peer-base.yaml" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/base/docker-compose-base.yaml" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/docker-compose.yaml" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/.env" />
-        <option value="$PROJECT_DIR$/multi-chaincode/blockchain-config.yaml" />
-        <option value="$PROJECT_DIR$/multi-chaincode/fabric_docker_container/configtx.yaml" />
-        <option value="$PROJECT_DIR$/multi-chaincode/main.go" />
-        <option value="$PROJECT_DIR$/multi-chaincode/chaincode/credit_chaincode/CreditChainCodeFacadedService.go" />
-        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/confixtx.yaml" />
-        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/build.sh" />
-        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/.env" />
-        <option value="$PROJECT_DIR$/v2/config.yaml" />
-        <option value="$PROJECT_DIR$/v2/crypto-config.yaml" />
-        <option value="$PROJECT_DIR$/v2/docker-compose-peer.yaml" />
-        <option value="$PROJECT_DIR$/v2/build.sh" />
-        <option value="$PROJECT_DIR$/v2/main.go" />
-        <option value="$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config.yaml" />
-        <option value="$PROJECT_DIR$/v2/configtx.yaml" />
         <option value="$PROJECT_DIR$/docker-container-base/peer-base.yaml" />
         <option value="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-peer.yaml" />
         <option value="$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-order.yaml" />
@@ -139,8 +211,6 @@
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/coincc/coincc.go" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/usercc/usercc.go" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/build.sh" />
-        <option value="$PROJECT_DIR$/config/init.go" />
-        <option value="$PROJECT_DIR$/config/vlink_configuration.go" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/README.md" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/docker-compose-order.yaml" />
@@ -149,12 +219,39 @@
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/blockchain-config.yaml" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/application-dev.yaml" />
         <option value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/configtx.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/README.md" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer1.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer2.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer3.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer4.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer0.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-peer.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/build.sh" />
+        <option value="$PROJECT_DIR$/raftorder_example/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/chaincodes/go.mod" />
+        <option value="$PROJECT_DIR$/raftorder_example/chaincodes/demo_chaincode.go" />
+        <option value="$PROJECT_DIR$/config/config.go" />
+        <option value="$PROJECT_DIR$/config/vlink_configuration.go" />
+        <option value="$PROJECT_DIR$/config/init.go" />
+        <option value="$PROJECT_DIR$/config/common/object_type/copyrightcc/copyright.go" />
+        <option value="$PROJECT_DIR$/config/common/object_type/usercc/user.go" />
+        <option value="$PROJECT_DIR$/config/blockchain/setup.go" />
+        <option value="$PROJECT_DIR$/raftorder_example/main.go" />
+        <option value="$PROJECT_DIR$/raftorder_example/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/blockchain-config.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-ca.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/configtx.yaml" />
+        <option value="$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer.yaml" />
+        <option value="$PROJECT_DIR$/config/go.mod" />
+        <option value="$PROJECT_DIR$/raftorder_example/go.mod" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -175,24 +272,12 @@
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="docker-container-base" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="twoorg_twochannel_chaincodes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="twoorg_twochannel_chaincodes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="twoorg_twochannel_chaincodes" type="462c0819:PsiDirectoryNode" />
-              <item name="chaincodes" type="462c0819:PsiDirectoryNode" />
+              <item name="raftorder_example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
@@ -218,19 +303,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/raftorder_example" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/raftorder_example/containers" />
+      <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes" />
+      <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker" />
       <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/coincc" />
       <recent name="$PROJECT_DIR$/multi-chaincode" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes" />
-      <recent name="$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker" />
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/oneorg_several_chaincodes/chaincode" />
-      <recent name="$PROJECT_DIR$/oneorg_several_chaincodes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -245,30 +331,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="blockchain" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/oneorg_several_chaincodes/main.go" />
-      <package value="examples/blockchain" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="blockchain" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/v2/main.go" />
-      <package value="examples/blockchain" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="blockchain" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go" />
+      <filePath value="$PROJECT_DIR$/raftorder_example/main.go" />
       <package value="examples/blockchain" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -282,24 +350,43 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$/raftorder_example" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go" />
+      <package value="examples/blockchain" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22961374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3313253" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2879518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37108433" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,8 +394,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" weight="0.2939759" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.19518073" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985694" weight="0.28915662" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50143063" side_tool="true" weight="0.46385542" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -324,243 +411,20 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/vendor/vlink.com/v2/vlink-rpc/config/blockchain/setup.go</url>
           <line>173</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/vendor/vlink.com/v2/vlink-rpc/config/blockchain/setup.go</url>
           <line>247</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/msp/admincerts/Admin@demo.com-cert.pem">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.key">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/artifacts/orderer.genesis.block">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="209" column="19" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/sirupsen/logrus/entry.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="275" column="20" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/prometheus/common/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="274" column="28" lean-forward="true" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric/core/chaincode/shim/interfaces_stable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/paycc/PayFacadedCC.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="34" column="69" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/itemcc/ItemFacadedCC.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beego/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="768" selection-start-line="768" selection-end-line="768" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-container-base/peer-base.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
-            <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/channel/chclient.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2808">
-          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/chaincode/usercc/UserFacadedCC.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/event/event.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3852">
-          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-          <folding>
-            <element signature="e#500#505#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/configtx.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/docker-compose-order.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/docker-container-base/peer-base.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt/resmgmt.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3096">
-          <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="e#142#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/docker/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oneorg_several_chaincodes/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/crypto-config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/coincc/coincc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding>
-            <element signature="e#144#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/chaincodes/usercc/usercc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#146#254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/system.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/blockchain/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/etcd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/blockchain/setup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1497" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/system.go" />
+    <entry file="file://$PROJECT_DIR$/config/blockchain/user.go" />
+    <entry file="file://$PROJECT_DIR$/config/etcd.go" />
     <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -568,13 +432,6 @@
             <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -599,27 +456,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../vlink.com/v2/vlink-rpc/config/blockchain/setup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/vlink_configuration.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../vlink.com/v2/vlink-rpc/config/blockchain/setup.go" />
     <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -658,13 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/vendor/examples/blockchain/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/artifacts/orderer.genesis.block">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -686,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.12.9/libexec/src/runtime/panic.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -704,6 +527,205 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="247" selection-start-line="247" selection-end-line="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer1.yaml" />
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer2.yaml" />
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer3.yaml" />
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer4.yaml" />
+    <entry file="file://$PROJECT_DIR$/raftorder_example/chaincodes/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/vendor/examples/blockchain/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/base/fabric/cc/base_cc.go" />
+    <entry file="file://$PROJECT_DIR$/config/common/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/vlink_configuration.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="e#143#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/common/object_type/copyrightcc/copyright.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/common/object_type/usercc/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/common/go.mod" />
+    <entry file="file://$PROJECT_DIR$/config/blockchain/setup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14328">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/chaincodes/demo_chaincode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twoorg_twochannel_chaincodes/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-peer.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="47" column="85" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/crypto-config/ordererOrganizations/demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/artifacts/demo.tx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/blockchain-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/containers/docker-compose-orderer.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1324">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/hyperledger/fabric-sdk-go@v1.0.0-beta1/internal/github.com/hyperledger/fabric/core/operations/system.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="226" column="28" selection-start-line="226" selection-start-column="28" selection-end-line="226" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#142#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/go.sum">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raftorder_example/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="13" column="98" selection-start-line="13" selection-start-column="98" selection-end-line="13" selection-end-column="98" />
         </state>
       </provider>
     </entry>
