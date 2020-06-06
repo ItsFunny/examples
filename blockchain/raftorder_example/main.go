@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	yamlPath := "/Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/application-dev.yaml"
+	yamlPath := "/Users/joker/go/src/examples/blockchain/raftorder_example/application-dev.yaml"
 	if e := config.Config(yamlPath); nil != e {
 		panic(e)
 	}
@@ -29,5 +29,6 @@ func main() {
 		fmt.Println("接收到结束信号")
 		os.Exit(0)
 	}
+
 	fmt.Println("程序结束运行")
 }

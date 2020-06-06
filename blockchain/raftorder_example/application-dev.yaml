@@ -3,39 +3,24 @@ blockchain:
   cryptVersion: 1
   configPath: /Users/joker/go/src/examples/blockchain/raftorder_example/blockchain-config.yaml
   channels:
-    - channelId: userchannel
-      channelConfigPath: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/artifacts/userchannel.tx
+    - channelId: demochannel
+      channelConfigPath: /Users/joker/go/src/examples/blockchain/raftorder_example/artifacts/demo.tx
       orders:
-        - ordererId: orderer.demo.com
-          ordererAddress: orderer.demo.com
+        - ordererId: orderer0.demo.com
+          ordererAddress: orderer0.demo.com
           ordererPort: 7050
+        - ordererId: orderer1.demo.com
+          ordererAddress: orderer1.demo.com
+          ordererPort: 7060
       organizations:
-        - organizationId: UserOrgMSP
+        - organizationId: Org0MSP
           organizationAdmin: admin
           users:
             - User1
           peers:
             - anchorPeers:
-                - address: peer0.user.demo.com
+                - address: peer0.demo.com
                   port: 8051
               chainCodes:
-                - chainCodeId: usercc
-                  chainCodePath: examples/blockchain/twoorg_twochannel_chaincodes/chaincodes/usercc
-    - channelId: coinchannel
-      channelConfigPath: /Users/joker/go/src/examples/blockchain/twoorg_twochannel_chaincodes/artifacts/coinchannel.tx
-      orders:
-        - ordererId: orderer.demo.com
-          ordererAddress: orderer.demo.com
-          ordererPort: 7050
-      organizations:
-        - organizationId: CoinOrgMSP
-          organizationAdmin: admin
-          users:
-            - User1
-          peers:
-            - anchorPeers:
-                - address: peer0.coin.demo.com
-                  port: 8051
-              chainCodes:
-                - chainCodeId: coincc
-                  chainCodePath: examples/blockchain/twoorg_twochannel_chaincodes/chaincodes/coincc
+                - chainCodeId: democc
+                  chainCodePath: examples/blockchain/raftorder_example/chaincodes

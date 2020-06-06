@@ -5,6 +5,8 @@ services:
     extends:
       file: ./base/peer-base.yaml
       service: peer-base
+    networks:
+      order-raft:
     environment:
       - CORE_PEER_ID=peer0.demo.com
       - CORE_PEER_ADDRESS=peer0.demo.com:8051
@@ -13,15 +15,15 @@ services:
       - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
       - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.demo.com:8061
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.demo.com:8051
-      - CORE_PEER_LOCALMSPID=OrdererOrgMSP
+      - CORE_PEER_LOCALMSPID=Org0MSP
     ports:
       - "8051:8051"
       - "8052:8052"
     volumes:
-      - /var/run/:/var/run/
+      - /var/run/:/host/var/run/
       - ../crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp:/etc/hyperledger/fabric/msp
       - ../crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.demo.com/tlsca
+#      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.demo.com/tlsca
 
 
   Org0Peer1:
@@ -29,6 +31,8 @@ services:
     extends:
       file: ./base/peer-base.yaml
       service: peer-base
+    networks:
+      order-raft:
     environment:
       - CORE_PEER_ID=peer1.demo.com
       - CORE_PEER_ADDRESS=peer1.demo.com:8061
@@ -37,7 +41,7 @@ services:
       - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8062
       - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.demo.com:8051
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.demo.com:8061
-      - CORE_PEER_LOCALMSPID=OrdererOrgMSP
+      - CORE_PEER_LOCALMSPID=Org0MSP
     ports:
       - "8061:8061"
       - "8062:8062"
@@ -45,4 +49,10 @@ services:
       - /var/run/:/var/run/
       - ../crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp:/etc/hyperledger/fabric/msp
       - ../crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls:/etc/hyperledger/fabric/tls
-      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer1.demo.com/tlsca
+#      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer1.demo.com/tlsca
+
+
+
+networks:
+  order-raft:
+    driver: bridge

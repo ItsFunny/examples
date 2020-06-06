@@ -1,170 +1,171 @@
 Organizations:
-  - &OrdererOrg
-    Name: OrdererOrgMSP
-    ID: OrdererOrgMSP
-    MSPDir: crypto-config/ordererOrganizations/demo.com/msp
-    Policies:
-      Readers:
-        Type: Signature
-        Rule: "OR('OrdererOrgMSP.member')"
-      Writers:
-        Type: Signature
-        Rule: "OR('OrdererOrgMSP.member')"
-      Admins:
-        Type: Signature
-        Rule: "OR('OrdererOrgMSP.admin')"
+    - &OrdererOrg
+        Name: OrdererOrgMSP
+        ID: OrdererOrgMSP
+        MSPDir: crypto-config/ordererOrganizations/demo.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('OrdererOrgMSP.member')"
+            Writers:
+                Type: Signature
+                Rule: "OR('OrdererOrgMSP.member')"
+            Admins:
+                Type: Signature
+                Rule: "OR('OrdererOrgMSP.admin')"
 
-  - &Org0
-    Name: Org0MSP
-    ID: Org0MSP
-    MSPDir: crypto-config/peerOrganizations/demo.com/msp
-    AnchorPeers:
-      - Host: peer0.demo.com
-        Port: 8051
-    Policies:
-      Readers:
-        Type: Signature
-        Rule: "OR('Org0MSP.admin', 'Org0MSP.peer', 'Org0MSP.client')"
-      Writers:
-        Type: Signature
-        Rule: "OR('Org0MSP.admin', 'Org0MSP.client')"
-      Admins:
-        Type: Signature
-        Rule: "OR('Org0MSP.admin')"
+    - &Org0
+        Name: Org0MSP
+        ID: Org0MSP
+        MSPDir: crypto-config/peerOrganizations/demo.com/msp
+        AnchorPeers:
+            - Host: peer0.demo.com
+              Port: 8051
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('Org0MSP.admin', 'Org0MSP.peer', 'Org0MSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('Org0MSP.admin', 'Org0MSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('Org0MSP.admin')"
 Capabilities:
-  Channel: &ChannelCapabilities
-    V1_3: true
-  Orderer: &OrdererCapabilities
-    V1_1: true
-  Application: &ApplicationCapabilities
-    V1_3: true
-    V1_2: false
-    V1_1: false
+    Channel: &ChannelCapabilities
+        V1_4_3: true
+        V1_3: false
+        V1_1: false
+    Orderer: &OrdererCapabilities
+        V1_4_2: true
+        V1_1: false
+    Application: &ApplicationCapabilities
+        V1_4_2: true
+        V1_3: false
+        V1_2: false
+        V1_1: false
 
+Application: &ApplicationDefaults
+    Organizations:
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+    Capabilities:
+        <<: *ApplicationCapabilities
+
+
+Orderer: &OrdererDefaults
+    OrdererType: solo
+    Addresses:
+        - orderer0.demo.com:7050
+    BatchTimeout: 2s
+    BatchSize:
+        MaxMessageCount: 10
+        AbsoluteMaxBytes: 99 MB
+        PreferredMaxBytes: 512 KB
+    Organizations:
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+        BlockValidation:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
 
 Channel: &ChannelDefaults
-  Policies:
-    Readers:
-      Type: ImplicitMeta
-      Rule: "ANY Readers"
-    Writers:
-      Type: ImplicitMeta
-      Rule: "ANY Writers"
-    Admins:
-      Type: ImplicitMeta
-      Rule: "MAJORITY Admins"
-  Capabilities:
-    <<: *ChannelCapabilities
-Application: &ApplicationDefaults
-  Organizations:
-  Policies:
-    Readers:
-      Type: ImplicitMeta
-      Rule: "ANY Readers"
-    Writers:
-      Type: ImplicitMeta
-      Rule: "ANY Writers"
-    Admins:
-      Type: ImplicitMeta
-      Rule: "MAJORITY Admins"
-  Capabilities:
-    <<: *ApplicationCapabilities
-Orderer: &OrdererDefaults
-  OrdererType: solo
-
-  Addresses:
-    - orderer0.demo.com:7050
-  BatchTimeout: 2s
-  BatchSize:
-    MaxMessageCount: 10
-    AbsoluteMaxBytes: 99 MB
-    PreferredMaxBytes: 512 KB
-  Organizations:
-  Policies:
-    Readers:
-      Type: ImplicitMeta
-      Rule: "ANY Readers"
-    Writers:
-      Type: ImplicitMeta
-      Rule: "ANY Writers"
-    Admins:
-      Type: ImplicitMeta
-      Rule: "MAJORITY Admins"
-    BlockValidation:
-      Type: ImplicitMeta
-      Rule: "ANY Writers"
-Profiles:
-  DemoOrdererSoloGenesis:
-    <<: *ChannelDefaults
-    Orderer:
-      <<: *OrdererDefaults
-      Organizations:
-        - *OrdererOrg
-      Capabilities:
-        <<: *OrdererCapabilities
-    Consortiums:
-      SampleConsortium:
-        Organizations:
-          - *Org0
-  DemoOrdererRaftGenesis:
-    <<: *ChannelDefaults
-    Orderer:
-      <<: *OrdererDefaults
-      OrdererType: etcdraft
-      EtcdRaft:
-        Consenters:
-        - Host: orderer0.demo.com
-          Port: 7050
-          ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
-          ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
-        - Host: orderer1.demo.com
-          Port: 7050
-          ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
-          ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
-        - Host: orderer2.demo.com
-          Port: 7050
-          ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
-          ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
-        - Host: orderer3.demo.com
-          Port: 7050
-          ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
-          ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
-        - Host: orderer4.demo.com
-          Port: 7050
-          ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
-          ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
-      Addresses:
-        - orderer0.demo.com:7050
-        - orderer1.demo.com:7050
-        - orderer2.demo.com:7050
-        - orderer3.demo.com:7050
-        - orderer4.demo.com:7050
-      Organizations:
-        - *OrdererOrg
-      Capabilities:
-        <<: *OrdererCapabilities
-    Consortiums:
-      SampleConsortium:
-        Organizations:
-          - *Org0
-  DemoChannel:
-    <<: *ChannelDefaults
-    Consortium: SampleConsortium
-    Application:
-      <<: *ApplicationDefaults
-      Organizations:
-        - *Org0
-      Capabilities:
-        <<: *ApplicationCapabilities
     Policies:
-      Readers:
-        Type: ImplicitMeta
-        Rule: "ANY Readers"
-      Writers:
-        Type: ImplicitMeta
-        Rule: "ANY Writers"
-      Admins:
-        Type: ImplicitMeta
-        Rule: "MAJORITY Admins"
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
     Capabilities:
-      <<: *ChannelCapabilities
+        <<: *ChannelCapabilities
+
+
+Profiles:
+    DemoOrdererSoloGenesis:
+        <<: *ChannelDefaults
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *OrdererOrg
+            Capabilities:
+                <<: *OrdererCapabilities
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                    - *Org0
+    DemoOrdererRaftGenesis:
+        <<: *ChannelDefaults
+        Capabilities:
+            <<: *ChannelCapabilities
+        Orderer:
+            <<: *OrdererDefaults
+            OrdererType: etcdraft
+            EtcdRaft:
+                Consenters:
+                - Host: orderer0.demo.com
+                  Port: 7050
+                  ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
+                  ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
+                - Host: orderer1.demo.com
+                  Port: 7050
+                  ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+                  ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+                - Host: orderer2.demo.com
+                  Port: 7050
+                  ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+                  ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+                - Host: orderer3.demo.com
+                  Port: 7050
+                  ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+                  ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+                - Host: orderer4.demo.com
+                  Port: 7050
+                  ClientTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+                  ServerTLSCert: ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+            Addresses:
+                - orderer0.demo.com:7050
+                - orderer1.demo.com:7050
+                - orderer2.demo.com:7050
+                - orderer3.demo.com:7050
+                - orderer4.demo.com:7050
+            Organizations:
+            - *OrdererOrg
+            Capabilities:
+                <<: *OrdererCapabilities
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+            - <<: *OrdererOrg
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                - *Org0
+    DemoChannel:
+        Consortium: SampleConsortium
+        <<: *ChannelDefaults
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *Org0
+            Capabilities:
+                <<: *ApplicationCapabilities

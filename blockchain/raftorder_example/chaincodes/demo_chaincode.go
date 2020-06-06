@@ -27,6 +27,7 @@ func (this *DemoChainCode) Invoke(stub shim.ChaincodeStubInterface) peer.Respons
 	for _, str := range args {
 		fmt.Println(str)
 	}
+
 	return shim.Success([]byte("success"))
 }
 

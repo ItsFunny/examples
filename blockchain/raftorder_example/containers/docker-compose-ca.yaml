@@ -2,22 +2,46 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
 version: '2'
+
 services:
   ca0:
-    image: hyperledger/fabric-ca:latest
+    image: hyperledger/fabric-ca:1.4.4
     environment:
-      - FABRIC_CA_HOME=/var/hyperledger/fabric-ca-server
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-org1
-      - FABRIC_CA_SERVER_CA_CERTFILE=/var/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/var/hyperledger/fabric-ca-server-config/c7f7a9b0ed2262a8d06a6c39f697e1772aab5e5aca012f2000f00677708e75b2_sk
       - FABRIC_CA_SERVER_TLS_ENABLED=true
-      - FABRIC_CA_SERVER_TLS_CERTFILE=/var/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-      - FABRIC_CA_SERVER_TLS_KEYFILE=/var/hyperledger/fabric-ca-server-config/c7f7a9b0ed2262a8d06a6c39f697e1772aab5e5aca012f2000f00677708e75b2_sk
+      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.demo.com-cert.pem
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/aeb5e6089476ed6f02b6e3ae876adf9007ad80b1b70491e72fe137d0d3e23b37_sk
       - FABRIC_CA_SERVER_PORT=7054
     ports:
       - "7054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.demo.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/aeb5e6089476ed6f02b6e3ae876adf9007ad80b1b70491e72fe137d0d3e23b37_sk -b admin:adminpw -d'
     volumes:
-      - ../crypto-config/peerOrganizations/org0.demo.com/ca/:/var/hyperledger/fabric-ca-server-config
-    container_name: ca_peerOrg1
+      - ../crypto-config/peerOrganizations/demo.com/ca/:/etc/hyperledger/fabric-ca-server-config
+    container_name: ca.demo.com
+    networks:
+       order-raft:
+
+
+networks:
+  order-raft:
+    driver: bridge
+#  ca1:
+#    image: hyperledger/fabric-ca:$IMAGE_TAG
+#    environment:
+#      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+#      - FABRIC_CA_SERVER_CA_NAME=ca-org2
+#      - FABRIC_CA_SERVER_TLS_ENABLED=true
+#      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org2.example.com-cert.pem
+#      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/${BYFN_CA2_PRIVATE_KEY}
+#      - FABRIC_CA_SERVER_PORT=8054
+#    ports:
+#      - "8054:8054"
+#    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org2.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/${BYFN_CA2_PRIVATE_KEY} -b admin:adminpw -d'
+#    volumes:
+#      - ./crypto-config/peerOrganizations/demo.com/ca/:/etc/hyperledger/fabric-ca-server-config
+#    container_name: ca_peerOrg2
+#    networks:
+#      - byfn

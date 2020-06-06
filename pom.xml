@@ -15,6 +15,7 @@
     <modules>
         <module>wechat-pay</module>
         <module>big-file-upload</module>
+        <module>rabbit-mq-cluster</module>
     </modules>
 
     <dependencies>

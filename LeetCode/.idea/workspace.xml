@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ada4ca0-3593-4da8-89bc-5997bd2962ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go/top100/_4_Median_of_Two_Sorted_Arrays.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-cli.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/create.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/artifacts/demo.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/artifacts/demo.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/artifacts/orderer.genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/artifacts/orderer.genesis.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/blockchain-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/blockchain-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/chaincodes/demo_chaincode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/chaincodes/demo_chaincode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/base/peer-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/base/peer-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/clean.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/clean.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-ca.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-ca.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/containers/docker-compose-peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/ca/9168b4d6154dca1a33a89abdc4aff0605788a4969b4c5d41769c503787ba98fd_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/ca/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/ca/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/keystore/9f22805edb18c92ce3c3192affe6662a16fdf6ee5746ec2962ba83c7274cb890_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/signcerts/orderer0.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/signcerts/orderer0.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/keystore/ced3fde919850f05df15a3d3e803d445940aeb2c4a5c43eecdb28e0bf1f39239_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/signcerts/orderer1.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/signcerts/orderer1.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/keystore/2f81b99f9704c695c6af93f56178fcb405674efd9a4d53d16ed0977735c09c4a_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/signcerts/orderer2.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/signcerts/orderer2.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/keystore/f5db92b039ea683c760dc92b4a8e86e65989e941ea3927e8c84d7cee6f1c5ea9_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/signcerts/orderer3.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/signcerts/orderer3.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/keystore/cf145da6686f98605ea02e6c6a12fffed1bd477304b561c08197000a580c8b53_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/signcerts/orderer4.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/signcerts/orderer4.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/tlsca/1d7d651b93687a26fc0c67497db479b892e066b03b838b4329c0141583bb2d3c_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/keystore/97e9369763a675d3c65df8335adf28680ae3f1f91fd735fa0f54ba7d7349de88_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/signcerts/Admin@demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/signcerts/Admin@demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/ordererOrganizations/demo.com/users/Admin@demo.com/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/ca/c8e124df385759f9db7eb9af2cdce9ffde69fa54ef80dcfacd319f52fcec21ac_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/ca/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/ca/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/keystore/4d393a5f19ef9282cc16aa0b78f27da9c7da81be4fa3099a5b10615d1ea1d094_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/signcerts/peer0.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/signcerts/peer0.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer0.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/keystore/bef489ee44f3222ff991ed88fea332d8c04532fa1209bc0ce51e811d12fd5e8c_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/signcerts/peer1.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/signcerts/peer1.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/tlsca/648d213cc88f433265ed94332550f7ece043f40a43195c71a065d1efdaed2987_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/keystore/1cc77ce626cffce6cb4ef70882283844548b91ff613ccb82a2b273b75d0e834c_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/signcerts/Admin@demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/signcerts/Admin@demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/Admin@demo.com/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/keystore/fcf3aa4e711c2ffa97099a10ac350c7f7785e7cbbfb7fe03acf549b9f96f41a3_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/signcerts/User1@demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/signcerts/User1@demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/cacerts/ca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/cacerts/ca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/keystore/a66a4dabd4fce11371ba1709c00e9770720e6c6a4c1440661e0a6460126aad4b_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/signcerts/User2@demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/signcerts/User2@demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/crypto-config/peerOrganizations/demo.com/users/User2@demo.com/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blockchain/raftorder_example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/raftorder_example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis-docker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wechat-pay/wechatpay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../wechat-pay/wechatpay.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/Top100/Top100_Easy_437_Path_Sum_III.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/top100/top100_3_Longest_Substring_Without_Repeating_Characters.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go/top100/_4_Median_of_Two_Sorted_Arrays.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="18" selection-end-line="43" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>`</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/string/String_28_Implement_strStr_重点.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_58_Length_of_Last_Word.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_67_Add_Binary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_67_Add_Binary_重看.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_125_Valid_Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_157_read_n_characters_given_read4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_344_Reverse_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_345_Reverse_Vowels_of_a_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_383_Ransom_Note.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_387_First_Unique_Character_in_a_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/重做/String_415_Add_Strings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_415_Add_Strings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_434_Number_of_Segments_in_a_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_443_String_Compression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/重做/String_443_String_Compression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_443_String_Compression_背.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_459_Repeated_Substring_Pattern.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_520_Detect_Capital.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_521_Longest_Uncommon_Subsequence_I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_541_Reverse_String_II.java" />
+        <option value="$PROJECT_DIR$/src/main/java/重做/String_541_Reverse_String_II.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_551_Student_Attendance_Record_I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_557_Reverse_Words_in_a_String_III.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Tree_637_Average_of_Levels_in_Binary_Tree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Tree_110_Balanced_Binary_Tree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/String_606_Construct_String_from_Binary_Tree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_844_Backspace_String_Compare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_682_Baseball_Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_232_Implement_Queue_using_Stacks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_225_Implement_Stack_using_Queues.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_155_Min_Stack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_496_Next_Greater_Element_I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/重做/Stack_496_Next_Greater_Element_I.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_1021_Remove_Outermost_Parentheses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stack/Stack_1047_Remove_All_Adjacent_Duplicates_In_String.java" />
+        <option value="$PROJECT_DIR$/src/main/java/queue/Queue_346_Moving_Average_from_Data_Stream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/queue/Queue_933_Number_of_Recent_Calls.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_299_Bulls_and_Cows.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_204_Count_Primes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_136_Single_Number.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_202_Happy_Number.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_205_Isomorphic_Strings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/HashTable_242_Valid_Anagram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Top100/Top100_Easy_70_Climbing_Stairs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Top100/Too100_Easy_198_House_Robber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/重做/Too100_Easy_198_House_Robber.java" />
+        <option value="$PROJECT_DIR$/go/top100/_3_Longest_Substring_Without_Repeating_Characters.go" />
+        <option value="$PROJECT_DIR$/go/top100/top100_3_Longest_Substring_Without_Repeating_Characters.go" />
+        <option value="$PROJECT_DIR$/go/top100/_4_Median_of_Two_Sorted_Arrays.go" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="go" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="go" type="462c0819:PsiDirectoryNode" />
+              <item name="top100" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="array.TwoSumNum2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="array" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="array.TwoSumNum2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="重做" />
+      <recent name="common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build top100_3_Longest_Substring_Without_Repeating_Characters.go">
+    <configuration name="Stack_225_Implement_Stack_using_Queues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Stack_225_Implement_Stack_using_Queues" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stack_496_Next_Greater_Element_I" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Stack_496_Next_Greater_Element_I" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stack_682_Baseball_Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Stack_682_Baseball_Game" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build _3_Longest_Substring_Without_Repeating_Characters.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/go/top100/_3_Longest_Substring_Without_Repeating_Characters.go" />
+      <package value="examples/LeetCode" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build top100_3_Longest_Substring_Without_Repeating_Characters.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/go/top100/top100_3_Longest_Substring_Without_Repeating_Characters.go" />
+      <package value="examples/LeetCode" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build top100_3_Longest_Substring_Without_Repeating_Characters.go" />
+        <item itemvalue="Go Build.go build _3_Longest_Substring_Without_Repeating_Characters.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ada4ca0-3593-4da8-89bc-5997bd2962ce" name="Default Changelist" comment="" />
+      <created>1574764302474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574764302474</updated>
+      <workItem from="1574764303781" duration="1008000" />
+      <workItem from="1574846077976" duration="1349000" />
+      <workItem from="1575536838410" duration="4341000" />
+      <workItem from="1575697076591" duration="4951000" />
+      <workItem from="1576145462178" duration="555000" />
+      <workItem from="1576820979220" duration="62000" />
+      <workItem from="1578316054312" duration="1379000" />
+      <workItem from="1578532951430" duration="567000" />
+      <workItem from="1581654341308" duration="5284000" />
+      <workItem from="1581751822107" duration="7490000" />
+      <workItem from="1582013454401" duration="2206000" />
+      <workItem from="1582100340321" duration="2323000" />
+      <workItem from="1582184907274" duration="2901000" />
+      <workItem from="1582272050299" duration="3461000" />
+      <workItem from="1582355427511" duration="3264000" />
+      <workItem from="1582423912519" duration="2610000" />
+      <workItem from="1582530480881" duration="2770000" />
+      <workItem from="1582604222901" duration="3356000" />
+      <workItem from="1582704218303" duration="3777000" />
+      <workItem from="1582790528692" duration="3999000" />
+      <workItem from="1582877338158" duration="3839000" />
+      <workItem from="1582977124627" duration="3201000" />
+      <workItem from="1583049988878" duration="3379000" />
+      <workItem from="1583122237312" duration="592000" />
+      <workItem from="1583133890779" duration="2834000" />
+      <workItem from="1583218101412" duration="637000" />
+      <workItem from="1583220937389" duration="363000" />
+      <workItem from="1583221540296" duration="3225000" />
+      <workItem from="1583300081975" duration="3657000" />
+      <workItem from="1583394474109" duration="4279000" />
+      <workItem from="1583458061444" duration="537000" />
+      <workItem from="1583757271487" duration="3380000" />
+      <workItem from="1583913909245" duration="155000" />
+      <workItem from="1583990417512" duration="3198000" />
+      <workItem from="1584085477421" duration="3437000" />
+      <workItem from="1584172802585" duration="15000" />
+      <workItem from="1584172832518" duration="3719000" />
+      <workItem from="1584259323399" duration="3682000" />
+      <workItem from="1584343453244" duration="2708000" />
+      <workItem from="1584432112633" duration="4238000" />
+      <workItem from="1584518724305" duration="2066000" />
+      <workItem from="1584605089097" duration="2015000" />
+      <workItem from="1584691726950" duration="2040000" />
+      <workItem from="1585469913233" duration="382000" />
+      <workItem from="1585729136815" duration="1563000" />
+      <workItem from="1585815864019" duration="1039000" />
+      <workItem from="1585902175871" duration="869000" />
+      <workItem from="1585989021128" duration="1223000" />
+      <workItem from="1586248604415" duration="1018000" />
+      <workItem from="1586334133433" duration="935000" />
+      <workItem from="1586507093658" duration="1177000" />
+      <workItem from="1586593294575" duration="48000" />
+      <workItem from="1586593742738" duration="666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.05 at 18h 46m 31s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 52m 29s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 53m 10s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 53m 13s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 53m 58s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 55m 31s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 55m 42s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RemoveElement27Test_removeElement - 2019.12.07 at 13h 56m 42s.xml">
+      <configuration name="RemoveElement27Test.removeElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchInsertPositionNum35Test_searchInsert - 2019.12.10 at 18h 33m 35s.xml">
+      <configuration name="SearchInsertPositionNum35Test.searchInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchInsertPositionNum35Test_searchInsert - 2019.12.10 at 18h 34m 41s.xml">
+      <configuration name="SearchInsertPositionNum35Test.searchInsert" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="123769000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36337626" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28674698" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.13493976" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/重做/String_443_String_Compression.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
+          <folding>
+            <element signature="e#5767#5768#0" expanded="true" />
+            <element signature="e#5800#5801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/SortedMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_459_Repeated_Substring_Pattern.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_443_String_Compression_背.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_520_Detect_Capital.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_521_Longest_Uncommon_Subsequence_I.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="532" column="33" selection-start-line="532" selection-start-column="33" selection-end-line="532" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="206" column="37" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
+          <folding>
+            <element signature="e#23072#23073#0" expanded="true" />
+            <element signature="e#23112#23113#0" expanded="true" />
+            <element signature="e#66457#66458#0" expanded="true" />
+            <element signature="e#66495#66496#0" expanded="true" />
+            <element signature="e#82616#82617#0" expanded="true" />
+            <element signature="e#82667#82668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="3664" column="45" selection-start-line="3664" selection-start-column="41" selection-end-line="3664" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/重做/String_541_Reverse_String_II.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_551_Student_Attendance_Record_I.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_541_Reverse_String_II.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_557_Reverse_Words_in_a_String_III.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/TreeNode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/TreeNode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/string/String_606_Construct_String_from_Binary_Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Tree_637_Average_of_Levels_in_Binary_Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_844_Backspace_String_Compare.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Tree_110_Balanced_Binary_Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_682_Baseball_Game.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_232_Implement_Queue_using_Stacks.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10868">
+          <caret line="620" column="29" selection-start-line="620" selection-start-column="29" selection-end-line="620" selection-end-column="29" />
+          <folding>
+            <element signature="e#28038#28039#0" expanded="true" />
+            <element signature="e#28083#28084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="198" column="6" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_225_Implement_Stack_using_Queues.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_1047_Remove_All_Adjacent_Duplicates_In_String.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_1021_Remove_Outermost_Parentheses.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/重做/Stack_496_Next_Greater_Element_I.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_496_Next_Greater_Element_I.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stack/Stack_155_Min_Stack.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-434">
+          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/queue/Queue_933_Number_of_Recent_Calls.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/queue/Queue_346_Moving_Average_from_Data_Stream.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_204_Count_Primes.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_299_Bulls_and_Cows.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_136_Single_Number.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_202_Happy_Number.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_205_Isomorphic_Strings.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/HashTable_242_Valid_Anagram.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3819">
+          <caret line="224" column="12" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Top100/Top100_Easy_70_Climbing_Stairs.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Top100/Too100_Easy_198_House_Robber.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/重做/Too100_Easy_198_House_Robber.java" />
+    <entry file="file://$PROJECT_DIR$/go/top100/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/Top100/Top100_Easy_437_Path_Sum_III.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/top100/top100_3_Longest_Substring_Without_Repeating_Characters.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/top100/_4_Median_of_Two_Sorted_Arrays.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="18" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>fabric-sdk-java2-1.4.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LeetCode</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
