@@ -8,6 +8,11 @@
 */
 package linked_list
 
+import (
+	"errors"
+	"fmt"
+)
+
 type listNode struct {
 	data interface{}
 	next *listNode
@@ -19,7 +24,7 @@ func NewListNode(data interface{}) *listNode {
 
 type linkedList struct {
 	size int
-	data *listNode
+	head *listNode
 }
 
 func NewLinkedList() *linkedList {
@@ -29,10 +34,10 @@ func NewLinkedList() *linkedList {
 
 func (this *linkedList) Add(data interface{}) {
 	newNode := NewListNode(data)
-	if this.data == nil {
-		this.data = newNode
+	if this.head == nil {
+		this.head = newNode
 	} else {
-		pHead := this.data
+		pHead := this.head
 		if pHead.next != nil {
 			pHead = pHead.next
 		}
@@ -41,12 +46,49 @@ func (this *linkedList) Add(data interface{}) {
 	this.size++
 }
 
-func (this *linkedList) RemoveByIndex(index int) interface{} {
-	panic("implement me")
+func (this *linkedList) RemoveByIndex(index int) (interface{}, error) {
+	if index >= this.size {
+		return nil, errors.New("index out of bound")
+	}
+	var data interface{}
+	tempNode := this.head
+	prev := this.head
+	if index == 0 {
+		data = this.head.data
+		this.head = this.head.next
+		return data, nil
+	}
+	for i := 0; i < index-1; i++ {
+		prev = tempNode
+		tempNode = tempNode.next
+	}
+	prev.next = tempNode.next
+	return data, nil
 }
 
-func (this *linkedList) Show() func() (interface{}, bool) {
-	panic("implement me")
+func (this *linkedList) Show() {
+	fmt.Println(this.head)
+	iterator := this.Iterator()
+	for {
+		i, b := iterator()
+		if !b {
+			break
+		}
+		fmt.Println(i)
+	}
+}
+
+func (this *linkedList) Iterator() func() (interface{}, bool) {
+	tempNode := this.head
+	return func() (interface{}, bool) {
+
+		if tempNode == nil {
+			return nil, false
+		}
+		data := tempNode.data
+		tempNode = tempNode.next
+		return data, true
+	}
 }
 
 func (this *linkedList) Size() int {
