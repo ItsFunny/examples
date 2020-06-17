@@ -1,0 +1,73 @@
+blockchain:
+  goPath: /Users/joker/go
+  cryptVersion: 1
+  configPath: /Users/joker/go/src/vlink.com/v2/vlink-rpc/resources/blockchain-config.yaml
+  channels:
+    - channelId: demochannel
+      channelConfigPath: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network/artifacts/userchannel.tx
+      orders:
+        - ordererId: orderer0.vlink.com
+          ordererAddress: orderer0.vlink.com
+          ordererPort: 6050
+      organizations:
+        - organizationId: VlinkOrgMSP
+          users:
+            - userName: 'User1'
+              admin: false
+            - userName: 'Admin'
+              admin: true
+          peers:
+            - anchorPeers:
+                - address: user0.vlink.com
+                  port: 11051
+                  chainCodes:
+                    - chainCodeId: democc
+                      chainCodePath: asddasd
+                      needUpdate: false
+                      needListOnBlockEvent: true
+
+    - channelId: copyrightchannel
+      channelConfigPath: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network/artifacts/copyrightchannel.tx
+      orders:
+        - ordererId: orderer0.vlink.com
+          ordererAddress: orderer0.vlink.com
+          ordererPort: 6050
+      organizations:
+        - organizationId: VlinkOrgMSP
+          organizationAdmin: admin
+          users:
+            - User1
+          peers:
+            - anchorPeers:
+                - address: copyright0.vlink.com
+                  port: 10051
+              chainCodes:
+                - chainCodeId: copyrightcc
+                  chainCodePath: vlink.com/v2/vlink-chaincodes/copyrightcc
+                  needUpdate: false
+    - channelId: coinchannel
+      channelConfigPath: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network/artifacts/coinchannel.tx
+      orders:
+        - ordererId: orderer0.vlink.com
+          ordererAddress: orderer0.vlink.com
+          ordererPort: 6050
+      organizations:
+        - organizationId: VlinkOrgMSP
+          organizationAdmin: admin
+          users:
+            - User1
+          peers:
+            - anchorPeers:
+                - address: coin0.vlink.com
+                  port: 8051
+              chainCodes:
+                - chainCodeId: coincc
+                  chainCodePath: vlink.com/v2/vlink-chaincodes/coincc
+                  needUpdate: false
+            - anchorPeers:
+                - address: usercoin0.vlink.com
+                  port: 9051
+              chainCodes:
+                - chainCodeId: usercoincc
+                  chainCodePath: vlink.com/v2/vlink-chaincodes/usercoincc
+                  needUpdate: false

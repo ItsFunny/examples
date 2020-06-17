@@ -10,7 +10,7 @@ package array_list
 
 type List interface {
 	Add(data interface{})
-	RemoveByIndex(index int) interface{}
+	RemoveByIndex(index int) (interface{},error)
 	Show() func() (interface{}, bool)
 	Size()int
 }
