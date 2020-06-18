@@ -14,3 +14,10 @@ type List interface {
 	Show() func() (interface{}, bool)
 	Size()int
 }
+
+
+type DoublyList interface {
+	List
+	InsertHead(data interface{})
+	InsertTail(data interface{})
+}
