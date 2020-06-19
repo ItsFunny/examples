@@ -8,6 +8,8 @@
 */
 package linked_list
 
+import "errors"
+
 type doubleListNode struct {
 	prev *doubleListNode
 	next *doubleListNode
@@ -32,7 +34,18 @@ func (this *DoublyLinkedList) Add(data interface{}) {
 }
 
 func (this *DoublyLinkedList) RemoveByIndex(index int) (interface{}, error) {
-	panic("implement me")
+	// 通过下标移除元素
+	walkerIndex := 0
+	if index >= this.size {
+		return nil, errors.New("index out of bound")
+	}
+	node := this.Head
+	for walkerIndex <= index {
+		node = node.next
+	}
+	node.prev.next, node.next.prev = node.next, node.prev
+
+	return node.data, nil
 }
 
 func (this *DoublyLinkedList) Show() func() (interface{}, bool) {
