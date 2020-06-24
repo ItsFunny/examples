@@ -1,0 +1,115 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+volumes:
+  peer0.org1.demo.com:
+  peer1.org1.demo.com:
+  peer0.org2.demo.com:
+  peer1.org2.demo.com:
+
+networks:
+  demo:
+
+services:
+  Org1Peer0:
+    container_name: peer0.org1.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer0.org1.demo.com
+      - CORE_PEER_ADDRESS=peer0.org1.demo.com:8051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.org1.demo.com:8052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.org1.demo.com:8061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.demo.com:8051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "8051:8051"
+      - "8052:8052"
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+
+  Org1Peer1:
+    container_name: peer1.org1.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer1.org1.demo.com
+      - CORE_PEER_ADDRESS=peer1.org1.demo.com:8061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.org1.demo.com:8062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.demo.com:8051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.org1.demo.com:8061
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "8061:8061"
+      - "8062:8062"
+    volumes:
+      - /var/run/:/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+
+  Org2Peer0:
+    container_name: peer0.org2.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer0.org2.demo.com
+      - CORE_PEER_ADDRESS=peer0.org2.demo.com:9051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:9051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.org2.demo.com:9052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.org2.demo.com:9061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org2.demo.com:9051
+      - CORE_PEER_LOCALMSPID=Org2MSP
+    ports:
+      - "9051:9051"
+      - "9052:9052"
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/tls:/etc/hyperledger/fabric/tls
+    #      - ./crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.org1.demo.com/tlsca
+
+
+  Org2Peer1:
+    container_name: peer1.org2.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer1.org2.demo.com
+      - CORE_PEER_ADDRESS=peer1.org2.demo.com:9061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:9061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.org2.demo.com:9062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org2.demo.com:9051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.org2.demo.com:9061
+      - CORE_PEER_LOCALMSPID=Org2MSP
+    ports:
+      - "9061:9061"
+      - "9062:9062"
+    volumes:
+      - /var/run/:/var/run/
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/tls:/etc/hyperledger/fabric/tls
+

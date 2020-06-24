@@ -68,7 +68,6 @@ func midorderTreeWithStack(root *TreeNode) ([]interface{}) {
 	if root == nil {
 		return nil
 	}
-
 	data := make([]interface{}, 0)
 	stack := make([]*TreeNode, 0)
 	for nil != root && len(stack) > 0 {
@@ -81,6 +80,44 @@ func midorderTreeWithStack(root *TreeNode) ([]interface{}) {
 		data = append(data, root.Data)
 		stack = stack[:len(stack)-1]
 		root = root.RightNode
+	}
+
+	return data
+}
+
+// 后序遍历
+func backorderTree(root *TreeNode) {
+	if root == nil {
+		return
+	}
+	backorderTree(root.LeftNode)
+	backorderTree(root.RightNode)
+	fmt.Println(root.Data)
+}
+
+// 非递归后序遍历
+func backorderTreeWithStack(root *TreeNode) []interface{} {
+	if root == nil {
+		return nil
+	}
+	data := make([]interface{}, 0)
+	stack := make([]*TreeNode, 0)
+
+	var lastVistiNode *TreeNode
+	for nil != root && len(stack) > 0 {
+		for nil != root {
+			stack = append(stack, root)
+			root = root.LeftNode
+		}
+
+		node := stack[len(stack)-1]
+		if node.RightNode == nil || node.RightNode == lastVistiNode {
+			stack = stack[:len(stack)-1]
+			data = append(data, node.Data)
+			lastVistiNode = node
+		} else {
+			root = node.RightNode
+		}
 	}
 
 	return data

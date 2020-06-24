@@ -1,0 +1,89 @@
+version: '2'
+volumes:
+  orderer0.demo.com:
+  orderer1.example.com:
+  orderer2.example.com:
+  orderer3.example.com:
+  orderer4.example.com:
+
+services:
+  orderer0.demo.com:
+    container_name: orderer0.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/:/var/hyperledger/orderer/tls
+    #      - orderer0.demo.com:/var/hyperledger/production/orderer
+    ports:
+      - 7050:7050
+  orderer2.demo.com:
+    container_name: orderer2.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+#        ipv4_address: 172.80.0.12
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/:/var/hyperledger/orderer/tls
+#      - orderer2.demo.com:/var/hyperledger/production/orderer
+    ports:
+      - 7070:7050
+  orderer3.demo.com:
+    container_name: orderer3.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+#        ipv4_address: 172.80.0.13
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/:/var/hyperledger/orderer/tls
+#      - orderer3.demo.com:/var/hyperledger/production/orderer
+    ports:
+      - 7080:7050
+  orderer4.demo.com:
+    container_name: orderer4.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+#        ipv4_address: 172.80.0.14
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/:/var/hyperledger/orderer/tls
+#      - orderer4.demo.com:/var/hyperledger/production/orderer
+    ports:
+      - 7090:7050
+  orderer5.demo.com:
+    container_name: orderer5.demo.com
+    extends:
+      file: ../base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+    #        ipv4_address: 172.80.0.11
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer5.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer5.demo.com/tls/:/var/hyperledger/orderer/tls
+    #      - orderer5.demo.com:/var/hyperledger/production/orderer
+    ports:
+      - 7060:7050
+
+
+
+networks:
+  demo:
+    driver: bridge
