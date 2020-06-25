@@ -20,6 +20,9 @@ type TreeNode struct {
 
 // 前序遍历 根左右
 func preorderTree(node *TreeNode) {
+	if node == nil {
+		return
+	}
 	fmt.Println(node.Data)
 	preorderTree(node.LeftNode)
 	preorderTree(node.RightNode)
@@ -117,6 +120,29 @@ func backorderTreeWithStack(root *TreeNode) []interface{} {
 			lastVistiNode = node
 		} else {
 			root = node.RightNode
+		}
+	}
+
+	return data
+}
+
+func dfs(root *TreeNode) []interface{} {
+	data := make([]interface{}, 0)
+	stack := make([]*TreeNode, 0)
+
+	stack = append(stack, root)
+	var tempNode *TreeNode
+	for len(stack) > 0 {
+		tempNode := stack[len(stack)-1]
+		if tempNode == nil {
+			return data
+		}
+		data = append(data, tempNode.Data)
+		if tempNode.RightNode != nil {
+			stack = append(stack, tempNode.RightNode)
+		}
+		if tempNode.LeftNode != nil {
+			stack = append(stack, tempNode.LeftNode)
 		}
 	}
 
