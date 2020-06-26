@@ -7,3 +7,9 @@
 # @Attention : 
 */
 package module_review
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
