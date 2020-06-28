@@ -133,7 +133,7 @@ func dfs(root *TreeNode) []interface{} {
 	stack = append(stack, root)
 	var tempNode *TreeNode
 	for len(stack) > 0 {
-		tempNode := stack[len(stack)-1]
+		tempNode = stack[len(stack)-1]
 		if tempNode == nil {
 			return data
 		}
@@ -145,6 +145,49 @@ func dfs(root *TreeNode) []interface{} {
 			stack = append(stack, tempNode.LeftNode)
 		}
 	}
+	return data
+}
 
+func dfsWithDivide(root *TreeNode) []interface{} {
+
+	return divide(root)
+}
+func divide(root *TreeNode) []interface{} {
+	result := make([]interface{}, 0)
+	if root == nil {
+		return result
+	}
+	// 分
+	left := divide(root.LeftNode)
+	right := divide(root.RightNode)
+	// 合
+	result = append(result, root.Data)
+	result = append(result, left...)
+	result = append(result, right...)
+	return result
+}
+
+func bfs(root *TreeNode) []interface{} {
+	data := make([]interface{}, 0)
+	queue := make([]*TreeNode, 0)
+
+	queue = append(queue, root)
+	var temNode *TreeNode
+	for len(queue) > 0 {
+		temNode = queue[0]
+		if temNode == nil {
+			return data
+		}
+		// 移除队头
+		queue = queue[1:]
+		data = append(data, temNode.Data)
+		if temNode.LeftNode != nil {
+			queue = append(queue, temNode.LeftNode)
+		}
+
+		if temNode.RightNode != nil {
+			queue = append(queue, temNode.RightNode)
+		}
+	}
 	return data
 }
