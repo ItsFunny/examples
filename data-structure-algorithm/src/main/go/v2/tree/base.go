@@ -191,3 +191,41 @@ func bfs(root *TreeNode) []interface{} {
 	}
 	return data
 }
+
+func mergeSort(data []int) []int {
+	return mSort(data)
+}
+func mSort(data []int) []int {
+	if len(data) <= 1 {
+		return data
+	}
+	// 分
+	mid := len(data) >> 1
+	left := mSort(data[:mid])
+	right := mSort(data[mid:])
+
+	// 合
+	result := merge(left, right)
+	return result
+}
+
+// 合并就是按照元素排序
+func merge(left []int, right []int) []int {
+	i := 0
+	j := 0
+	index := 0
+	data := make([]int, len(left)+len(right))
+	for i < len(left) && j < len(right) {
+		if left[i] < right[j] {
+			data[index] = left[i]
+		} else {
+			data[index] = right[j]
+		}
+		i++
+		j++
+		index++
+	}
+	data = append(data, left[i:]...)
+	data = append(data, right[i:]...)
+	return data
+}
