@@ -229,3 +229,37 @@ func merge(left []int, right []int) []int {
 	data = append(data, right[i:]...)
 	return data
 }
+
+// 分治法的另一使用: 快速排序
+func QuickSort(data []int) {
+	quickSort(data, 0, len(data))
+}
+func quickSort(data []int, start, end int) {
+	if start < end {
+		// 分治法: divide
+		divide := paration(data, start, end)
+		// 对左边进行分
+		quickSort(data, 0, divide-1)
+		quickSort(data, divide+1, end)
+	}
+}
+func paration(data []int, start, end int) int {
+	// 以最左为基准数
+	base := data[start]
+	i := start
+	j := end
+	for i < j {
+		for j > i && data[j] > base {
+			j--
+		}
+		for i < j && data[i] < base {
+			i++
+		}
+		if i < j {
+			data[i], data[j] = data[j], data[i]
+		}
+	}
+	// 交换基准数
+	data[start], data[i] = data[i], base
+	return i
+}
