@@ -36,13 +36,13 @@ services:
       - "8052:8052"
     volumes:
       - /var/run/:/host/var/run/
-      - ../crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls:/etc/hyperledger/fabric/tls
 
   Org1Peer1:
     container_name: peer1.org1.demo.com
     extends:
-      file: ./base/peer-base.yaml
+      file: ../base/peer-base.yaml
       service: peer-base
     networks:
       demo:
@@ -60,13 +60,13 @@ services:
       - "8062:8062"
     volumes:
       - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/tls:/etc/hyperledger/fabric/tls
 
   Org2Peer0:
     container_name: peer0.org2.demo.com
     extends:
-      file: ./base/peer-base.yaml
+      file: ../base/peer-base.yaml
       service: peer-base
     networks:
       demo:
@@ -84,15 +84,15 @@ services:
       - "9052:9052"
     volumes:
       - /var/run/:/host/var/run/
-      - ../crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/tls:/etc/hyperledger/fabric/tls
-    #      - ../crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.org1.demo.com/tlsca
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/tls:/etc/hyperledger/fabric/tls
+    #      - ./crypto-config/peerOrganizations/demo.com/tlsca:/etc/hyperledger/orgs/peer0.org1.demo.com/tlsca
 
 
   Org2Peer1:
     container_name: peer1.org2.demo.com
     extends:
-      file: ./base/peer-base.yaml
+      file: ../base/peer-base.yaml
       service: peer-base
     networks:
       demo:
@@ -110,6 +110,6 @@ services:
       - "9062:9062"
     volumes:
       - /var/run/:/var/run/
-      - ../crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/msp:/etc/hyperledger/fabric/msp
-      - ../crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org2.demo.com/peers/peer1.org2.demo.com/tls:/etc/hyperledger/fabric/tls
 

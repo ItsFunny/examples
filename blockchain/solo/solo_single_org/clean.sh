@@ -3,4 +3,4 @@
 
 docker stop $(docker ps -qa)
 docker rm $(docker ps -qa)
-docker-compose -f docker-compose-cli.yaml -f docker-compose-orderer.yaml -f docker-compose-peer.yaml  down --volumes --remove-orphans
+docker-compose -f docker-compose-org1.yaml  -f docker-compose-orderer.yaml   down --volumes --remove-orphans

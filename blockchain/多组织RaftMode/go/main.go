@@ -6,4 +6,8 @@
 # @Description : 
 # @Attention : 
 */
-package _go
+package main
+
+func main() {
+
+}

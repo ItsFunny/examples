@@ -5,23 +5,20 @@ OrdererOrgs:
     EnableNodeOUs: true
     Specs:
       - Hostname: orderer0
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
-
 PeerOrgs:
   - Name: Org1
     Domain: org1.demo.com
     EnableNodeOUs: true
-    Template:
-      Count: 2
+    Specs:
+      - Hostname: peer0
+      - Hostname: peer1
+      - Hostname: ca
     Users:
       Count: 1
-  - Name: Org2
-    Domain: org2.demo.com
+  - Name: TlsOrg
+    Domain: tls.demo.com
     EnableNodeOUs: true
-    Template:
-      Count: 2
+    Specs:
+      - Hostname: ca
     Users:
       Count: 1

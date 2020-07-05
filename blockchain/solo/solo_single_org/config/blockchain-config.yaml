@@ -21,19 +21,19 @@ version: 1.0.0
 #
 
 organizations:
-  DemoOrg:
-    mspid: DemoOrgMSP
+  Org1MSP:
+    mspid: Org1MSP
     # This org's MSP store (absolute path or relative to client.cryptoconfig)
-    cryptoPath:  peerOrganizations/demo.com/users/{username}@demo.com/msp
+    cryptoPath:  peerOrganizations/org1.demo.com/users/{username}@org1.demo.com/msp
     peers:
-      - user0.demo.com
+      - peer0.org1.demo.com
     # [Optional]. Certificate Authorities issue certificates for identification purposes in a Fabric based
     # network. Typically certificates provisioning is done in a separate process outside of the
     # runtime network. Fabric-CA is a special certificate authority that provides a REST APIs for
     # dynamic certificate management (enroll, revoke, re-enroll). The following section is only for
     # Fabric-CA servers.
     certificateAuthorities:
-      - ca.demo.com
+      - ca.org1.demo.com
   # the profile will contain public information about organizations other than the one it belongs to.
   # These are necessary information to make transaction lifecycles work, including MSP IDs and
   # peers with a public URL to send transaction proposals. The file will not contain private
@@ -46,17 +46,17 @@ client:
 
   # Which organization does this application instance belong to? The value must be the name of an org
   # defined under "organizations"
-  organization: DemoOrgMSP
+  organization: Org1MSP
 
   logging:
-    level: info
+    level: debug
 
   eventService:
     type: eventhub
 
   # Root of the MSP directories with keys and certs.
   cryptoconfig:
-    path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config
+    path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config
 
   # Some SDKs support pluggable KV stores, the properties under "credentialStore"
   # are implementation specific
@@ -111,7 +111,7 @@ channels:
     #[Required if _default peers not defined; Optional if _default peers defined].
     # list of peers from participating orgs
     peers:
-      user0.demo.com:
+      peer0.org1.demo.com:
         # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
         # have the chaincode installed. The app can also use this property to decide which peers
         # to send the chaincode install request. Default: true
@@ -130,56 +130,7 @@ channels:
         # produce events but the app typically only needs to connect to one to listen to events.
         # Default: true
         eventSource: true
-#      usercoin0.demo.com:
-#        # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
-#        # have the chaincode installed. The app can also use this property to decide which peers
-#        # to send the chaincode install request. Default: true
-#        endorsingPeer: true
-#
-#        # [Optional]. will this peer be sent query proposals? The peer must have the chaincode
-#        # installed. The app can also use this property to decide which peers to send the
-#        # chaincode install request. Default: true
-#        chaincodeQuery: true
-#
-#        # [Optional]. will this peer be sent query proposals that do not require chaincodes, like
-#        # queryBlock(), queryTransaction(), etc. Default: true
-#        ledgerQuery: true
-#
-#        # [Optional]. will this peer be the target of the SDK's listener registration? All peers can
-#        # produce events but the app typically only needs to connect to one to listen to events.
-#        # Default: true
-#        eventSource: true
-  coinchannel:
-    # list of orderers designated by the application to use for transactions on this
-    # channel. This list can be a result of access control ("FBI" can only access "ordererA"), or
-    # operational decisions to share loads from applications among the orderers.  The values must
-    # be "names" of orgs defined under "organizations/peers"
-    # deprecated: not recommended, to override any orderer configuration items, entity matchers should be used.
-    #    orderers:
-    #      - orderer.citizens.com
-    #[Required if _default peers not defined; Optional if _default peers defined].
-    # list of peers from participating orgs
-    peers:
-#      coin0.demo.com:
-#        # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
-#        # have the chaincode installed. The app can also use this property to decide which peers
-#        # to send the chaincode install request. Default: true
-#        endorsingPeer: true
-#
-#        # [Optional]. will this peer be sent query proposals? The peer must have the chaincode
-#        # installed. The app can also use this property to decide which peers to send the
-#        # chaincode install request. Default: true
-#        chaincodeQuery: true
-#
-#        # [Optional]. will this peer be sent query proposals that do not require chaincodes, like
-#        # queryBlock(), queryTransaction(), etc. Default: true
-#        ledgerQuery: true
-#
-#        # [Optional]. will this peer be the target of the SDK's listener registration? All peers can
-#        # produce events but the app typically only needs to connect to one to listen to events.
-#        # Default: true
-#        eventSource: true
-#      usercoin0.demo.com:
+#      usercoin0.org1.demo.com:
 #        # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
 #        # have the chaincode installed. The app can also use this property to decide which peers
 #        # to send the chaincode install request. Default: true
@@ -199,36 +150,6 @@ channels:
 #        # Default: true
 #        eventSource: true
 
-  copyrightchannel:
-    # list of orderers designated by the application to use for transactions on this
-    # channel. This list can be a result of access control ("FBI" can only access "ordererA"), or
-    # operational decisions to share loads from applications among the orderers.  The values must
-    # be "names" of orgs defined under "organizations/peers"
-    # deprecated: not recommended, to override any orderer configuration items, entity matchers should be used.
-    #    orderers:
-    #      - orderer.citizens.com
-    #[Required if _default peers not defined; Optional if _default peers defined].
-    # list of peers from participating orgs
-    peers:
-      copyright0.demo.com:
-        # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
-        # have the chaincode installed. The app can also use this property to decide which peers
-        # to send the chaincode install request. Default: true
-        endorsingPeer: true
-
-        # [Optional]. will this peer be sent query proposals? The peer must have the chaincode
-        # installed. The app can also use this property to decide which peers to send the
-        # chaincode install request. Default: true
-        chaincodeQuery: true
-
-        # [Optional]. will this peer be sent query proposals that do not require chaincodes, like
-        # queryBlock(), queryTransaction(), etc. Default: true
-        ledgerQuery: true
-
-        # [Optional]. will this peer be the target of the SDK's listener registration? All peers can
-        # produce events but the app typically only needs to connect to one to listen to events.
-        # Default: true
-        eventSource: true
 
 
 
@@ -241,7 +162,7 @@ orderers:
   orderer0.demo.com:
     #    url: localhost:6050
     #    url: 192.168.161.139:6050
-    url: orderer0.demo.com:6050
+    url: orderer0.demo.com:7050
 
     # these are standard properties defined by the gRPC library
     # they will be passed in as-is to gRPC client constructor
@@ -259,18 +180,18 @@ orderers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config/ordererOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 
 #
 # List of peers to send various requests to, including endorsement, query
 # and event listener registration.
 #
 peers:
-  user0.demo.com:
+  peer0.org1.demo.com:
     # this URL is used to send endorsement and query requests
-    url: user0.demo.com:11051
+    url: peer0.org1.demo.com:8051
     grpcOptions:
-      ssl-target-name-override: user0.demo.com
+      ssl-target-name-override: peer0.org1.demo.com
       # These parameters should be set in coordination with the keepalive policy on the server,
       # as incompatible settings can result in closing of connection.
       # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
@@ -283,64 +204,9 @@ peers:
 
     tlsCACerts:
       # Certificate location absolute path
-      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config/peerOrganizations/org1.demo.com/tlsca/tlsca.org1.demo.com-cert.pem
 
-#  coin0.demo.com:
-#    # this URL is used to send endorsement and query requests
-#    url: coin0.demo.com:8051
-#    grpcOptions:
-#      ssl-target-name-override: coin0.demo.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 
-#  usercoin0.demo.com:
-#    # this URL is used to send endorsement and query requests
-#    url: usercoin0.demo.com:9051
-#    grpcOptions:
-#      ssl-target-name-override: usercoin0.demo.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
-
-  copyright0.demo.com:
-    # this URL is used to send endorsement and query requests
-    url: copyright0.demo.com:10051
-    grpcOptions:
-      ssl-target-name-override: copyright0.demo.com
-      # These parameters should be set in coordination with the keepalive policy on the server,
-      # as incompatible settings can result in closing of connection.
-      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-      keep-alive-time: 0s
-      keep-alive-timeout: 20s
-      keep-alive-permit: false
-      fail-fast: false
-      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-      allow-insecure: false
-
-    tlsCACerts:
-      # Certificate location absolute path
-      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
 
 
 #
@@ -349,24 +215,24 @@ peers:
 # Certificate Authority instead of Fabric-CA, in which case this section would not be specified.
 #
 certificateAuthorities:
-  ca.demo.com:
-    url: https://ca.demo.com:7054
+  ca.org1.demo.com:
+    url: https://ca.org1.demo.com:7054
     tlsCACerts:
       # Comma-Separated list of paths
-      path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/tlsca/tlsca.demo.com-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config/peerOrganizations/org1.demo.com/peers/ca.org1.demo.com/tls/ca.crt
       # Client key and cert for SSL handshake with Fabric CA
       client:
         key:
-          path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.key
+          path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config/peerOrganizations/org1.demo.com/peers/ca.org1.demo.com/tls/server.key
         cert:
-          path: /Users/joker/go/src/demo.com/v2/demo-blockchain-network/crypto-config/peerOrganizations/demo.com/users/User1@demo.com/tls/client.crt
+          path: /Users/joker/go/src/examples/blockchain/solo/solo_single_org/crypto-config/peerOrganizations/org1.demo.com/peers/ca.org1.demo.com/tls/server.crt
     # Fabric-CA supports dynamic user enrollment via REST APIs. A "root" user, a.k.a registrar, is
     # needed to enroll and invoke new users.
     registrar:
       enrollId: admin
       enrollSecret: adminpw
     # [Optional] The optional name of the CA.
-    caName: ca.demo.com
+    caName: ca.org1.demo.com
 
 
 
@@ -395,7 +261,7 @@ certificateAuthorities:
 #      mappedHost: peer0.fbi.citizens.com
 #
 #    - pattern: (\w+).fbi.citizens.com.(\w+):(\d+)
-#      urlSubstitutionExp: peer0.fbi.citizens.com:11051
+#      urlSubstitutionExp: peer0.fbi.citizens.com:8051
 #      sslTargetOverrideUrlSubstitutionExp: peer0.fbi.citizens.com
 #      mappedHost: peer0.fbi.citizens.com
 #

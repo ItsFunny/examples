@@ -25,5 +25,6 @@ echo "在其他节点中也安装chaincode" && \
 CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.demo.com/users/Admin@org2.demo.com/msp CORE_PEER_ADDRESS=peer0.org2.demo.com:9051 CORE_PEER_LOCALMSPID=Org2MSP CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.demo.com/peers/peer0.org2.demo.com/tls/ca.crt peer chaincode install -n democc -v 1.0 -p github.com/chaincode && \
 echo "实例化chaincode" && \
 peer chaincode instantiate -o orderer0.demo.com:7050 --tls true --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/tlscacerts/tlsca.demo.com-cert.pem -C demochannel -n democc -v 1.0 -c '{"Args":["init","a","b","100"]}' -P "AND ('Org1MSP.peer','Org2MSP.peer')" && \
+
 echo "查询测试" && \
 peer chaincode query -C demochannel -n democc -c '{"Args":["query","a"]}'

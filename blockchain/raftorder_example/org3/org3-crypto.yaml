@@ -11,7 +11,7 @@ PeerOrgs:
   # Org3
   # ---------------------------------------------------------------------------
   - Name: Org3
-    Domain: org3.example.com
+    Domain: org3.demo.com
     EnableNodeOUs: true
     Template:
       Count: 2

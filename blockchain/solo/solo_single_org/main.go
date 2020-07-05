@@ -6,4 +6,21 @@
 # @Description : 
 # @Attention : 
 */
-package solo_single_org
+package main
+
+import (
+	"examples/blockchain/solo/solo_single_org/config"
+	"flag"
+)
+
+var (
+	configPath = flag.String("config", "/Users/joker/go/src/examples/blockchain/solo/solo_single_org/config/application.yaml", "配置路径")
+)
+
+func main() {
+	flag.Parse()
+	e := config.Config(*configPath)
+	if nil != e {
+		panic(e)
+	}
+}
