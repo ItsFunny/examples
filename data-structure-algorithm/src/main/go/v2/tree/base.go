@@ -10,6 +10,7 @@ package tree
 
 import (
 	"fmt"
+	"math"
 )
 
 type TreeNode struct {
@@ -262,4 +263,79 @@ func paration(data []int, start, end int) int {
 	// 交换基准数
 	data[start], data[i] = data[i], base
 	return i
+}
+
+// 求二叉树的最大深度 也是可以使用分治法
+func treeMaxDepth(root *TreeNode) int {
+	// 递归退出
+	if root == nil {
+		return 0
+	}
+	// 分
+	left := treeMaxDepth(root.LeftNode)
+	right := treeMaxDepth(root.RightNode)
+	// 合
+	if left > right {
+		return left + 1
+	}
+	return right + 1
+}
+
+// 判断是否是一颗平衡的二叉树:
+// 所有左子树平衡 && 所有右子树平衡 && 右子树-左子树<=1  && 左子树-右子树<=1
+func IsBalanceTree(root *TreeNode) bool {
+
+	if -1 == isBalanceTree(root) {
+		return false
+	}
+	return true
+}
+
+func isBalanceTree(node *TreeNode) int {
+	if node == nil {
+		return 0
+	}
+	left := isBalanceTree(node.LeftNode)
+	right := isBalanceTree(node.RightNode)
+	if left == -1 || right == -1 || left-right > 1 || right-left > 1 {
+		return -1
+	}
+	if left > right {
+		return left + 1
+	}
+	return right + 1
+}
+
+// 获取一颗树的最长路径
+func MaxTreeTrace(root *TreeNode) int {
+	max := math.MaxInt64
+	maxTreeTrace(root, &max)
+	return max
+}
+
+func maxTreeTrace(node *TreeNode, i *int) int {
+	// 递归退出条件
+	if node == nil {
+		return 0
+	}
+	// 分
+	left := maxTreeTrace(node.LeftNode, i)
+	right := maxTreeTrace(node.RightNode, i)
+
+	// 过当前根节点的最大和
+	lOrR := max(left, right)
+	curSum := max(node.Data.(int), lOrR+node.Data.(int))
+	// 考虑 横跨的情况,既从左子树到右子树 或者是右子树到左子树
+	curMax := max(node.Data.(int), left+right+node.Data.(int))
+
+	*i = max(curMax, *i)
+	// 返回的是过当前节点的最大和
+	return curSum
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
