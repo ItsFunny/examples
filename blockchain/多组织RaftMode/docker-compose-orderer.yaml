@@ -20,7 +20,7 @@ services:
       - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/:/var/hyperledger/orderer/tls
     #      - orderer0.vlink.link:/var/hyperledger/production/orderer
     ports:
-      - 7050:7050
+      - 6050:7050
   orderer2.vlink.link:
     container_name: orderer2.vlink.link
     extends:
@@ -35,7 +35,7 @@ services:
       - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/:/var/hyperledger/orderer/tls
 #      - orderer2.vlink.link:/var/hyperledger/production/orderer
     ports:
-      - 7070:7050
+      - 6052:7050
   orderer3.vlink.link:
     container_name: orderer3.vlink.link
     extends:
@@ -50,7 +50,7 @@ services:
       - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/:/var/hyperledger/orderer/tls
 #      - orderer3.vlink.link:/var/hyperledger/production/orderer
     ports:
-      - 7080:7050
+      - 6053:7050
   orderer4.vlink.link:
     container_name: orderer4.vlink.link
     extends:
@@ -65,7 +65,7 @@ services:
       - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/:/var/hyperledger/orderer/tls
 #      - orderer4.vlink.link:/var/hyperledger/production/orderer
     ports:
-      - 7090:7050
+      - 6054:7050
   orderer5.vlink.link:
     container_name: orderer5.vlink.link
     extends:
@@ -80,7 +80,7 @@ services:
       - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/:/var/hyperledger/orderer/tls
     #      - orderer5.vlink.link:/var/hyperledger/production/orderer
     ports:
-      - 7060:7050
+      - 6055:7050
 
 
 
