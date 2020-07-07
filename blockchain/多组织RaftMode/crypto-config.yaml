@@ -1,4 +1,3 @@
-
 OrdererOrgs:
   - Name: Orderer
     Domain: vlink.link
@@ -14,6 +13,13 @@ PeerOrgs:
   - Name: VlinkOrg
     Domain: org.vlink.link
     EnableNodeOUs: true
+    Specs:
+      - Hostname: ca0
+      - Hostname: user0
+      - Hostname: user1
+      - Hostname: copyright0
+      - Hostname: copyright1
+
     Template:
       Count: 2
     Users:
