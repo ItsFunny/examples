@@ -107,10 +107,10 @@ Orderer: &OrdererDefaults
               Port: 7050
               ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
               ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
-            - Host: orderer1.demo.com
+            - Host: orderer2.demo.com
               Port: 7050
-              ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
-              ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+              ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+              ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
             - Host: orderer2.demo.com
               Port: 7050
               ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
