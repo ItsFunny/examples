@@ -339,3 +339,90 @@ func max(a, b int) int {
 	}
 	return b
 }
+
+// 找到给定2个节点的公共祖先
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+	// 退出条件
+	if root == nil {
+		return nil
+	}
+	// 判断是否到了左子树
+	if root == p || root == q {
+		return root
+	}
+	// 分
+	left := lowestCommonAncestor(root.LeftNode, p, q)
+	right := lowestCommonAncestor(root.RightNode, p, q)
+
+	// 合
+	if left != nil && right != nil {
+		return root
+	}
+	if left != nil {
+		return left
+	}
+	if right != nil {
+		return right
+	}
+	return nil
+}
+
+func levelTree(root *TreeNode) [][]interface{} {
+	if root == nil {
+		return nil
+	}
+	result := make([][]interface{}, 0)
+	queue := make([]*TreeNode, 0)
+	queue = append(queue, root)
+	for len(queue) > 0 {
+		data := make([]interface{}, 0)
+		for i := 0; i < len(queue); i++ {
+			node := queue[0]
+			queue = queue[1:]
+			data = append(data, node.Data)
+			if nil != node.LeftNode {
+				queue = append(queue, node.LeftNode)
+			}
+			if nil != node.RightNode {
+				queue = append(queue, node.RightNode)
+			}
+		}
+		result = append(result, data)
+	}
+	return result
+}
+
+// 从底下上的层级遍历
+func levelOrderFromBottom(root *TreeNode) []interface{} {
+	resutl := levelOo(root)
+	reverse(&resutl)
+	return resutl
+}
+
+func reverse(data *[]interface{}) {
+	d := *data
+	for i, j := 0, len(*data)-1; i < j; i, j = i+1, j-1 {
+		d[i], d[j] = d[j], d[i]
+	}
+}
+
+func levelOo(node *TreeNode) []interface{} {
+	if nil == node {
+		return nil
+	}
+	result := make([]interface{}, 0)
+	queue := make([]*TreeNode, 0)
+	queue = append(queue, node)
+	for len(queue) > 0 {
+		t := queue[0]
+		queue = queue[1:]
+		if t.LeftNode != nil {
+			queue = append(queue, t.LeftNode)
+		}
+		if t.RightNode != nil {
+			queue = append(queue, t.RightNode)
+		}
+		result = append(result, t.Data)
+	}
+	return result
+}
