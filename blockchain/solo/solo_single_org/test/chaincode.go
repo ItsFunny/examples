@@ -7,3 +7,9 @@
 # @Attention : 
 */
 package test
+
+import "examples/blockchain/solo/solo_single_org/config"
+
+func Invoke(){
+	config.Invoke()
+}

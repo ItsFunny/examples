@@ -6,11 +6,12 @@
 # @Description :    注册用户
 # @Attention : 
 */
-package main
+package test
 
 import (
 	"examples/blockchain/solo/solo_single_org/config"
 	"flag"
+	"fmt"
 )
 
 var (
@@ -23,12 +24,14 @@ func main() {
 	if nil != e {
 		panic(e)
 	}
-	enroll()
+	// Enroll()
 
 }
 
-func enroll() {
-	if enrolle := config.Enrolle("joker", "123"); nil != enrolle {
+func Enroll(username,pwd string) {
+	if enrolle := config.Enrolle(username,pwd); nil != enrolle {
 		panic(enrolle)
+	}else{
+		fmt.Println("enroll 成功")
 	}
 }

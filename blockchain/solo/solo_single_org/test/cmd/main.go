@@ -6,4 +6,10 @@
 # @Description : 
 # @Attention : 
 */
-package cmd
+package main
+
+import "examples/blockchain/solo/solo_single_org/test"
+
+func main() {
+	test.TestRegistration()
+}
