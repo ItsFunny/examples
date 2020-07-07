@@ -1,14 +1,14 @@
 version: '2'
 volumes:
-  orderer0.demo.com:
-  orderer1.example.com:
-  orderer2.example.com:
-  orderer3.example.com:
-  orderer4.example.com:
+  orderer0.vlink.link:
+  orderer1.vlink.link:
+  orderer2.vlink.link:
+  orderer3.vlink.link:
+  orderer4.vlink.link:
 
 services:
-  orderer0.demo.com:
-    container_name: orderer0.demo.com
+  orderer0.vlink.link:
+    container_name: orderer0.vlink.link
     extends:
       file: ../base/peer-base.yaml
       service: orderer-base
@@ -16,13 +16,13 @@ services:
       demo:
     volumes:
       - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/:/var/hyperledger/orderer/tls
-    #      - orderer0.demo.com:/var/hyperledger/production/orderer
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/:/var/hyperledger/orderer/tls
+    #      - orderer0.vlink.link:/var/hyperledger/production/orderer
     ports:
       - 7050:7050
-  orderer2.demo.com:
-    container_name: orderer2.demo.com
+  orderer2.vlink.link:
+    container_name: orderer2.vlink.link
     extends:
       file: ../base/peer-base.yaml
       service: orderer-base
@@ -31,13 +31,13 @@ services:
 #        ipv4_address: 172.80.0.12
     volumes:
       - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/:/var/hyperledger/orderer/tls
-#      - orderer2.demo.com:/var/hyperledger/production/orderer
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/:/var/hyperledger/orderer/tls
+#      - orderer2.vlink.link:/var/hyperledger/production/orderer
     ports:
       - 7070:7050
-  orderer3.demo.com:
-    container_name: orderer3.demo.com
+  orderer3.vlink.link:
+    container_name: orderer3.vlink.link
     extends:
       file: ../base/peer-base.yaml
       service: orderer-base
@@ -46,13 +46,13 @@ services:
 #        ipv4_address: 172.80.0.13
     volumes:
       - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/:/var/hyperledger/orderer/tls
-#      - orderer3.demo.com:/var/hyperledger/production/orderer
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/:/var/hyperledger/orderer/tls
+#      - orderer3.vlink.link:/var/hyperledger/production/orderer
     ports:
       - 7080:7050
-  orderer4.demo.com:
-    container_name: orderer4.demo.com
+  orderer4.vlink.link:
+    container_name: orderer4.vlink.link
     extends:
       file: ../base/peer-base.yaml
       service: orderer-base
@@ -61,13 +61,13 @@ services:
 #        ipv4_address: 172.80.0.14
     volumes:
       - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp/:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/:/var/hyperledger/orderer/tls
-#      - orderer4.demo.com:/var/hyperledger/production/orderer
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/:/var/hyperledger/orderer/tls
+#      - orderer4.vlink.link:/var/hyperledger/production/orderer
     ports:
       - 7090:7050
-  orderer5.demo.com:
-    container_name: orderer5.demo.com
+  orderer5.vlink.link:
+    container_name: orderer5.vlink.link
     extends:
       file: ../base/peer-base.yaml
       service: orderer-base
@@ -76,9 +76,9 @@ services:
     #        ipv4_address: 172.80.0.11
     volumes:
       - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer5.demo.com/msp:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer5.demo.com/tls/:/var/hyperledger/orderer/tls
-    #      - orderer5.demo.com:/var/hyperledger/production/orderer
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/:/var/hyperledger/orderer/tls
+    #      - orderer5.vlink.link:/var/hyperledger/production/orderer
     ports:
       - 7060:7050
 

@@ -22,10 +22,8 @@ if [[ $? -ne 0 ]]; then
 fi
 
 echo "初始化创世块"
-configtxgen  --profile DemoOrdererRaftGenesis -channelID sysdemochannel -outputBlock ./artifacts/orderer.genesis.block
+configtxgen  --profile VlinkOrdererRaftGenesis -channelID sysdemochannel -outputBlock ./artifacts/orderer.genesis.block
 echo "生成channel的配置信息"
-configtxgen  --profile DemoChannel  -outputCreateChannelTx ./artifacts/demo.tx -channelID demochannel
+configtxgen  --profile UserChannel  -outputCreateChannelTx ./artifacts/userchannel.tx -channelID userchannel
 echo "生成组织1的锚节点信息"
-configtxgen  --profile DemoChannel -outputAnchorPeersUpdate ./artifacts/org1mspanchors.tx -channelID demochannel -asOrg Org1MSP
-echo "生成组织2的锚节点信息"
-configtxgen --profile DemoChannel -outputAnchorPeersUpdate ./artifacts/org2mspanchors.tx -channelID demochannel -asOrg Org2MSP
+configtxgen  --profile UserChannel -outputAnchorPeersUpdate ./artifacts/org1vlinkmspanchors.tx -channelID userchannel -asOrg VlinkOrgMSP
