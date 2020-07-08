@@ -426,3 +426,46 @@ func levelOo(node *TreeNode) []interface{} {
 	}
 	return result
 }
+
+// 判断是否是有效的完全二叉树:
+// 1. 中序遍历判断是否是顺序的
+// 2. 分治法: 左Max<根<右Min
+
+type ResultType struct {
+	IsValid bool
+	Max     *TreeNode
+	Min     *TreeNode
+}
+
+func IsCompleteTree(root *TreeNode) ResultType {
+	return isComplete(root)
+}
+
+func isComplete(node *TreeNode) ResultType {
+	var result ResultType
+	if node == nil {
+		return result
+	}
+	left := isComplete(node.LeftNode)
+	right := isComplete(node.RightNode)
+
+	// 不是完全二叉树的情况
+	if !left.IsValid || !right.IsValid {
+		result.IsValid = false
+		return result
+	}
+	// 如果右子树的min <root不是
+	// 左子树的max < root 不是
+
+	if left.Max != nil && left.Max.Data.(int) < node.Data.(int) {
+		result.IsValid = false
+		return result
+	}
+
+	if right.Min != nil && node.Data.(int) > right.Min.Data.(int) {
+		result.IsValid = false
+		return result
+	}
+
+	return result
+}
