@@ -11,11 +11,25 @@ The maximum depth is the number of nodes along the longest path from the root no
 Note: A leaf is a node with no children.
 
 Example:    求一颗二叉树的深度
-# @Attention :
-借助队列层次遍历BFS,获取层数即可
+# @Attention :  分治法
 */
 package module_review
 
 func maxDepth(root *TreeNode) int {
-	return 0
+	if nil == root {
+		return 0
+	}
+	left := maxDepth(root.Left)
+	right := maxDepth(root.Right)
+	if left > right {
+		return left + 1
+	}
+	return right + 1
+}
+
+func max(i, j int) int {
+	if i > j {
+		return i
+	}
+	return j
 }
