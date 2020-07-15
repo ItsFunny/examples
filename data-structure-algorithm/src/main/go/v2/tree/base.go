@@ -313,31 +313,37 @@ func MaxTreeTrace(root *TreeNode) int {
 	return max
 }
 
-func maxTreeTrace(node *TreeNode, i *int) int {
-	// 递归退出条件
-	if node == nil {
-		return 0
-	}
-	// 分
-	left := maxTreeTrace(node.LeftNode, i)
-	right := maxTreeTrace(node.RightNode, i)
+func maxPathSum(root *TreeNode) int {
+	max := root.Data.(int)
 
-	// 过当前根节点的最大和
-	lOrR := max(left, right)
-	curSum := max(node.Data.(int), lOrR+node.Data.(int))
-	// 考虑 横跨的情况,既从左子树到右子树 或者是右子树到左子树
-	curMax := max(node.Data.(int), left+right+node.Data.(int))
-
-	*i = max(curMax, *i)
-	// 返回的是过当前节点的最大和
-	return curSum
+	maxPath(root, &max)
+	return max
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
+func maxPath(node *TreeNode, mm *int) int {
+	if node == nil {
+		return -1 * math.MaxInt32
 	}
-	return b
+	left := maxPath(node.LeftNode, mm)
+	right := maxPath(node.RightNode, mm)
+
+	// 计算左右子树的最大值
+	leftRightMax := max(left, right)
+	// 计算加上了根节点的最大值
+	withRootMax := max(node.Data.(int), leftRightMax+node.Data.(int))
+	// 计算横跨时候的最大值
+	withThroughMax := max(withRootMax, left+right+node.Data.(int))
+	// 与最后的结果比较
+	*mm = max(withThroughMax, *mm)
+
+	return withRootMax
+}
+
+func max(i, j int) int {
+	if i > j {
+		return i
+	}
+	return j
 }
 
 // 找到给定2个节点的公共祖先
