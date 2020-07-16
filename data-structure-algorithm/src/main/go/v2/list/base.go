@@ -162,3 +162,108 @@ func partition(head *ListNode, x int) *ListNode {
 
 	return headDummy.Next
 }
+
+// 在  O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。
+// 思路: 模拟快排的思路,找到中间点排序
+// 重点:
+// 1. 快慢指针 获取中间元素
+// 2. mergeSort:归并排序(简易快排)的时候断开中间节点
+// 3. 分治法的退出条件是 为空,或者是 只有一个节点
+func sortList(head *ListNode) *ListNode {
+	return qSortLinkedList(head)
+}
+func qSortLinkedList(node *ListNode) *ListNode {
+	if node == nil || node.Next == nil {
+		return node
+	}
+	middle := paration(node)
+	// 排序之前需要断开,因为链表不像数组,链表是有前后连接的
+	after := middle.Next
+	middle.Next = nil
+	// 对左右进行排序
+	left := qSortLinkedList(node)
+	right := qSortLinkedList(after)
+	result := mergeLists(left, right)
+	return result
+}
+func mergeLists(left, right *ListNode) *ListNode {
+	dummy := &ListNode{}
+	walkerNode := dummy
+	for nil != left && right != nil {
+		if left.Val < right.Val {
+			walkerNode.Next = left
+			left = left.Next
+		} else {
+			walkerNode.Next = right
+			right = right.Next
+		}
+		walkerNode = walkerNode.Next
+	}
+
+	for nil != left {
+		walkerNode.Next = left
+		left = left.Next
+		walkerNode = walkerNode.Next
+	}
+	for nil != right {
+		walkerNode.Next = right
+		right = right.Next
+		walkerNode = walkerNode.Next
+	}
+	return dummy.Next
+}
+
+// 链表找中间元素的方法: 就是通过快慢指针,当快指针到末尾的时候,慢指针刚好到中间
+func paration(node *ListNode) *ListNode {
+	fast := node.Next
+	slow := node
+	for nil != fast && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+	}
+	return slow
+}
+
+// 判断是否有环
+// 快慢指针 如果有环每次前进都会使得距离缩短-1
+func hasCycle(head *ListNode) bool {
+	if head == nil {
+		return false
+	}
+	if head.Next == nil || head.Next.Next == nil {
+		return true
+	}
+	fast := head.Next.Next
+	slow := head.Next
+	for nil != fast && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+		if slow == fast {
+			return true
+		}
+	}
+	return false
+}
+
+// 给定一个链表，返回链表开始入环的第一个节点。  如果链表无环，则返回  null。
+// 思路: 快慢指针,相遇代表有环,有环之后,慢指针到头部,两者步调一致,相遇的既为入环的节点
+func detectCycleNode(head *ListNode) *ListNode {
+	if nil == head || head.Next == nil {
+		return nil
+	}
+	fast := head.Next
+	slow := head
+	for nil != fast && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+		if fast == slow {
+			slow = head
+			for slow != fast {
+				slow, fast = slow.Next, fast.Next
+			}
+			return slow
+		}
+	}
+
+	return nil
+}

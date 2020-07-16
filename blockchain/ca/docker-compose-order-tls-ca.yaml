@@ -1,9 +1,10 @@
+# 这是组织成员的ca
 version: '2'
 volumes:
   ca-tls:
 services:
-  ca-tls:
-    container_name: ca-tls
+  tls-ca:
+    container_name: tls-ca
     image: hyperledger/fabric-ca:1.4.4
     command: sh -c 'fabric-ca-server start -d -b tls-ca-admin:tls-ca-adminpw --port 7052'
     environment:
