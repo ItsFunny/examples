@@ -3,7 +3,16 @@
 # @Author : joker
 # @Time : 2020-07-14 09:13 
 # @File : base.go
-# @Description : 
+# @Description :
+ 链表核心知识点:
+ 1. nil退出条件处理
+ 2. dummy node 哑巴节点
+ 3. 快慢指针
+	3.1 找到链表的中间节点
+ 4. 链表插入
+ 5. 链表删除
+ 6. 反转链表
+ 7. 合并链表
 # @Attention : 
 */
 package list
@@ -267,3 +276,47 @@ func detectCycleNode(head *ListNode) *ListNode {
 
 	return nil
 }
+
+// 判断链表是否是一个回文链表
+
+func isPalindrome(head *ListNode) bool {
+	if nil == head {
+		return true
+	}
+	// 找到中间节点
+	fast := head.Next
+	slow := head
+	for nil != fast && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+	}
+	mid := slow
+	// 断开连接
+	after := mid.Next
+	mid.Next = nil
+	// 反转后半段链表
+	after = revSe(after)
+	// 判断
+	for nil != head && nil != after {
+		if head.Val != after.Val {
+			return false
+		}
+		head = head.Next
+		after = after.Next
+	}
+	return true
+}
+
+func revSe(node *ListNode) *ListNode {
+	var prev *ListNode
+	for nil != node {
+		tempNode := node.Next
+		tempNode.Next = prev
+
+		prev = node
+		node = tempNode
+	}
+	return prev
+}
+
+// 给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。 要求返回这个链表的 深拷贝

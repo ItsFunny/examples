@@ -1,0 +1,18 @@
+# ca-tls 服务器,用于控制所有的组织之间的交流
+version: '2'
+
+services:
+  ca.demo.com:
+    container_name: ca.demo.com
+    image: hyperledger/fabric-ca:1.4.4
+    command: sh -c 'fabric-ca-server start -d -b demo-admin:demo-adminpw'
+    environment:
+      - FABRIC_CA_SERVER_HOME=/tmp/hyperledger/fabric-ca
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
+      - FABRIC_CA_SERVER_CSR_CN=ca-demo
+      - FABRIC_CA_SERVER_CSR_HOSTS=0.0.0.0
+      - FABRIC_CA_SERVER_DEBUG=true
+    volumes:
+      - /Users/joker/go/src/examples/blockchain/ca/organizations/demo.com/ca:/tmp/hyperledger/fabric-ca
+    ports:
+      - 7054:7054
