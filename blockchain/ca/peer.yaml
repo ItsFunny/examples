@@ -1,0 +1,91 @@
+# ca-tls 服务器,用于控制所有的组织之间的交流
+version: '2'
+
+services:
+  peer1.demo.com:
+    container_name: peer1.demo.com
+    image: hyperledger/fabric-peer:1.4.4
+    environment:
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=guide_fabric-ca
+      - FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      # 这是 由TLS-CA-Server 颁发的属于admin角色的证书
+#      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/signcerts//server.crt
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/signcerts/cert.pem
+      # 这是 该client 对于TLS-CA-SERVER节点生成的私钥
+#      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/keystore/key.pem
+      # 这是tls组织的公钥
+#      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/tlscacerts/tls-0-0-0-0-7052.pem
+      - CORE_PEER_LOCALMSPID=org1MSP
+      - CORE_PEER_ID=peer1.demo.com
+      - CORE_PEER_ADDRESS=peer1.demo.com:9051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:9051
+      - CORE_PEER_CHAINCODEADDRESS=peer1.demo.com:9052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer2.demo.com:8051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.demo.com:9051
+      - CORE_PEER_GOSSIP_SKIPHANDSHAKE=true
+    working_dir: /etc/hyperledger/fabric/
+#    extra_hosts:
+#      - "peer1.demo.com:192.168.1.100"
+#      - "peer2.demo.com:192.168.1.100"
+    ports:
+      - 9051:9051
+      - 9052:9052
+    volumes:
+      - /var/run:/host/var/run
+      - /Users/joker/go/src/examples/blockchain/ca/organizations/demo.com/peer1.demo.com/tls-msp:/etc/hyperledger/fabric/tls
+      - /Users/joker/go/src/examples/blockchain/ca/organizations/demo.com/peer1.demo.com/msp:/etc/hyperledger/fabric/msp
+    command: peer node start
+
+
+
+  peer2.demo.com:
+    container_name: peer2.demo.com
+    image: hyperledger/fabric-peer:1.4.4
+    environment:
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=guide_fabric-ca
+      - FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      # 这是 由CA-Server 颁发的属于admin角色的证书
+      #      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/signcerts//server.crt
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/signcerts/cert.pem
+      # 这是 该client 节点生成的私钥
+      #      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/keystore/key.pem
+      # 这是tls组织的公钥
+      #      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/tlscacerts/tls-0-0-0-0-7052.pem
+      - CORE_PEER_LOCALMSPID=org1MSP
+      - CORE_PEER_ID=peer2.demo.com
+      - CORE_PEER_ADDRESS=peer2.demo.com:8051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
+      - CORE_PEER_CHAINCODEADDRESS=peer2.demo.com:8052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
+      # 默认值是 /etc/hyperledger/fabric/msp
+#      - CORE_PEER_MSPCONFIGPATH=/tmp/hyperledger/org1/peer1/msp
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.demo.com:9051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer2.demo.com:8051
+      - CORE_PEER_GOSSIP_SKIPHANDSHAKE=true
+    working_dir: /etc/hyperledger/fabric/
+#    extra_hosts:
+#      - "peer1.demo.com:192.168.1.100"
+#      - "peer2.demo.com:192.168.1.100"
+    ports:
+      - 8051:8051
+      - 8052:8052
+    volumes:
+      - /var/run:/host/var/run
+      - /Users/joker/go/src/examples/blockchain/ca/organizations/demo.com/peer2.demo.com/tls-msp:/etc/hyperledger/fabric/tls
+      - /Users/joker/go/src/examples/blockchain/ca/organizations/demo.com/peer2.demo.com/msp:/etc/hyperledger/fabric/msp
+    command: peer node start
