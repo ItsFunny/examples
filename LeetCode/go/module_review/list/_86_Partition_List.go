@@ -19,6 +19,7 @@ func partition(head *ListNode, x int) *ListNode {
 	tailDummy := &ListNode{Val: 0}
 	tail := tailDummy
 	headDummy.Next = head
+	// 这里将head 从新移动到headDummy的缘故在于,for循环中是通过next判断的
 	head = headDummy
 	for head.Next != nil {
 		if head.Next.Val < x {
