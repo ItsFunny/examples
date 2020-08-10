@@ -1,0 +1,156 @@
+#
+# Copyright SecureKey Technologies Inc. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+#
+# The network connection profile provides client applications the information about the target
+# blockchain network that are necessary for the applications to interact with it. These are all
+# knowledge that must be acquired from out-of-band sources. This file provides such a source.
+#
+
+
+#
+# Schema version of the content. Used by the SDK to apply the corresponding parsing rules.
+#
+version: 1.0.0
+
+
+#
+# list of participating organizations in this network
+#
+
+organizations:
+  VlinkOrgMSP:
+    mspid: VlinkOrgMSP
+    cryptoPath:  peerOrganizations/vlink.link/users/{username}@vlink.link/msp
+    peers:
+      - user0.peer.vlink.link
+      - user1.peer.vlink.link
+      - copyright0.peer.vlink.link
+      - copyright1.peer.vlink.link
+    # [Optional]. Certificate Authorities issue certificates for identification purposes in a Fabric based
+    # network. Typically certificates provisioning is done in a separate process outside of the
+    # runtime network. Fabric-CA is a special certificate authority that provides a REST APIs for
+    # dynamic certificate management (enroll, revoke, re-enroll). The following section is only for
+    # Fabric-CA servers.
+    certificateAuthorities:
+      - org.ca.vlink.link
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+#
+# The client section used by GO SDK.
+#
+client:
+  organization: VlinkOrgMSP
+  logging:
+    level: info
+  eventService:
+    type: eventhub
+  # Root of the MSP directories with keys and certs.
+  cryptoconfig:
+    path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config
+
+  # Some SDKs support pluggable KV stores, the properties under "credentialStore"
+  # are implementation specific
+  credentialStore:
+    # [Optional]. Used by user store. Not needed if all credentials are embedded in configuration
+    # and enrollments are performed elswhere.
+    path: "/tmp/hyperledger/state-store"
+
+    # [Optional]. Specific to the CryptoSuite implementation used by GO SDK. Software-based implementations
+    # requiring a key store. PKCS#11 based implementations does not.
+    cryptoStore:
+      # Specific to the underlying KeyValueStore that backs the crypto key store.
+      path: '/tmp/hyperledger/store'
+
+    # BCCSP config for the client. Used by GO SDK.
+  BCCSP:
+    security:
+      enabled: true
+      default:
+        provider: "SW"
+      hashAlgorithm: "SHA2"
+      softVerify: true
+      level: 256
+  tlsCerts:
+    systemCertPool: false
+    client:
+      key:
+        path:
+      cert:
+        path:
+channels:
+  userchannel:
+    peers:
+      user0.peer.vlink.link:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+  copyrightchannel:
+    peers:
+      copyright0.peer.vlink.link:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+
+
+
+orderers:
+  orderer0.vlink.link:
+    url: orderer0.vlink.link:5050
+    grpcOptions:
+      ssl-target-name-override: orderer0.vlink.link
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/ordererOrganizations/vlink.link/tlsca/ca.crt
+
+peers:
+  user0.peer.vlink.link:
+    url: user0.peer.vlink.link:11051
+    grpcOptions:
+      ssl-target-name-override: user0.peer.vlink.link
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/tlsca/ca-cert.pem
+
+  copyright0.peer.vlink.link:
+    url: copyright0.peer.vlink.link:12051
+    grpcOptions:
+      ssl-target-name-override: copyright0.peer.vlink.link
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/tlsca/ca-cert.pem
+certificateAuthorities:
+  org.ca.vlink.link:
+    url: https://org.ca.vlink.link:4054
+    tlsCACerts:
+      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/ca.crt
+      client:
+        key:
+          path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/server.key
+        cert:
+          path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/server.crt
+    registrar:
+      enrollId: vlink
+      enrollSecret: vlinkpw
+    caName:
