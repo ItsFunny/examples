@@ -1,0 +1,54 @@
+goPath: /Users/joker/go
+cryptVersion: 1
+configPath: /Users/joker/go/src/vlink.com/v2/vlink-rpc/resources/blockchain-config-local.yaml
+channels:
+  - channelId: userchannel
+    needListOnBlockEvent: true
+    channelConfigPath: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network/containers/test/artifacts/userchannel.tx
+    orders:
+      - ordererId: orderer0.vlink.link
+        ordererAddress: orderer0.vlink.link
+        ordererPort: 6050
+    organizations:
+      - organizationId: VlinkOrgMSP
+        users:
+          - userName: 'User1'
+            admin: false
+          - userName: 'Admin'
+            admin: true
+        peers:
+          - anchorPeers:
+              - address: user0.vlink.link
+                port: 11051
+                chainCodes:
+                  - chainCodeId: usercc
+                    chainCodePath: vlink.com/v2/vlink-chaincodes/usercc
+                    needUpdate: false
+        ca:
+          caName: 'ca0.vlink.link'
+
+#
+  - channelId: copyrightchannel
+    needListOnBlockEvent: true
+    channelConfigPath: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network/containers/test/artifacts/copyrightchannel.tx
+    orders:
+      - ordererId: orderer0.vlink.link
+        ordererAddress: orderer0.vlink.link
+        ordererPort: 6050
+    organizations:
+      - organizationId: VlinkOrgMSP
+        users:
+          - userName: 'User1'
+            admin: false
+          - userName: 'Admin'
+            admin: true
+        peers:
+          - anchorPeers:
+              - address: copyright0.vlink.link
+                port: 10051
+                chainCodes:
+                  - chainCodeId: copyrightcc
+                    chainCodePath: vlink.com/v2/vlink-chaincodes/copyrightcc
+                    needUpdate: false
+        ca:
+          caName: 'ca0.vlink.link'

@@ -27,7 +27,7 @@ func deleteDuplicateNode(root *ListNode) {
 	walkerNode := root
 	for walkerNode != nil {
 		for walkerNode.Next != nil && walkerNode.Val == walkerNode.Next.Val {
-			walkerNode = walkerNode.Next
+			walkerNode = walkerNode.Next.Next
 		}
 		walkerNode = walkerNode.Next
 	}
@@ -65,7 +65,7 @@ func reverseList(head *ListNode) *ListNode {
 	var prev *ListNode
 	for nil != head {
 		temp := head.Next
-		temp.Next = prev
+		head.Next = prev
 		// prev 前移动 反转意味着 在前面的会变为在后面,所以head 会变为过去式
 		prev = head
 		// head 前移动 而之前的下一个节点会是先的next ,所以会变为新的head
@@ -91,6 +91,8 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	prev.Next = node
 	return prev
 }
+
+
 func reverse(head *ListNode, count int) *ListNode {
 	var prev *ListNode
 	for i := 0; i < count && head != nil; i++ {

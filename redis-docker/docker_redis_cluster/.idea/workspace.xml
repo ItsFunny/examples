@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46d020dc-1c4d-4157-889f-37a001160c77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/master2/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/master3/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel/docker-compose-sentinel.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel/sentinel2.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel/sentinel3.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slave2/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slave3/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../big-file-upload/big-file-upload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../big-file-upload/big-file-upload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/ca-demo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/ca-demo.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/ca-order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/ca-order.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/ca-tls.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/ca-tls.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/configtx2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/demo-cli.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/demo-cli.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/mac_main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/mac_main.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/main.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/ca/prepare.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/ca/prepare.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/orderer.genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/orderer.genesis.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/org1vlinkmspanchors.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/org1vlinkmspanchors.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/userchannel.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/artifacts/userchannel.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/list/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/list/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rabbit-mq-cluster/rabbit-mq-cluster.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbit-mq-cluster/rabbit-mq-cluster.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raft/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../raft/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-redis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-redis.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/master/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/master1/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/.github/workflows/ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/00-RELEASENOTES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/BUGS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/CONTRIBUTING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/MANIFESTO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/TLS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/ae.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/glib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/ivykis.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/libev.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/libevent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/libuv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/macosx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/adapters/qt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/async.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/async.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/async_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/dict.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/dict.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-ae.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-glib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-ivykis.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-libev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-libevent-ssl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-libevent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-libuv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-macosx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-qt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-qt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example-ssl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/examples/example.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/fmacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/hiredis.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/hiredis.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/hiredis.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/hiredis_ssl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/hiredis_ssl.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/net.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/net.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/read.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/read.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/sds.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/sds.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/sdsalloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/sockcompat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/sockcompat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/ssl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/hiredis/win32.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/.appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/.autom4te.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/INSTALL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/TUNING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/autogen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/bin/jemalloc-config.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/bin/jemalloc.sh.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/bin/jeprof.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/build-aux/config.guess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/build-aux/config.sub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/build-aux/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/config.stamp.in" beforeDir="false" afterPath="$PROJECT_DIR$/sentinel/sentinel1.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/doc/html.xsl.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/doc/jemalloc.xml.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/doc/manpages.xsl.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/doc/stylesheet.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_inlines_a.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_inlines_b.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_stats.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_structs_a.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_structs_b.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/arena_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/assert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/atomic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/atomic_c11.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/atomic_gcc_atomic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/atomic_gcc_sync.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/atomic_msvc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/background_thread_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/background_thread_inlines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/background_thread_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/base_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/base_inlines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/base_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/base_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/bin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/bin_stats.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/bit_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/bitmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/cache_bin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/ckh.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/ctl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/div.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/emitter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_dss.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_inlines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_mmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/extent_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/hooks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_decls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_includes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_a.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_b.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/jemalloc_preamble.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/large_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/malloc_io.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/mutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/mutex_pool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/mutex_prof.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/nstime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/pages.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/ph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/private_namespace.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/private_symbols.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prng.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prof_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prof_inlines_a.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prof_inlines_b.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prof_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/prof_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/public_namespace.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/public_unnamespace.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/ql.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/qr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/rb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/rtree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/rtree_tsd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/size_classes.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/smoothstep.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/smoothstep.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/spin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/stats.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/sz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tcache_externs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tcache_inlines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tcache_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tcache_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/ticker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd_generic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd_malloc_thread_cleanup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd_tls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/tsd_win.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/internal/witness.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_defs.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_macros.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_mangle.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_protos.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_rename.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/jemalloc/jemalloc_typedefs.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/msvc_compat/C99/stdbool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/msvc_compat/C99/stdint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/msvc_compat/strings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/include/msvc_compat/windows_extra.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/jemalloc.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/m4/ax_cxx_compile_stdcxx.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/jemalloc_vc2015.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/jemalloc_vc2017.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2015/jemalloc/jemalloc.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2015/jemalloc/jemalloc.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2015/test_threads/test_threads.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2015/test_threads/test_threads.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2017/jemalloc/jemalloc.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2017/jemalloc/jemalloc.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2017/test_threads/test_threads.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/projects/vc2017/test_threads/test_threads.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/test_threads/test_threads.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/test_threads/test_threads.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/msvc/test_threads/test_threads_main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/run_tests.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/scripts/gen_run_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/scripts/gen_travis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/background_thread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/bin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/bitmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/ckh.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/ctl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/div.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/extent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/extent_dss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/extent_mmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/hooks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/jemalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/jemalloc_cpp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/large.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/malloc_io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/mutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/mutex_pool.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/nstime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/pages.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/prng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/prof.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/rtree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/stats.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/sz.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/tcache.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/ticker.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/tsd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/witness.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/src/zone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-alti.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params11213.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params1279.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params132049.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params19937.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params216091.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params2281.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params4253.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params44497.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params607.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-params86243.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT-sse2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/SFMT.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/btalloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/extent_hooks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/jemalloc_test.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/jemalloc_test_defs.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/math.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/mq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/mtx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/thd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/include/test/timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/MALLOCX_ARENA.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/aligned_alloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/allocated.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/extent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/extent.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/mallocx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/mallocx.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/overflow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/posix_memalign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/rallocx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/sdallocx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/thread_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/thread_tcache_enabled.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/xallocx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/integration/xallocx.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/SFMT.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/btalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/btalloc_0.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/btalloc_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/math.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/mq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/mtx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/thd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/src/timer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/stress/microbench.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/test.sh.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/SFMT.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/a0.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/arena_reset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/arena_reset_prof.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/arena_reset_prof.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/atomic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/background_thread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/background_thread_enable.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/bit_util.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/bitmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/ckh.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/decay.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/decay.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/div.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/emitter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/extent_quantize.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/fork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/hooks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk_alloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk_alloc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk_free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/junk_free.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/mallctl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/malloc_io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/math.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/mq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/mtx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/nstime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/pack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/pack.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/pages.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/ph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_accum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_accum.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_active.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_active.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_gdump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_gdump.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_idump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_idump.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_reset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_reset.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_tctx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_tctx.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_thread_name.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/prof_thread_name.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/ql.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/qr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/rb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/retained.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/rtree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/size_classes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/slab.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/smoothstep.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/spin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/stats.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/stats_print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/ticker.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/tsd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/witness.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/zero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/jemalloc/test/unit/zero.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/README.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/example.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/linenoise.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/linenoise/linenoise.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/HISTORY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/contents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/lua.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/lua.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/lua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/luac.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/luac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/manual.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/manual.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/doc/readme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/all.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/lua.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/lua.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/lua.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/luavs.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/min.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/noparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/etc/strict.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/fpconv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/fpconv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lapi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lauxlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lauxlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lbaselib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lcode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldblib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldebug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldebug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ldump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lfunc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lfunc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lgc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lgc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/linit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/liolib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/llex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/llex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/llimits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lmathlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lmem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lmem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/loadlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lobject.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lopcodes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lopcodes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/loslib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lparser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lstate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lstate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lstring.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lstring.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lstrlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ltable.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ltable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ltablib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ltm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/ltm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua_bit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua_cjson.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua_cmsgpack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lua_struct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/luac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/luaconf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lualib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lundump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lundump.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lvm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lvm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lzio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/lzio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/strbuf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/src/strbuf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/bisect.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/cf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/echo.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/env.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/factorial.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/fib.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/fibfor.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/globals.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/hello.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/life.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/luac.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/printf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/readonly.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/sieve.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/sort.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/table.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/trace-calls.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/trace-globals.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/lua/test/xd.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/deps/update-jemalloc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/redis.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/runtest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/runtest-cluster" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/runtest-moduleapi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/runtest-sentinel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/sentinel.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/acl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/adlist.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/adlist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae_epoll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae_evport.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae_kqueue.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ae_select.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/anet.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/anet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/aof.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/asciilogo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/atomicvar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/bio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/bio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/bitops.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/blocked.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/childinfo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/cluster.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/cluster.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/config.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/connection.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/connection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/connhelpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crc16.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crc16_slottable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crc64.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crc64.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crcspeed.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/crcspeed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/db.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/debug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/debugmacro.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/defrag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/dict.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/dict.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/endianconv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/endianconv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/evict.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/expire.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/fmacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geohash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geohash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geohash_helper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/geohash_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/gopher.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/help.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/hyperloglog.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/intset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/intset.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/latency.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/latency.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lazyfree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/listpack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/listpack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/listpack_malloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/localtime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lolwut.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lolwut.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lolwut5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lolwut6.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lzf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lzfP.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lzf_c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/lzf_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/memtest.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/mkreleasehdr.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/module.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/gendoc.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/helloacl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/helloblock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/hellocluster.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/hellodict.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/hellohook.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/hellotimer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/hellotype.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/helloworld.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/modules/testmodule.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/multi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/networking.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/notify.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/object.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/pqsort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/pqsort.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/pubsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/quicklist.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/quicklist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rand.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rand.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rax.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rax.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rax_malloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rdb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rdb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redis-benchmark.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redis-check-aof.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redis-check-rdb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redis-cli.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redis-trib.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redisassert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/redismodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/release.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/replication.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/rio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/scripting.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sds.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sds.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sdsalloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sentinel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/server.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/setproctitle.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sha1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sha1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sha256.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sha256.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/siphash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/slowlog.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/slowlog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/solarisfixes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sparkline.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/sparkline.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/stream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/syncio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_set.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_stream.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/t_zset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/testhelp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/timeout.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/tls.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/tracking.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/util.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/valgrind.sup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ziplist.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/ziplist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/zipmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/zipmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/zmalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/src/zmalloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/assets/default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/assets/encodings.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/assets/hash-zipmap.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/cluster.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/run.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/00-base.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/01-faildet.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/02-failover.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/03-failover-loop.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/04-resharding.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/05-slave-selection.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/06-slave-stop-cond.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/07-replica-migration.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/08-update-msg.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/09-pubsub.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/10-manual-failover.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/11-manual-takeover.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/12-replica-migration-2.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/13-no-failover-option.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/14-consistency-check.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/15-cluster-slots.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/helpers/onlydots.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tests/includes/init-tests.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/cluster/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/helpers/bg_block_op.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/helpers/bg_complex_data.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/helpers/gen_write_load.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/instances.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/aof-race.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/aof.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/block-repl.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/convert-zipmap-hash-on-load.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/logging.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/psync2-pingoff.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/psync2-reg.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/psync2.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/rdb.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/redis-cli.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/replication-2.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/replication-3.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/replication-4.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/replication-psync.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/integration/replication.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/auth.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/blockonkeys.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/commandfilter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/datatype.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/fork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/hooks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/infotest.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/misc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/propagate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/scan.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/modules/testrdb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/run.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/00-base.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/01-conf-update.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/02-slaves-reconf.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/03-runtime-reconf.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/04-slave-selection.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/05-manual.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/06-ckquorum.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/07-down-conditions.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tests/includes/init-tests.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/sentinel/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/cli.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/cluster.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/redis.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/server.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/test.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/tmpfile.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/support/util.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/test_helper.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/acl.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/aofrw.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/auth.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/bitfield.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/bitops.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/dump.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/expire.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/geo.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/hyperloglog.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/introspection-2.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/introspection.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/keyspace.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/latency-monitor.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/lazyfree.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/limits.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/maxmemory.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/memefficiency.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/auth.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/blockonkeys.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/commandfilter.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/datatype.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/fork.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/hooks.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/infotest.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/misc.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/propagate.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/scan.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/moduleapi/testrdb.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/multi.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/obuf-limits.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/other.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/pendingquerybuf.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/printver.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/protocol.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/pubsub.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/quit.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/scan.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/scripting.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/slowlog.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/sort.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/tls.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/tracking.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/hash.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/incr.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/list-2.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/list-3.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/list-common.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/list.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/set.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/stream-cgroups.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/stream.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/string.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/type/zset.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/tests/unit/wait.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/build-static-symbols.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/cluster_fail_time.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/corrupt_rdb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/create-cluster/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/create-cluster/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/create-cluster/create-cluster" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/gen-test-certs.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/generate-command-help.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/graphs/commits-over-time/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/graphs/commits-over-time/genhtml.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/hashtable/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/hashtable/rehashing.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/hyperloglog/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/hyperloglog/hll-err.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/hyperloglog/hll-gnuplot-graph.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/install_server.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/lru/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/lru/lfu-simulation.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/lru/test-lru.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/redis-copy.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/redis-sha1.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/redis_init_script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/redis_init_script.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/releasetools/01_create_tarball.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/releasetools/02_upload_tarball.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/releasetools/03_test_release.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/releasetools/04_release_hash.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/releasetools/changelog.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/speed-regression.tcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/srandmember/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/srandmember/showdist.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/srandmember/showfreq.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/systemd-redis_multiple_servers@.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/systemd-redis_server.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/tracking_collisions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.0/utils/whatisdoing.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slave/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/slave1/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wxpay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wxpay.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slave1/redis.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="429">
+                <caret line="15" column="143" lean-forward="true" selection-start-line="15" selection-end-line="15" selection-end-column="143" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>172.28</find>
+      <find>cluster-announce-ip</find>
+      <find>requirepass 123456</find>
+      <find>“/usr/local/logs/redis/redis-server.log”</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>requirepass 123456 \n masterauth 123456</replace>
+      <replace>requirepass 123456  masterauth 123456</replace>
+      <replace>172.29</replace>
+      <replace>&quot;/usr/local/logs/redis/redis-server.log&quot;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/master1/redis.conf" />
+        <option value="$PROJECT_DIR$/master2/redis.conf" />
+        <option value="$PROJECT_DIR$/master3/redis.conf" />
+        <option value="$PROJECT_DIR$/slave1/redis.conf" />
+        <option value="$PROJECT_DIR$/slave2/redis.conf" />
+        <option value="$PROJECT_DIR$/slave3/redis.conf" />
+        <option value="$PROJECT_DIR$/sentinel/sentinel1.conf" />
+        <option value="$PROJECT_DIR$/sentinel/sentinel2.conf" />
+        <option value="$PROJECT_DIR$/sentinel/sentinel3.conf" />
+        <option value="$PROJECT_DIR$/sentinel/docker-compose-sentinel.yaml" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose-redis.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="master1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="master2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="master3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="slave1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="slave2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker_redis_cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker_redis_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="slave3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sentinel" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46d020dc-1c4d-4157-889f-37a001160c77" name="Default Changelist" comment="" />
+      <created>1595473460055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595473460055</updated>
+      <workItem from="1595473461657" duration="10838000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10838000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.28313252" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker-compose-slave.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-6.0.0/src/config.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="2109" column="12" selection-start-line="2109" selection-start-column="12" selection-end-line="2109" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master3/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master2/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slave3/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slave2/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentinel/sentinel2.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentinel/sentinel1.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentinel/sentinel3.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentinel/docker-compose-sentinel.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#25#330#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-redis.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master1/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slave1/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="429">
+            <caret line="15" column="143" lean-forward="true" selection-start-line="15" selection-end-line="15" selection-end-column="143" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

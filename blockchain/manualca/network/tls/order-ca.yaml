@@ -1,7 +1,5 @@
 # ca-order 服务器,用于控制orderer节点
 version: '2'
-volumes:
-  orderer0.vlink.link:
 networks:
   ca:
 services:

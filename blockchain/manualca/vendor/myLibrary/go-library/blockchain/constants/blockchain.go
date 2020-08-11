@@ -1,0 +1,47 @@
+/*
+# -*- coding: utf-8 -*-
+# @Author : joker
+# @Time : 2020-06-16 13:48 
+# @File : blockchain.go
+# @Description : 
+# @Attention : 
+*/
+package constants
+
+
+
+const (
+	FROM_WALLET_ADDRESS_BEGIN = 0
+	FROM_WALLET_ADDRESS_EDN   = 34
+
+	TO_WALLET_ADDRESS_BEGIN = 34
+	TO_WALLET_ADDRESS_END   = 68
+
+	TRANS_AMOUNT_INDEX_BEGIN = 68
+	TRANS_AMOUNT_INDEX_END   = 76
+
+	VERSION_TYPE_INDEX_BEGIN = 76
+	VERSION_TYPE_INDEX_END   = 84
+
+	LEFT_BYTE_BGEIN      = 84
+	VERSION_INDEX        = 1
+	CRYPT_INDEX          = 84
+	BASE_TYPE_BYTE_INDEX = 85
+	LEFT_BYTE_END        = 92
+
+	VLINK_COMMON_INDEX_END = 120
+)
+
+const (
+	FROM_WALLET_ADDRESS_BYTE_LENGTH = 34
+	TO_WALLET_ADDRESS_BYTE_LENGTH   = 34
+	// 遗留字段长度
+	LEFT_BYTE_LENGTH            = 8
+	LEFT_BYTE_CRYPT_INDEX       = 0
+	LEFT_BYTE_TYPE_LENGTH_INDEX = 1
+	// 遗留字段,判断是否为 章节版权还是作品版权
+	LEFT_BYTE_COPYRIGHT_TYPE_INDEX = 2
+
+	IDLE_BYTE_LENGTH = 28
+)
+

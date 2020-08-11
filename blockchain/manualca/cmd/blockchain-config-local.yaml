@@ -21,21 +21,19 @@ version: 1.0.0
 #
 
 organizations:
-  VlinkOrgMSP:
-    mspid: VlinkOrgMSP
-    cryptoPath:  peerOrganizations/vlink.link/users/{username}@vlink.link/msp
+  Org0MSP:
+    mspid: Org0MSP
+    cryptoPath:  peerOrganizations/demo.com/users/{username}@demo.com/msp
     peers:
-      - user0.peer.vlink.link
-      - user1.peer.vlink.link
-      - copyright0.peer.vlink.link
-      - copyright1.peer.vlink.link
+      - peer1.demo.com
+      - peer2.demo.com
     # [Optional]. Certificate Authorities issue certificates for identification purposes in a Fabric based
     # network. Typically certificates provisioning is done in a separate process outside of the
     # runtime network. Fabric-CA is a special certificate authority that provides a REST APIs for
     # dynamic certificate management (enroll, revoke, re-enroll). The following section is only for
     # Fabric-CA servers.
     certificateAuthorities:
-      - org.ca.vlink.link
+      - org.ca.demo.com
   # the profile will contain public information about organizations other than the one it belongs to.
   # These are necessary information to make transaction lifecycles work, including MSP IDs and
   # peers with a public URL to send transaction proposals. The file will not contain private
@@ -45,14 +43,14 @@ organizations:
 # The client section used by GO SDK.
 #
 client:
-  organization: VlinkOrgMSP
+  organization: Org0MSP
   logging:
     level: info
   eventService:
     type: eventhub
   # Root of the MSP directories with keys and certs.
   cryptoconfig:
-    path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config
+    path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config
 
   # Some SDKs support pluggable KV stores, the properties under "credentialStore"
   # are implementation specific
@@ -84,73 +82,56 @@ client:
       cert:
         path:
 channels:
-  userchannel:
+  demochannel:
     peers:
-      user0.peer.vlink.link:
+      peer1.demo.com:
         endorsingPeer: true
         chaincodeQuery: true
         ledgerQuery: true
         eventSource: true
 
-  copyrightchannel:
-    peers:
-      copyright0.peer.vlink.link:
-        endorsingPeer: true
-        chaincodeQuery: true
-        ledgerQuery: true
-        eventSource: true
 
 
 
 
 orderers:
-  orderer0.vlink.link:
-    url: orderer0.vlink.link:5050
+  orderer0.demo.com:
+    url: orderer0.demo.com:5050
     grpcOptions:
-      ssl-target-name-override: orderer0.vlink.link
+      ssl-target-name-override: orderer0.demo.com
       keep-alive-time: 0s
       keep-alive-timeout: 20s
       keep-alive-permit: false
       fail-fast: false
       allow-insecure: false
     tlsCACerts:
-      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/ordererOrganizations/vlink.link/tlsca/ca.crt
+      path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config/ordererOrganizations/demo.com/tlsca/ca.crt
 
 peers:
-  user0.peer.vlink.link:
-    url: user0.peer.vlink.link:11051
+  peer1.demo.com:
+    url: peer1.demo.com:11051
     grpcOptions:
-      ssl-target-name-override: user0.peer.vlink.link
+      ssl-target-name-override: peer1.demo.com
       keep-alive-time: 0s
       keep-alive-timeout: 20s
       keep-alive-permit: false
       fail-fast: false
       allow-insecure: false
     tlsCACerts:
-      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/tlsca/ca-cert.pem
+      path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config/peerOrganizations/demo.com/tlsca/ca-cert.pem
 
-  copyright0.peer.vlink.link:
-    url: copyright0.peer.vlink.link:12051
-    grpcOptions:
-      ssl-target-name-override: copyright0.peer.vlink.link
-      keep-alive-time: 0s
-      keep-alive-timeout: 20s
-      keep-alive-permit: false
-      fail-fast: false
-      allow-insecure: false
-    tlsCACerts:
-      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/tlsca/ca-cert.pem
 certificateAuthorities:
-  org.ca.vlink.link:
-    url: https://org.ca.vlink.link:4054
+  org.ca.demo.com:
+    url: https://org.ca.demo.com:4054
     tlsCACerts:
-      path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/ca.crt
+      path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config/peerOrganizations/demo.com/msp/ca.crt
       client:
         key:
-          path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/server.key
+          path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config/peerOrganizations/demo.com/msp/server.key
         cert:
-          path: /Users/joker/go/src/vlink.com/v2/vlink-blockchain-network-raft/crypto-config/peerOrganizations/vlink.link/msp/server.crt
+          path: /Users/joker/go/src/examples/blockchain/manualca/crypto-config/peerOrganizations/demo.com/msp/server.crt
     registrar:
-      enrollId: vlink
-      enrollSecret: vlinkpw
+      enrollId: admin
+      enrollSecret: adminpw
     caName:
+      org.ca.demo.com

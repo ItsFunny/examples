@@ -4,8 +4,6 @@ networks:
   ca:
 services:
   tls.ca:
-    env_file:
-      - ../../.env
     container_name: tls.ca.${DOMAIN}
     image: hyperledger/fabric-ca:1.4.4
     command: sh -c 'fabric-ca-server start -d -b admin:adminpw '

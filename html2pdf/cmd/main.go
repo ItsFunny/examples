@@ -15,7 +15,7 @@ import (
 )
 
 var (
-	templatePath = flag.String("template", "/Users/joker/Desktop/test.html", "")
+	templatePath = flag.String("template", "/Users/joker/Desktop/fabric-ca1.4.htm", "")
 )
 
 func main() {

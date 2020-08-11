@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bb238ed-b61a-44ab-bc18-0a5ed0e1766b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/application-blockchain-local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/blockchain-config-local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LeetCode/go/module_review/stack_queue/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../LeetCode/go/module_review/stack_queue/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../big-file-upload/big-file-upload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../big-file-upload/big-file-upload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/ca-demo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/ca-demo.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/ca-order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/ca-order.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/ca-tls.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/ca-tls.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/configtx2.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/crypto-config/orderOrganizations/demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/crypto-config/orderOrganizations/demo.com/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/peers/peer2.demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/peers/peer2.demo.com/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/users/admin0/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/crypto-config/peerOrganizations/demo.com/users/admin0/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/demo-cli.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/demo-cli.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/mac_main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/mac_main.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/main.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/orderer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/peer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ca/prepare.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../ca/prepare.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/tls/order-ca.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/network/tls/order-ca.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/tls/tls-ca.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/network/tls/tls-ca.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/artifacts/orderer.genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/artifacts/orderer.genesis.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/artifacts/org1vlinkmspanchors.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/artifacts/org1vlinkmspanchors.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/artifacts/userchannel.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/artifacts/userchannel.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/list/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/list/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/queue/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/queue/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/stack/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm/src/main/go/v2/stack/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../../go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../../go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html2pdf/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../../html2pdf/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rabbit-mq-cluster/rabbit-mq-cluster.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rabbit-mq-cluster/rabbit-mq-cluster.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../raft/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../raft/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master1/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master1/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master2/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master2/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master3/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/master3/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/docker-compose-sentinel.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/docker-compose-sentinel.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel1.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel1.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel2.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel3.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/sentinel/sentinel3.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave1/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave1/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave2/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave2/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave3/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-docker/docker_redis_cluster/slave3/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../wxpay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wxpay.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/tls/tls-ca.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="6" column="13" selection-end-line="20" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/tls/order-ca.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="2" column="8" selection-end-line="20" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/network/tls/org-ca.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="14" column="29" lean-forward="true" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$DOMAIN</find>
+      <find>7053</find>
+      <find>vlink.link/crypto-config</find>
+      <find>DIRECTORY_NAME/crypto-config</find>
+      <find>7054</find>
+      <find>src/${DOMAIN}/crypto-config</find>
+      <find>7052</find>
+      <find>/src/${DOMAIN}/crypto-config/</find>
+      <find>src/vlink.link/crypto-config</find>
+      <find>/src/vlink.link/crypto-config/</find>
+      <find>VlinkOrg</find>
+      <find>orderer-base-local</find>
+      <find>118.178.85.47</find>
+      <find>../../base/peer-base.yaml</find>
+      <find>peer-base-local</find>
+      <find>31062</find>
+      <find>../../../crypto-config/</find>
+      <find>../../../crypto-config</find>
+      <find>../../../artifacts</find>
+      <find>chaincoe</find>
+      <find>Org0MSP</find>
+      <find>CORE_PEER_GOSSIP_USELEADERELECTION</find>
+      <find>vlink</find>
+      <find>vlink.link</find>
+      <find>VlinkOrgMSP</find>
+      <find>user0.peer.demo.com</find>
+      <find>$PROJECT_DIR$/../../../vlink.com/v2/vlink-blockchain-network-raft</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$DOMAIN</replace>
+      <replace>4053</replace>
+      <replace>${DIRECTORY_NAME}/crypto-config</replace>
+      <replace>4054</replace>
+      <replace>src/${DIRECTORY_NAME}/crypto-config</replace>
+      <replace>4052</replace>
+      <replace>/src/${DIRECTORY_NAME}/crypto-config/</replace>
+      <replace>Org0</replace>
+      <replace>orderer-base</replace>
+      <replace>172.224.2.2</replace>
+      <replace>../base/peer-base.yaml</replace>
+      <replace>peer-base</replace>
+      <replace>11062</replace>
+      <replace>../../crypto-config/</replace>
+      <replace>../../crypto-config</replace>
+      <replace>../../artifacts</replace>
+      <replace>${DOMAIN}</replace>
+      <replace>demo</replace>
+      <replace>demo.com</replace>
+      <replace>Org0MSP</replace>
+      <replace>peer1.demo.com</replace>
+      <replace>$PROJECT_DIR$</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/network/tls/order/docker-compose-vlink-order.yaml" />
+        <option value="$PROJECT_DIR$/crypto-config/caOrganizations/tls-ca/fabric-ca-server-config.yaml" />
+        <option value="$PROJECT_DIR$/network/tls/org-ca.yaml" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/network/base/.env" />
+        <option value="$PROJECT_DIR$/configtx.yaml" />
+        <option value="$PROJECT_DIR$/prepare.sh" />
+        <option value="$PROJECT_DIR$/clean.sh" />
+        <option value="$PROJECT_DIR$/network/order/docker-compose-order.yaml" />
+        <option value="$PROJECT_DIR$/restart.sh" />
+        <option value="$PROJECT_DIR$/network/peer/docker-compose-vlink-local-simple.yaml" />
+        <option value="$PROJECT_DIR$/cleanAll.sh" />
+        <option value="$PROJECT_DIR$/start_all_ts.sh" />
+        <option value="$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/msp/config.yaml" />
+        <option value="$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/config.yaml" />
+        <option value="$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/config.yaml" />
+        <option value="$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/config.yaml" />
+        <option value="$PROJECT_DIR$/network/base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/main.sh" />
+        <option value="$PROJECT_DIR$/cmd/application-blockchain-local.yaml" />
+        <option value="$PROJECT_DIR$/cmd/main.go" />
+        <option value="$PROJECT_DIR$/cmd/go.mod" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/vendor.sh" />
+        <option value="$PROJECT_DIR$/cmd/blockchain-config-local.yaml" />
+        <option value="$PROJECT_DIR$/network/tls/order-ca.yaml" />
+        <option value="$PROJECT_DIR$/network/tls/tls-ca.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="726" />
+    <option name="width" value="714" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manualca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manualca" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manualca" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manualca" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manualca" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="tls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="go-library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="go-library" type="462c0819:PsiDirectoryNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="go-library" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manualca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;manualca&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="go-library" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/network/peer" />
+      <recent name="$PROJECT_DIR$/network/order" />
+      <recent name="$PROJECT_DIR$/network/tls" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="manualca" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <package value="examples/blockchain/manualca" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.34578314" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4361446" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/cmd/main.go</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/vendor/myLibrary/go-library/blockchain/event.go</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/network/tls/order/docker-compose-vlink-order.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1244">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/caOrganizations/tls-ca/fabric-ca-server-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/peerOrganizations/demo.com/msp/signcerts/cert.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="11" column="31" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/base/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincodes/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/order/docker-compose-order.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_all_ts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="109" selection-start-line="2" selection-end-line="2" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/peer/docker-compose-vlink-local-simple.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanAll.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/peerOrganizations/demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restart.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../github.com/btcsuite/btcd/blockchain/chain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../myLibrary/go-library/blockchain/event.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="104" column="20" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../myLibrary/go-library/blockchain/blockchian.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="164" column="60" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/application-blockchain-local.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/myLibrary/go-library/blockchain/event.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/myLibrary/go-library/blockchain/blockchian.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="708" column="18" lean-forward="true" selection-start-line="708" selection-start-column="18" selection-end-line="708" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#142#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/myLibrary/go-library/go/log/base_logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/blockchain-config-local.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/tls/order-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="8" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/tls/tls-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="13" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/tls/org-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="29" lean-forward="true" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

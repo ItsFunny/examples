@@ -6,6 +6,7 @@ require (
 	code.cloudfoundry.org/clock v1.0.0 // indirect
 	github.com/Shopify/sarama v1.26.4 // indirect
 	github.com/chanxuehong/util v0.0.0-20200304121633-ca8141845b13 // indirect
+	github.com/gin-gonic/gin v1.6.3 // indirect
 	github.com/go-kit/kit v0.10.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0 // indirect
 	github.com/hashicorp/go-version v1.2.1 // indirect

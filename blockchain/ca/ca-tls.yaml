@@ -1,24 +1,17 @@
+# ca-tls 服务器,用于控制所有的组织之间的交流
 version: '2'
-volumes:
-  orderer0.demo.com:
-
 services:
-  orderer0.demo.com:
-    container_name: orderer0.demo.com
-    extends:
-      file: ./base/peer-base.yaml
-      service: orderer-base
-    networks:
-      demo:
+  tls.ca.demo.com:
+    container_name: tls.ca.demo.com
+    image: hyperledger/fabric-ca:1.4.4
+    command: sh -c 'fabric-ca-server start -d -b admin:adminpw '
+    environment:
+      - FABRIC_CA_SERVER_HOME=/tmp/hyperledger/fabric-ca
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
+      - FABRIC_CA_SERVER_CSR_CN=ca-tls
+      - FABRIC_CA_SERVER_CSR_HOSTS=0.0.0.0
+      - FABRIC_CA_SERVER_DEBUG=true
     volumes:
-      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
-      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/:/var/hyperledger/orderer/tls
+      - /Users/joker/go/src/examples/blockchain/ca/crypto-config/caOrganizations/ca-tls:/tmp/hyperledger/fabric-ca
     ports:
-      - 7050:7050
-
-
-
-networks:
-  demo:
-    driver: bridge
+      - 7052:7054
