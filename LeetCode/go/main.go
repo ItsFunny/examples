@@ -10,9 +10,13 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	fmt.Println((-1 * math.MaxInt32) + (-1 * math.MaxInt32))
+	// fmt.Println((-1 * math.MaxInt32) + (-1 * math.MaxInt32))
+
+	a := 12
+	fmt.Println(a)
+	fmt.Println(a & (a - 1))
+	fmt.Println((a & (a - 1)) ^ a)
 }
