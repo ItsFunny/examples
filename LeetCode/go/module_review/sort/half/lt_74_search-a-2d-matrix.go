@@ -7,7 +7,7 @@
 # @Attention : 将二维数组转为一维数组即可
 注意,在获取中间值的时候,使用的是  matrix[mid/cols][mid%cols]  列的值
 */
-package sort
+package half
 
 func searchMatrix(matrix [][]int, target int) bool {
 	if len(matrix)==0 || len(matrix[0]) == 0 {

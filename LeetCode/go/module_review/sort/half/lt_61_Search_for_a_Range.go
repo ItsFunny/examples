@@ -6,7 +6,7 @@
 # @Description : 
 # @Attention : 
 */
-package sort
+package half
 
 func searchRange(nums []int, target int) []int {
 	start := 0
