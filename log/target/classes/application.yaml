@@ -1,0 +1,7 @@
+logstash:
+  host: localhost
+
+
+logging:
+  level:
+    root: debug

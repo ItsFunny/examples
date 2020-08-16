@@ -2,160 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ada4ca0-3593-4da8-89bc-5997bd2962ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go/module_review/queue/level_order_tree.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go/module_review/stack/lt_84_Largest_Rectangle_in_Histogram.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go/module_review/stack/lt_number_of_islands.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/module_review/recusive/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/module_review/recusive/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/module_review/recusive/lt_24_Swap_Nodes_in_Pairs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/module_review/recusive/lt_509_Fibonacci_Number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/bas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/bubble_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/heap_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/insert_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/merge_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/quick_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/select_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/sort/shell_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/gin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gin/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big-file-upload/big-file-upload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../big-file-upload/big-file-upload.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/ca-demo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/ca-demo.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/ca-order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/ca-order.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/ca-tls.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/ca-tls.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/configtx.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/configtx2.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/crypto-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/crypto-config/orderOrganizations/demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/crypto-config/orderOrganizations/demo.com/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/peers/peer2.demo.com/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/peers/peer2.demo.com/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/users/admin0/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/crypto-config/peerOrganizations/demo.com/users/admin0/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/demo-cli.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/demo-cli.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/mac_main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/mac_main.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/main.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/main.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/orderer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/orderer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/peer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/peer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/ca/prepare.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/ca/prepare.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/cmd/application-blockchain-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/cmd/application-blockchain-local.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/cmd/blockchain-config-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/cmd/blockchain-config-local.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/network/tls/order-ca.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/network/tls/order-ca.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/network/tls/tls-ca.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/network/tls/tls-ca.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/manualca/vendor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/manualca/vendor.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/orderer.genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/orderer.genesis.block" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/org1vlinkmspanchors.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/org1vlinkmspanchors.tx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/userchannel.tx" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/artifacts/userchannel.tx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/ca/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/signcerts/orderer0.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/signcerts/orderer2.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/signcerts/orderer3.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/signcerts/orderer4.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/signcerts/orderer5.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/orderers/orderer5.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/tlsca/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/cacerts/ca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/signcerts/Admin@vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/msp/tlscacerts/tlsca.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/ordererOrganizations/vlink.link/users/Admin@vlink.link/tls/client.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/ca/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/signcerts/peer0.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer0.org.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/signcerts/peer1.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/peers/peer1.org.vlink.link/tls/server.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/tlsca/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/signcerts/Admin@org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/Admin@org.vlink.link/tls/client.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/cacerts/ca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/keystore/priv_sk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/signcerts/User1@org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/msp/tlscacerts/tlsca.org.vlink.link-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/ca.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" beforeDir="false" afterPath="$PROJECT_DIR$/../blockchain/多组织RaftMode/crypto-config/peerOrganizations/org.vlink.link/users/User1@org.vlink.link/tls/client.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data-structure-algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure-algorithm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/list/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/list/base.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/queue/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/queue/base.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/stack/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/stack/stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html2pdf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../html2pdf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html2pdf/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../html2pdf/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html2pdf/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../html2pdf/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html2pdf/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../html2pdf/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rabbit-mq-cluster/rabbit-mq-cluster.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../rabbit-mq-cluster/rabbit-mq-cluster.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raft/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../raft/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/docker-compose-redis.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master1/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master1/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master2/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master2/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master3/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/master3/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/docker-compose-sentinel.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/docker-compose-sentinel.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel1.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel1.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel2.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel3.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/sentinel/sentinel3.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave1/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave1/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave2/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave2/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave3/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-docker/docker_redis_cluster/slave3/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wxpay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../wxpay.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../log/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../log/docker-compose.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -167,14 +41,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go/module_review/queue/level_order_tree.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/module_review/recusive/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="36">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding>
-                <element signature="e#155#239#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="256">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="9" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_24_Swap_Nodes_in_Pairs.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="24" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_509_Fibonacci_Number.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -207,57 +117,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go/top100/_23_Merge_k_Sorted_Lists.go" />
-        <option value="$PROJECT_DIR$/go/top100/_33_Search_in_Rotated_Sorted_Array.go" />
-        <option value="$PROJECT_DIR$/go/module_review/README.md" />
-        <option value="$PROJECT_DIR$/go/module_review/base.go" />
-        <option value="$PROJECT_DIR$/go/top100/_34_Find_First_and_Last_Position_of_Element_in_Sorted_Array.go" />
-        <option value="$PROJECT_DIR$/go/top100/_42_Trapping_Rain_Water.go" />
-        <option value="$PROJECT_DIR$/go/top100/_48_Rotate_Image.go" />
-        <option value="$PROJECT_DIR$/go/top100/_49_Group_Anagrams.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_104_Maximum_Depth_of_Binary_Tree.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_110_Balanced_Binary_Tree.go" />
-        <option value="$PROJECT_DIR$/go/mian.go" />
-        <option value="$PROJECT_DIR$/go/main.go" />
-        <option value="$PROJECT_DIR$/go/module_review/124_Binary_Tree_Maximum_Path_Sum_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/124_Binary_Tree_Maximum_Path_Sum.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_236_Lowest_Common_Ancestor_of_a_Binary_Tree.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_102_Binary_Tree_Level_Order_Traversal.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_Binary_Tree_Level_Order_Traversal_II.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_103_Binary_Tree_Zigzag_Level_Order_Traversal.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_98_Validate_Binary_Search_Tree_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_98_Validate_Binary_Search_Tree.go" />
-        <option value="$PROJECT_DIR$/go/module_review/_701_Insert_into_a_Binary_Search_Tree.go" />
-        <option value="$PROJECT_DIR$/go/top100/_55_Jump_Game.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/base.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_83_Remove_Duplicates_from_Sorted_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_82_Remove_Duplicates_from_Sorted_List_II.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_206_Reverse_Linked_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_92_Reverse_Linked_List_II.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_21_Merge_Two_Sorted_Lists.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_86_Partition_List_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/main/list.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/_86_Partition_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/lt_148_Sort_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/lt_143_Reorder_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/lt_141_Linked_List_Cycle.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/lt_142_Linked_List_Cycle_II.go" />
-        <option value="$PROJECT_DIR$/go/module_review/list/lt_234_Palindrome_Linked_List.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack_queue/stack.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/stack_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_150_Evaluate_Reverse_Polish_Notation.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_394_Decode_String_test.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_394_Decode_String.go" />
-        <option value="$PROJECT_DIR$/go/module_review/base/tree.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/tree.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_94_Binary_Tree_Inorder_Traversal.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_number_of_islands.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_84_Largest_Rectangle_in_Histogram.go" />
-        <option value="$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues_test.go" />
         <option value="$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues.go" />
         <option value="$PROJECT_DIR$/go/module_review/queue/level_order_tree.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_136_Single_Number.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_137_Single_Number_II.go" />
+        <option value="$PROJECT_DIR$/go/module_review/test/test_1.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_260_Single_Number_III.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_191_Number_of_1_Bits.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_338_Counting_Bits.go" />
+        <option value="$PROJECT_DIR$/lt_190_Reverse_Bits.go" />
+        <option value="$PROJECT_DIR$/go/module_review/byte/lt_201_Bitwise_AND_of_Numbers_Range.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/README.md" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字_test.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/base.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/lt_61_Search_for_a_Range.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/lt_35_Search_Insert_Position.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/lt_74_search-a-2d-matrix.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_剑指_Offer_05_替换空格_test.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_剑指_Offer_05_替换空格.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/half/lt_278_First_Bad_Version.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/half/lt_153_Find_Minimum_in_Rotated_Sorted_Array_test.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/half/lt_153_Find_Minimum_in_Rotated_Sorted_Array.go" />
+        <option value="$PROJECT_DIR$/go/module_review/sort/half/lt_33_Search_in_Rotated_Sorted_Array.go" />
+        <option value="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack.go" />
+        <option value="$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack_test.go" />
+        <option value="$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go" />
+        <option value="$PROJECT_DIR$/go/main.go" />
+        <option value="$PROJECT_DIR$/go/sort/buble_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/bubble_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/bubble_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/README.md" />
+        <option value="$PROJECT_DIR$/go/sort/select_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/select_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/insert_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/bas.go" />
+        <option value="$PROJECT_DIR$/go/sort/insert_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/shell_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/shell_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/merge_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/merge_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/quick_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/quick_sort.go" />
+        <option value="$PROJECT_DIR$/go/sort/heap_sort_test.go" />
+        <option value="$PROJECT_DIR$/go/sort/heap_sort.go" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/README.md" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String_test.go" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String.go" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/base.go" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/lt_24_Swap_Nodes_in_Pairs.go" />
+        <option value="$PROJECT_DIR$/go/module_review/recusive/lt_509_Fibonacci_Number.go" />
       </list>
     </option>
   </component>
@@ -270,7 +180,7 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="794" />
     <option name="height" value="806" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -281,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,32 +214,29 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="go" type="462c0819:PsiDirectoryNode" />
               <item name="module_review" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="module_review" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="module_review" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="module_review" type="462c0819:PsiDirectoryNode" />
-              <item name="stack_queue" type="462c0819:PsiDirectoryNode" />
+              <item name="recusive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.14.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.14.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.14.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="builtin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
@@ -417,6 +323,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -438,19 +345,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="array" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="重做" />
+      <recent name="common" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="array.TwoSumNum2" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="重做" />
-      <recent name="common" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/go/module_review/sort/half" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,67 +375,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestMyStack_Top in examples/LeetCode/go/module_review/stack">
-    <configuration name="go build list.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.Test_reverseString in examples/LeetCode/go/module_review/recusive">
+    <configuration name="TestHeapSort in examples/LeetCode/go/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/module_review/main/list.go" />
-      <package value="examples/LeetCode" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMinStack_GetMin in examples/LeetCode/go/module_review/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$/go/module_review/stack" />
+      <working_directory value="$PROJECT_DIR$/go/sort" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="examples/LeetCode/go/module_review/stack" />
+      <package value="examples/LeetCode/go/sort" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestMinStack_GetMin$" />
+      <pattern value="^TestHeapSort$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMyStack_Top in examples/LeetCode/go/module_review/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMergeSort in examples/LeetCode/go/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$/go/module_review/stack" />
+      <working_directory value="$PROJECT_DIR$/go/sort" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="examples/LeetCode/go/module_review/stack" />
+      <package value="examples/LeetCode/go/sort" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestMyStack_Top$" />
+      <pattern value="^TestMergeSort$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestQuickSort in examples/LeetCode/go/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$/go/module_review/stack" />
+      <working_directory value="$PROJECT_DIR$/go/sort" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="examples/LeetCode/go/module_review/stack" />
+      <package value="examples/LeetCode/go/sort" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_decodeString$" />
+      <pattern value="^TestQuickSort$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_partition in examples/LeetCode/go/module_review/list" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestShellSort in examples/LeetCode/go/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$/go/module_review/list" />
+      <working_directory value="$PROJECT_DIR$/go/sort" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="examples/LeetCode/go/module_review/list" />
+      <package value="examples/LeetCode/go/sort" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_partition$" />
+      <pattern value="^TestShellSort$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_reverseString in examples/LeetCode/go/module_review/recusive" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <working_directory value="$PROJECT_DIR$/go/module_review/recusive" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="examples/LeetCode/go/module_review/recusive" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_reverseString$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestMyStack_Top in examples/LeetCode/go/module_review/stack" />
-        <item itemvalue="Go Test.Test_decodeString in examples/LeetCode/go/module_review/stack" />
-        <item itemvalue="Go Test.TestMinStack_GetMin in examples/LeetCode/go/module_review/stack" />
-        <item itemvalue="Go Build.go build list.go" />
-        <item itemvalue="Go Test.Test_partition in examples/LeetCode/go/module_review/list" />
+        <item itemvalue="Go Test.Test_reverseString in examples/LeetCode/go/module_review/recusive" />
+        <item itemvalue="Go Test.TestHeapSort in examples/LeetCode/go/sort" />
+        <item itemvalue="Go Test.TestQuickSort in examples/LeetCode/go/sort" />
+        <item itemvalue="Go Test.TestMergeSort in examples/LeetCode/go/sort" />
+        <item itemvalue="Go Test.TestShellSort in examples/LeetCode/go/sort" />
       </list>
     </recent_temporary>
   </component>
@@ -596,35 +508,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 28m 19s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestMergeSort_in_examples_LeetCode_go_sort - 2020.08.16 at 15h 21m 16s.xml">
+      <configuration name="TestMergeSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 36m 50s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestMergeSort_in_examples_LeetCode_go_sort - 2020.08.16 at 15h 22m 41s.xml">
+      <configuration name="TestMergeSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 37m 56s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestQuickSort_in_examples_LeetCode_go_sort - 2020.08.16 at 15h 48m 53s.xml">
+      <configuration name="TestQuickSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 40m 37s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestQuickSort_in_examples_LeetCode_go_sort - 2020.08.16 at 15h 51m 01s.xml">
+      <configuration name="TestQuickSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 41m 03s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestHeapSort_in_examples_LeetCode_go_sort - 2020.08.16 at 16h 08m 59s.xml">
+      <configuration name="TestHeapSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 41m 20s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestHeapSort_in_examples_LeetCode_go_sort - 2020.08.16 at 16h 09m 12s.xml">
+      <configuration name="TestHeapSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 41m 30s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestHeapSort_in_examples_LeetCode_go_sort - 2020.08.16 at 16h 09m 48s.xml">
+      <configuration name="TestHeapSort in examples/LeetCode/go/sort" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 41m 57s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_reverseString_in_examples_LeetCode_go_module_review_recusive - 2020.08.16 at 16h 46m 14s.xml">
+      <configuration name="Test_reverseString in examples/LeetCode/go/module_review/recusive" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_decodeString_in_examples_LeetCode_go_module_review_stack - 2020.08.10 at 09h 42m 06s.xml">
-      <configuration name="Test_decodeString in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_reverseString_in_examples_LeetCode_go_module_review_recusive - 2020.08.16 at 16h 46m 37s.xml">
+      <configuration name="Test_reverseString in examples/LeetCode/go/module_review/recusive" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestMyStack_Top_in_examples_LeetCode_go_module_review_stack - 2020.08.11 at 09h 44m 37s.xml">
-      <configuration name="TestMyStack_Top in examples/LeetCode/go/module_review/stack" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test_reverseString_in_examples_LeetCode_go_module_review_recusive - 2020.08.16 at 16h 47m 18s.xml">
+      <configuration name="Test_reverseString in examples/LeetCode/go/module_review/recusive" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -634,21 +546,21 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29470673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16987951" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38915664" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3313253" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.40722892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.1879518" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.36024097" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.23493975" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
@@ -737,370 +649,486 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues_test.go</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字_test.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字.go</url>
+          <line>13</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/offer/of_剑指_Offer_05_替换空格.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/sort/half/lt_153_Find_Minimum_in_Rotated_Sorted_Array_test.go</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/main.go</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/bubble_sort_test.go</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/bubble_sort_test.go</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/select_sort_test.go</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/shell_sort_test.go</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/merge_sort_test.go</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/merge_sort.go</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/sort/quick_sort_test.go</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String_test.go</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String.go</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go/module_review/_104_Maximum_Depth_of_Binary_Tree.go">
+    <entry file="file://$PROJECT_DIR$/lt_190_Reverse_Bits.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="252">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_110_Balanced_Binary_Tree.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/byte/lt_338_Counting_Bits.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="295">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/math/const.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/byte/lt_201_Bitwise_AND_of_Numbers_Range.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        <state relative-caret-position="214">
+          <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/mian.go" />
-    <entry file="file://$PROJECT_DIR$/go/main.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/base.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="330">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="9" selection-start-column="9" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_Offer_03_数组中重复的数字_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_74_search-a-2d-matrix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_61_Search_for_a_Range.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_35_Search_Insert_Position.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_剑指_Offer_05_替换空格.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_剑指_Offer_05_替换空格_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#142#167#0" expanded="true" />
+            <element signature="e#155#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/124_Binary_Tree_Maximum_Path_Sum_test.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#242#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/124_Binary_Tree_Maximum_Path_Sum.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_236_Lowest_Common_Ancestor_of_a_Binary_Tree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_102_Binary_Tree_Level_Order_Traversal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="10" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_Binary_Tree_Level_Order_Traversal_II.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_103_Binary_Tree_Zigzag_Level_Order_Traversal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/top100/_55_Jump_Game.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_701_Insert_into_a_Binary_Search_Tree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_98_Validate_Binary_Search_Tree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="44" column="105" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/_98_Validate_Binary_Search_Tree_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/base.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_83_Remove_Duplicates_from_Sorted_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_86_Partition_List_test.go" />
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_206_Reverse_Linked_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/main/list.go" />
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/lt_143_Reorder_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/lt_141_Linked_List_Cycle.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/lt_142_Linked_List_Cycle_II.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/lt_148_Sort_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_21_Merge_Two_Sorted_Lists.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_82_Remove_Duplicates_from_Sorted_List_II.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_86_Partition_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/_92_Reverse_Linked_List_II.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/lt_234_Palindrome_Linked_List.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/strconv/atoi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/stack_test.go" />
-    <entry file="file:///usr/local/go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1188" selection-start-line="1188" selection-end-line="1188" />
+        <state relative-caret-position="153">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="244">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#160#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_150_Evaluate_Reverse_Polish_Notation.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_33_Search_in_Rotated_Sorted_Array.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="388">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_155_Min_Stack.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_153_Find_Minimum_in_Rotated_Sorted_Array.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="313">
+          <caret line="13" selection-start-line="13" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack_queue/stack.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_278_First_Bad_Version.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="219">
+          <caret line="13" selection-start-line="13" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/sort/half/lt_153_Find_Minimum_in_Rotated_Sorted_Array_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#150#207#0" expanded="true" />
+            <element signature="e#286#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="6" selection-start-column="6" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../data-structure-algorithm/src/main/go/v2/tree/base.go">
+    <entry file="file://$PROJECT_DIR$/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="15" selection-start-line="15" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/list/base.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/tree.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_84_Largest_Rectangle_in_Histogram.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_number_of_islands.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_94_Binary_Tree_Inorder_Traversal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_394_Decode_String.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#159#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_394_Decode_String_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#156#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#177#205#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+        <state relative-caret-position="292">
+          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/base/tree.go">
+    <entry file="file://$PROJECT_DIR$/go/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/testing/testing.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="982" selection-start-line="982" selection-end-line="982" />
+    <entry file="file://$PROJECT_DIR$/go/sort/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="5" lean-forward="true" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/module_review/queue/level_order_tree.go">
+    <entry file="file://$PROJECT_DIR$/go/sort/bubble_sort.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="214">
+          <caret line="19" lean-forward="true" selection-start-line="10" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/select_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
-            <element signature="e#155#239#0" expanded="true" />
+            <element signature="e#146#174#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/select_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="9" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/bas.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/bubble_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/shell_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/insert_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/insert_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#151#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/shell_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#145#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/list/base.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/list/_206_Reverse_Linked_List.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/list/_83_Remove_Duplicates_from_Sorted_List.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_94_Binary_Tree_Inorder_Traversal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_150_Evaluate_Reverse_Polish_Notation.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/stack/lt_225_Implement_Stack_using_Queues.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1782">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1188" selection-start-line="1188" selection-end-line="1188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/merge_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#150#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/merge_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="46" lean-forward="true" selection-start-line="9" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/quick_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#145#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/quick_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1101">
+          <caret line="39" lean-forward="true" selection-start-line="9" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/heap_sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/sort/heap_sort_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#144#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_344_Reverse_String.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="9" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_24_Swap_Nodes_in_Pairs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/module_review/recusive/lt_509_Fibonacci_Number.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>

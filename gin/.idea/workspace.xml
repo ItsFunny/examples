@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a3dc95f-8b95-416a-ae79-ab9ae0c170d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/recusive/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/recusive/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/recusive/lt_24_Swap_Nodes_in_Pairs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/recusive/lt_344_Reverse_String.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/recusive/lt_509_Fibonacci_Number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/bas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/bubble_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/heap_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/insert_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/merge_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/quick_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/select_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCode/go/sort/shell_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LeetCode/go/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/go/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LeetCode/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/offer/of_Offer_04_二维数组中的查找_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LeetCode/go/module_review/stack/lt_155_Min_Stack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/go/module_review/stack/lt_155_Min_Stack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data-structure-algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structure-algorithm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../log/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../log/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +66,7 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="794" />
     <option name="height" value="806" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -91,6 +111,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
