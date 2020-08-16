@@ -22,5 +22,4 @@ func TestMinStack_GetMin(t *testing.T) {
 	stack.Pop()
 	stack.Top()
 	stack.GetMin()
-
 }

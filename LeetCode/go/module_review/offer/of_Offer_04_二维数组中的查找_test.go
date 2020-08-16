@@ -15,3 +15,9 @@ import "testing"
 func Test_findNumberIn2DArray2(t *testing.T) {
 	findNumberIn2DArray2([][]int{{1, 4}, {2, 5}}, 2)
 }
+
+
+func TestMinStack_GetMin2(t *testing.T) {
+	m:=make(map[string]interface{},0)
+	m["1"]=1
+}
