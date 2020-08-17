@@ -8,8 +8,15 @@
 */
 package recusive
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func Test_reverseString(t *testing.T) {
-	reverseString([]byte("qwertyui"))
+	// reverseString([]byte("qwertyui"))
+	str := "qwezxc"
+	for _, t := range str {
+		fmt.Println(t)
+	}
 }
