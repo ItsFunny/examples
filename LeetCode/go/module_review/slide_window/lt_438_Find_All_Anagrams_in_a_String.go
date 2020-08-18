@@ -9,35 +9,36 @@
 package slide_window
 
 func findAnagrams(s string, p string) []int {
-	result:=make([]int,0)
-	have := make([]int, 128)
-	need := make([]int, 128)
+	need := make(map[int]int)
+	have := make(map[int]int)
 	for _, v := range p {
-		need[v]++
+		need[int(v)]++
 	}
-	left, right, distance := 0, 0, 0
+	result := make([]int, 0)
+	left, right, match := 0, 0, 0
 	for right < len(s) {
-		rightVal := s[right]
-		if need[rightVal] == 0 {
-			right++
-			continue
-		}
-		if have[rightVal] < need[rightVal] {
-			distance++
-		}
-		have[rightVal]++
-		rightVal++
-		for distance == len(p) {
-			leftVal:=s[left]
-			if need[leftVal]==0{
-				left++
-				continue
+		rightVal := int(s[right])
+		right++
+		if need[rightVal] != 0 {
+			have[rightVal]++
+			if have[rightVal] == need[rightVal] {
+				match++
 			}
-			if need[leftVal]==have[leftVal]{
-
+			for right-left >= len(p) {
+				// 可能存在 大于 该字符串的可能
+				if right-left == len(p) && match == len(need) {
+					result = append(result, left)
+				}
+				leftVal := int(s[left])
+				left++
+				if need[leftVal] != 0 {
+					if need[leftVal] == have[leftVal] {
+						match--
+					}
+					have[leftVal]--
+				}
 			}
 		}
 	}
-
 	return result
 }
