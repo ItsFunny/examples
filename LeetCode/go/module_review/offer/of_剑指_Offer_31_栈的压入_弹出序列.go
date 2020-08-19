@@ -19,7 +19,6 @@ func validateStackSequences(pushed []int, popped []int) bool {
 			index++
 		}
 	}
-
 	// 如果全弹出来了,说明全匹配了
 	return len(stack) == 0
 }

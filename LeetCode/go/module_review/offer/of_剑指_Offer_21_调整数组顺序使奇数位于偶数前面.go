@@ -11,7 +11,6 @@ package offer
 func exchange(nums []int) []int {
 	slow := 0
 	fast := 0
-
 	for fast < len(nums) {
 		if nums[fast]&1 == 1 {
 			nums[slow], nums[fast] = nums[fast], nums[slow]

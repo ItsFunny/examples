@@ -13,9 +13,6 @@ func replaceSpace(s string) string {
 	for i, j := 0, 0; i < len(s); {
 		if s[i] == ' ' {
 			bytes = append(bytes, '%', '2', '0')
-			// bytes[j] = '%'
-			// bytes[j+1] = '2'
-			// bytes[j+2] = '0'
 			j += 3
 		} else {
 			bytes = append(bytes, s[i])

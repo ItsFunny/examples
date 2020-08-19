@@ -29,6 +29,5 @@ func bfs(root *TreeNode) []int {
 		}
 		queue = queue[1:]
 	}
-
 	return result
 }

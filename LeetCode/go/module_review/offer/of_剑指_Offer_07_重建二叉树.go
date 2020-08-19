@@ -12,7 +12,6 @@
 package offer
 
 func buildTree2(preorder []int, inorder []int) *TreeNode {
-
 	for index := range inorder {
 		if preorder[0] == inorder[index] {
 			return &TreeNode{
@@ -24,6 +23,7 @@ func buildTree2(preorder []int, inorder []int) *TreeNode {
 	}
 	return nil
 }
+
 func buildTree(preorder []int, inorder []int) *TreeNode {
 	if len(preorder) == 0 || len(inorder) == 0 {
 		return nil
@@ -55,6 +55,5 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 		}
 		stack = append(stack, node.Left)
 	}
-
 	return root
 }

@@ -30,5 +30,4 @@ func dfs(index int) {
 	for i := 0; i < len(chars); i++ {
 		s.WriteString(chars[i])
 	}
-
 }
