@@ -163,3 +163,158 @@ func bfs(root *TreeNode) []int {
 	}
 	return result
 }
+
+// 通过分治法遍历二叉树
+func loopTreeByDivide(root *TreeNode) []int {
+	if root == nil {
+		return []int{}
+	}
+
+	result := make([]int, 0)
+	left := loopTreeByDivide(root.Left)
+	right := loopTreeByDivide(root.Right)
+	result = append(result, root.Val)
+	result = append(result, left...)
+	result = append(result, right...)
+
+	return result
+}
+
+// 归并排序
+func mergeSort(nums []int) {
+
+}
+func divide(nums []int) []int {
+	if len(nums) < 2 {
+		return nums
+	}
+	d := len(nums) >> 1
+	left := divide(nums[:d])
+	right := divide(nums[d:])
+	return merge(left, right)
+}
+func merge(left, right []int) []int {
+	result := make([]int, 0)
+	i := 0
+	j := 0
+	for ; i < len(left) && j < len(right); {
+		i++
+		j++
+		if left[i] < right[j] {
+			result = append(result, left[i])
+			i++
+		} else {
+			result = append(result, right[j])
+			j++
+		}
+	}
+
+	for i < len(left) {
+		result = append(result, left[i])
+		i++
+	}
+
+	for j < len(right) {
+		result = append(result, right[i])
+		i++
+	}
+
+	return result
+}
+
+// 快速排序
+func QSort(data []int) {
+	qSort(data, 0, len(data)-1)
+}
+func qSort(data []int, start int, end int) {
+	if start < end {
+		index := paration(data, start, end)
+		qSort(data, start, index)
+		qSort(data, index+1, end)
+	}
+}
+func paration(data []int, start, end int) int {
+	standard := data[start]
+	for start < end {
+		for end > start && data[end] >= standard {
+			end--
+		}
+		data[start] = data[end]
+
+		for start < end && data[start] <= standard {
+			start++
+		}
+		data[end] = data[start]
+	}
+	data[start] = standard
+	return start
+}
+
+func maxDepth(root *TreeNode) int {
+	return dep(root)
+}
+func dep(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+	left := dep(root.Left)
+	right := dep(root.Right)
+	if left < right {
+		return right + 1
+	}
+	return left + 1
+}
+
+// 判断是否是高度平衡的二叉树
+// 1. 则子树也要平衡 ,判断深度即可
+
+func isBalanced(root *TreeNode) bool {
+
+	return balanced(root) > -1
+}
+
+func balanced(node *TreeNode) int {
+	if node == nil {
+		return 0
+	}
+	left := balanced(node.Left)
+	right := balanced(node.Right)
+
+	if left == -1 || right == -1 || mabs(left, right) <= -1 {
+		return -1
+	}
+	if left > right {
+		return left + 1
+	}
+	return right + 1
+}
+
+func mabs(a, b int) int {
+	if a < b {
+		return a - b
+	}
+	return b - a
+}
+
+// 树的最大路径和
+func MaxSumOfTree(root *TreeNode) int {
+	return maxSumOfTree(root)
+}
+
+func maxSumOfTree(node *TreeNode) int {
+	if node == nil {
+		return 0
+	}
+	left := maxSumOfTree(node.Left)
+	right := maxSumOfTree(node.Right)
+	leftRightMax := max(left, right)
+	sumMax := max(leftRightMax+node.Val, node.Val)
+	allMax := max(sumMax, left+right+node.Val)
+	return allMax
+}
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}

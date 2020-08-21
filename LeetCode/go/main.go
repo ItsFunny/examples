@@ -8,12 +8,5 @@
 */
 package main
 
-import "fmt"
-
 func main() {
-	// fmt.Println((-1 * math.MaxInt32) + (-1 * math.MaxInt32))
-	m := make(map[string]int, 0)
-	m["1"] = 1
-	delete(m, "1")
-	fmt.Println("delete")
 }
