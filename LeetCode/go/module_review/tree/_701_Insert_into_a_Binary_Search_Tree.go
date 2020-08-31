@@ -6,7 +6,7 @@
 # @Description : 完全二叉树值插入  前提 left<root<right
 # @Attention : 
 */
-package module_review
+package tree
 
 func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	if nil == root {

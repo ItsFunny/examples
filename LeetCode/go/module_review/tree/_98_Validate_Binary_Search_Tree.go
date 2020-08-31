@@ -15,7 +15,7 @@
 	所以判断是否是完全二叉树: left 的最大值 < root < right的最小值
 # @Attention : 
 */
-package module_review
+package tree
 
 func isValidBST(root *TreeNode) bool {
 	result := validBst(root)

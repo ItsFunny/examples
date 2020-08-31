@@ -8,7 +8,7 @@
 	1.
 # @Attention : 
 */
-package module_review
+package tree
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	// 从根节点开始遍历

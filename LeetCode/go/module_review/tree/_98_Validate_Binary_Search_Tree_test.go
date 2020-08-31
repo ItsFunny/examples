@@ -7,7 +7,7 @@
 	什么是二叉搜索树: 左孩子 < root < 右孩子
 # @Attention :
 */
-package module_review
+package tree
 
 import "testing"
 

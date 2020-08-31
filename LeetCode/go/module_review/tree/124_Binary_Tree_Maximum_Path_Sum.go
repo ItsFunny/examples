@@ -11,7 +11,7 @@
 	4. curWithRoot 和 左+右+根的最大值
 # @Attention :
 */
-package module_review
+package tree
 
 import "math"
 

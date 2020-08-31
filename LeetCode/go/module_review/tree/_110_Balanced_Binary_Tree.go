@@ -9,7 +9,7 @@
 # @Attention :
 注意 ,当为nil的时候, 是平衡的,意味着是true
 */
-package module_review
+package tree
 
 func isBalanced(root *TreeNode) bool {
 	b, _ := balanced(root)

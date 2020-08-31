@@ -13,7 +13,7 @@ Note: A leaf is a node with no children.
 Example:    求一颗二叉树的深度
 # @Attention :  分治法
 */
-package module_review
+package tree
 
 func maxDepth(root *TreeNode) int {
 	if nil == root {

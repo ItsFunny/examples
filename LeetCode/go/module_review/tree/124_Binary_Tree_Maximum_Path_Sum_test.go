@@ -11,7 +11,7 @@
 	4. 取最大值
 # @Attention :
 */
-package module_review
+package tree
 
 import (
 	"fmt"
