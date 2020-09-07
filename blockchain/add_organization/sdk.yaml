@@ -1,0 +1,87 @@
+version: 1.0.0
+organizations:
+  BidsunMSP:
+    mspid: BidsunMSP
+    cryptoPath:  peerOrganizations/bidsun.com/users/{username}@bidsun.com/msp
+    peers:
+      - peer0.bidsun.com
+    certificateAuthorities:
+      - org.ca.bidsun.com
+client:
+  organization: BidsunMSP
+  logging:
+    level: info
+  eventService:
+    type: eventhub
+  # Root of the MSP directories with keys and certs.
+  cryptoconfig:
+    path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config
+
+  credentialStore:
+    path: "/tmp/hyperledger/state-store"
+    cryptoStore:
+      path: '/tmp/hyperledger/store'
+  BCCSP:
+    security:
+      enabled: true
+      default:
+        provider: "SW"
+      hashAlgorithm: "SHA2"
+      softVerify: true
+      level: 256
+  tlsCerts:
+    systemCertPool: false
+    client:
+      key:
+        path:
+      cert:
+        path:
+channels:
+  ebidsun-global:
+    peers:
+      peer0.bidsun.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+orderers:
+  orderer.bidsun.com:
+    url: orderer.bidsun.com:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.bidsun.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config/ordererOrganizations/bidsun.com/tlsca/ca.crt
+
+peers:
+  peer0.bidsun.com:
+    url: peer0.bidsun.com:11051
+    grpcOptions:
+      ssl-target-name-override: peer0.bidsun.com
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+    tlsCACerts:
+      path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config/peerOrganizations/bidsun.com/tlsca/tlsca.bidsun.com-cert.pem
+
+certificateAuthorities:
+  org.ca.bidsun.com:
+    url: https://org.ca.bidsun.com:4054
+    tlsCACerts:
+      path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config/peerOrganizations/bidsun.com/msp/tlscacerts/tlsca.bidsun.com-cert.pem
+      client:
+        key:
+          path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config/peerOrganizations/bidsun.com/msp/admincerts/Admin@bidsun.com-cert.pem
+        cert:
+          path: /Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/crypto-config/peerOrganizations/bidsun.com/msp/cacerts/ca.bidsun.com-cert.pem
+    registrar:
+      enrollId: admin
+      enrollSecret: adminpw
+    caName:
+      org.ca.bidsun.com

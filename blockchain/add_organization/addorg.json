@@ -1,0 +1,84 @@
+{
+  "goPath": "/Users/joker/ebidsun",
+  "cryptVersion": 1,
+  "configPath": [
+    {
+      "path": "/Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/bidsun-blockchain-config-local.yaml",
+      "clientId": "BidsunMSP"
+    }
+  ],
+  "channels": [
+    {
+      "channelId": "ebidsun-global",
+      "needListOnBlockEvent": false,
+      "channelConfigPath": "/Users/joker/go/src/myLibrary/go-library/blockchain/ebidsun/channel-artifacts/ebidsun-global.tx",
+      "orders": [
+        {
+          "ordererId": "orderer.bidsun.com",
+          "ordererAddress": "orderer.bidsun.com",
+          "ordererPort": 7050
+        }
+      ],
+      "organizations": [
+        {
+          "organizationId": "BidsunMSP",
+          "users": [
+            {
+              "userName": "Admin",
+              "admin": true
+            }
+          ],
+          "peer": {
+            "endorserPeers": [
+              {
+                "address": "peer0.bidsun.com",
+                "port": 11051,
+                "chainCodes": [
+                  {
+                    "chainCodeId": "tt_example",
+                    "chainCodePath": "bidchain/chaincode/tt_example",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "enterprise",
+                    "chainCodePath": "bidchain/chaincode/enterprise",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "platform",
+                    "chainCodePath": "bidchain/chaincode/platform",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "cryptomessage",
+                    "chainCodePath": "bidchain/chaincode/cryptomessage",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "tender_project",
+                    "chainCodePath": "bidchain/chaincode/tender_project",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "platform",
+                    "chainCodePath": "bidchain/chaincode/platform",
+                    "needUpdate": false
+                  },
+                  {
+                    "chainCodeId": "platform",
+                    "chainCodePath": "bidchain/chaincode/platform",
+                    "needUpdate": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
