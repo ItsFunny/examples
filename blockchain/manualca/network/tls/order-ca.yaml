@@ -5,7 +5,7 @@ networks:
 services:
   order.ca:
     container_name: orderer.ca.${DOMAIN}
-    image: hyperledger/fabric-ca:1.4.4
+    image: hyperledger/fabric-ca:1.4.2
     command: sh -c 'fabric-ca-server start -d -b admin:adminpw'
     environment:
       - FABRIC_CA_SERVER_HOME=/tmp/hyperledger/fabric-ca

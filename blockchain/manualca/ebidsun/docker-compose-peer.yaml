@@ -1,0 +1,61 @@
+version: '2'
+
+networks:
+  bidchain:
+
+services:
+  peer0:
+    container_name: peer0.${DOMAIN}
+    extends:
+      file: base/peer-base.yaml
+      service: peer-base
+    environment:
+      - FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_ID=peer0.${DOMAIN}
+      - CORE_PEER_ADDRESS=peer0.${DOMAIN}:7051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+      - CORE_PEER_CHAINCODEADDRESS=peer2.${DOMAIN}:7052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer2.${DOMAIN}:4051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.${DOMAIN}:7051
+      - CORE_PEER_LOCALMSPID=BidsunMSP
+    volumes:
+        - /var/run/:/host/var/run/
+#        - ~/bidsun/bidchain/bidchain_configs/peer2.${DOMAIN}:/etc/hyperledger/fabric
+        - ./crypto-config/peerOrganizations/${DOMAIN}/peers/peer0.${DOMAIN}/msp:/etc/hyperledger/fabric/msp
+        - ./crypto-config/peerOrganizations/${DOMAIN}/peers/peer0.${DOMAIN}/tls:/etc/hyperledger/fabric/tls
+#        - ~/bidsun/bidchain/bidchain_db/peer2.${DOMAIN}:/var/hyperledger/production
+#        - ~/bidsun/bidchain/bidchain-network/scripts:/opt/workspace/scripts
+    networks:
+      - bidchain
+    ports:
+      - 7051:7051
+      - 7052:7052
+
+  peer2:
+    container_name: peer2.${DOMAIN}
+    extends:
+      file: base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer2.${DOMAIN}
+      - CORE_PEER_ADDRESS=peer2.${DOMAIN}:4051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:4051
+      - CORE_PEER_CHAINCODEADDRESS=peer2.${DOMAIN}:4052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:4052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.${DOMAIN}:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.${DOMAIN}:4051
+      - CORE_PEER_LOCALMSPID=BidsunMSP
+    volumes:
+        - /var/run/:/host/var/run/
+#        - ~/bidsun/bidchain/bidchain_configs/peer2.${DOMAIN}:/etc/hyperledger/fabric
+        - ./crypto-config/peerOrganizations/${DOMAIN}/peers/peer2.${DOMAIN}/msp:/etc/hyperledger/fabric/msp
+        - ./crypto-config/peerOrganizations/${DOMAIN}/peers/peer2.${DOMAIN}/tls:/etc/hyperledger/fabric/tls
+#        - ~/bidsun/bidchain/bidchain_db/peer2.${DOMAIN}:/var/hyperledger/production
+#        - ~/bidsun/bidchain/bidchain-network/scripts:/opt/workspace/scripts
+    networks:
+      - bidchain
+    ports:
+      - 4051:4051
+      - 4052:4052
+
