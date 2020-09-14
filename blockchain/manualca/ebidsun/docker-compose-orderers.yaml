@@ -1,0 +1,82 @@
+
+version: '2'
+
+networks:
+  bidchain:
+
+services:
+  orderer2.bidsun.com:
+    command: orderer
+    container_name: orderer2.bidsun.com
+    environment:
+      GODEBUG: netdns=go
+      #FABRIC_LOGGING_SPEC: DEBUG
+      FABRIC_LOGGING_SPEC: INFO
+      ORDERER_GENERAL_LISTENPORT: 8050
+      ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+      ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+      ORDERER_GENERAL_CLUSTER_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+      ORDERER_GENERAL_CLUSTER_SENDBUFFERSIZE: 1000
+      ORDERER_GENERAL_GENESISFILE: /var/hyperledger/orderer/orderer.genesis.block
+      ORDERER_GENERAL_GENESISMETHOD: file
+      ORDERER_GENERAL_LISTENADDRESS: 0.0.0.0
+      ORDERER_GENERAL_LOCALMSPDIR: /var/hyperledger/orderer/msp
+      ORDERER_GENERAL_LOCALMSPID: OrdererMSP
+      ORDERER_GENERAL_TLS_CERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+      ORDERER_GENERAL_TLS_ENABLED: "true"
+      ORDERER_GENERAL_TLS_PRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+      ORDERER_GENERAL_TLS_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+    image: hyperledger/fabric-orderer:latest
+    networks:
+      bidchain:
+    ports:
+    - 8050:8050/tcp
+    volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - ./crypto-config/ordererOrganizations/bidsun.com/orderers/orderer2.bidsun.com/msp:/var/hyperledger/orderer/msp:rw
+    - ./channel-artifacts/orderer2.bidsun.com_system-channel.block:/var/hyperledger/orderer/orderer.genesis.block:rw
+    - ./crypto-config/ordererOrganizations/bidsun.com/orderers/orderer2.bidsun.com/tls:/var/hyperledger/orderer/tls:rw
+    - ~/bidsun/bidchain/bidchain_db/orderer2.bidsun.com:/var/hyperledger/production/orderer:rw
+    working_dir: /var/hyperledger/production/orderer
+    #extra_hosts:
+    #  - "orderer4.bidsun.com:172.19.69.23"
+    #  - "orderer5.bidsun.com:172.19.69.24"
+
+  orderer3.bidsun.com:
+    command: orderer
+    container_name: orderer3.bidsun.com
+    environment:
+      GODEBUG: netdns=go
+      FABRIC_LOGGING_SPEC: INFO
+      ORDERER_GENERAL_LISTENPORT: 9050
+      ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+      ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+      ORDERER_GENERAL_CLUSTER_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+      ORDERER_GENERAL_CLUSTER_SENDBUFFERSIZE: 1000
+      ORDERER_GENERAL_GENESISFILE: /var/hyperledger/orderer/orderer.genesis.block
+      ORDERER_GENERAL_GENESISMETHOD: file
+      ORDERER_GENERAL_LISTENADDRESS: 0.0.0.0
+      ORDERER_GENERAL_LOCALMSPDIR: /var/hyperledger/orderer/msp
+      ORDERER_GENERAL_LOCALMSPID: OrdererMSP
+      ORDERER_GENERAL_TLS_CERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+      ORDERER_GENERAL_TLS_ENABLED: "true"
+      ORDERER_GENERAL_TLS_PRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+      ORDERER_GENERAL_TLS_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+    image: hyperledger/fabric-orderer:latest
+    networks:
+      bidchain:
+    ports:
+    - 9050:9050/tcp
+    volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - ./crypto-config/ordererOrganizations/bidsun.com/orderers/orderer3.bidsun.com/msp:/var/hyperledger/orderer/msp:rw
+    - ./channel-artifacts/orderer3.bidsun.com_system-channel.block:/var/hyperledger/orderer/orderer.genesis.block:rw
+    - ./crypto-config/ordererOrganizations/bidsun.com/orderers/orderer3.bidsun.com/tls:/var/hyperledger/orderer/tls:rw
+    - ~/bidsun/bidchain/bidchain_db/orderer3.bidsun.com:/var/hyperledger/production/orderer:rw
+    working_dir: /var/hyperledger/production/orderer
+    #extra_hosts:
+    #  - "orderer4.bidsun.com:172.19.69.23"
+    #  - "orderer5.bidsun.com:172.19.69.24"
+
+
+
