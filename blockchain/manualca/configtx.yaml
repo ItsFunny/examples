@@ -35,7 +35,7 @@ Organizations:
 
 Capabilities:
     Channel: &ChannelCapabilities
-        V1_4_3: false
+        V1_4_3: true
         V1_3: false
         V1_1: false
 
