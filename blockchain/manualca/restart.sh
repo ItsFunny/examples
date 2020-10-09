@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export DOMAIN=demo.com
+
 docker-compose --project-name demo -f ./network/order/docker-compose-order.yaml down
 
 docker-compose --project-name demo -f ./network/peer/docker-compose-vlink-local-simple.yaml down
