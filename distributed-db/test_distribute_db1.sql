@@ -5,13 +5,13 @@
  Source Server Type    : MySQL
  Source Server Version : 50725
  Source Host           : localhost:3306
- Source Schema         : test_distribute_db0
+ Source Schema         : test_distribute_db1
 
  Target Server Type    : MySQL
  Target Server Version : 50725
  File Encoding         : 65001
 
- Date: 12/10/2020 13:02:19
+ Date: 12/10/2020 13:02:25
 */
 
 SET NAMES utf8mb4;
