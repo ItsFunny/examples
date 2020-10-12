@@ -22,7 +22,7 @@ channels:
               port: 11051
               chainCodes:
                 - chainCodeId: usercc
-                  chainCodePath: vlink.com/v2/vlink-chaincodes/usercc
+                  chainCodePath: examples/blockchain/manualca/chaincodes
                   needUpdate: false
         ca:
           caName: 'org.ca.demo.com'

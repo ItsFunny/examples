@@ -15,8 +15,8 @@ if [[ $? -ne 0 ]]; then
     exit -1
 fi
 
-echo "solo 创世快"
-configtxgen  --profile OrdererSoloGenesis -channelID sysdemochannel -outputBlock ./artifacts/orderer.solo.genesis.block
+#echo "solo 创世快"
+#configtxgen  --profile OrdererSoloGenesis -channelID sysdemochannel -outputBlock ./artifacts/orderer.solo.genesis.block
 echo "初始化创世块"
 configtxgen  --profile OrdererRaftGenesis -channelID sysdemochannel -outputBlock ./artifacts/orderer.genesis.block
 echo "生成channel的配置信息"

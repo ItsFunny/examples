@@ -36,7 +36,7 @@ import (
 	"myLibrary/go-library/common"
 	"myLibrary/go-library/common/blockchain/base"
 	error3 "myLibrary/go-library/common/error"
-	"myLibrary/go-library/go/converters"
+	// "myLibrary/go-library/go/converters"
 	"myLibrary/go-library/go/log"
 	"myLibrary/go-library/go/wallet"
 	"strconv"
@@ -168,9 +168,8 @@ func (this *BlockChainConfiguration) Execute(executeReq ExecuteReq) (base.Servic
 		return logicRes, nil, baseError
 	}
 	resp, _ := HandleResponse(response)
-	logicRes.LogicCode = int(converter.BigEndianBytes2Int64(resp.CodeBytes))
-	logicRes.LogicMsg = string(resp.MsgBytes)
-	logicRes.LogBytes = resp.LogBytes
+
+
 	if resp.OtherBytes != nil && len(resp.OtherBytes) > 0 {
 		this.Log.Debug("otherBytes的数据为:%s", string(resp.OtherBytes))
 		if e := json.Unmarshal(resp.OtherBytes, &logicRes.CommAttribute); nil != e {

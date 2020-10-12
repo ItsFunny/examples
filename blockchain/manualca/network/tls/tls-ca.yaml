@@ -9,7 +9,7 @@ services:
     command: sh -c 'fabric-ca-server start -d -b admin:adminpw '
     environment:
       - FABRIC_CA_SERVER_HOME=/tmp/hyperledger/fabric-ca
-      - FABRIC_CA_SERVER_TLS_ENABLED=false
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
       - FABRIC_CA_SERVER_CSR_CN=ca-tls
       - FABRIC_CA_SERVER_CSR_HOSTS=0.0.0.0
       - FABRIC_CA_SERVER_DEBUG=true

@@ -9,6 +9,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	bcConfig "myLibrary/go-library/blockchain"
 )
@@ -38,6 +39,19 @@ func main() {
 	if nil != err {
 		panic(err)
 	}
+
+	req := bcConfig.ExecuteReq{
+		MethodName:     "asd",
+		ChannelID:      "demochannel",
+		OrganizationID: "Org0MSP",
+		ChainCodeID:    "democc",
+		ReqData:        "123",
+		Context:        nil,
+	}
+	resp, bytes, baseError := configuration.Execute(req)
+	fmt.Println(baseError)
+	fmt.Println(string(bytes))
+	fmt.Println(resp)
 
 	engine := gin.Default()
 

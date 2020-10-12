@@ -1,4 +1,3 @@
-
 ---
 Organizations:
     - &OrdererOrg
@@ -69,12 +68,9 @@ Application: &ApplicationDefaults
 Orderer: &OrdererDefaults
 
     OrdererType: solo
-
     Addresses:
         - orderer0.demo.com:5050
-
     BatchTimeout: 2s
-
     BatchSize:
         MaxMessageCount: 10
         AbsoluteMaxBytes: 99 MB
@@ -109,18 +105,6 @@ Channel: &ChannelDefaults
         <<: *ChannelCapabilities
 
 Profiles:
-    SoloOrdererGenesis:
-        <<: *ChannelDefaults
-        Orderer:
-            <<: *OrdererDefaults
-            Organizations:
-                - *OrdererOrg
-            Capabilities:
-                <<: *OrdererCapabilities
-        Consortiums:
-            SampleConsortium:
-                Organizations:
-                    - *Org0
     DemoChannel:
         Consortium: SampleConsortium
         <<: *ChannelDefaults
@@ -130,27 +114,6 @@ Profiles:
                 - *Org0
             Capabilities:
                 <<: *ApplicationCapabilities
-    OrdererSoloGenesis:
-        <<: *ChannelDefaults
-        Capabilities:
-            <<: *ChannelCapabilities
-        Orderer:
-            <<: *OrdererDefaults
-            OrdererType: solo
-            Addresses:
-                - orderer0.demo.com:5050
-            Organizations:
-                - *OrdererOrg
-            Capabilities:
-                <<: *OrdererCapabilities
-        Application:
-            <<: *ApplicationDefaults
-            Organizations:
-                - <<: *OrdererOrg
-        Consortiums:
-            SampleConsortium:
-                Organizations:
-                    - *Org0
     OrdererRaftGenesis:
         <<: *ChannelDefaults
         Capabilities:
@@ -160,42 +123,41 @@ Profiles:
             OrdererType: etcdraft
             EtcdRaft:
                 Consenters:
-                    - Host: orderer0.demo.com
-                      Port: 5050
-                      ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
-                      ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
-                    - Host: orderer1.demo.com
-                      Port: 5051
-                      ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
-                      ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
-                    - Host: orderer2.demo.com
-                      Port: 5052
-                      ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
-                      ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
-                    - Host: orderer3.demo.com
-                      Port: 5053
-                      ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
-                      ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
-                    - Host: orderer4.demo.com
-                      Port: 5054
-                      ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
-                      ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+                - Host: orderer0.demo.com
+                  Port: 5050
+                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/server.crt
+#                - Host: orderer1.demo.com
+#                  Port: 5051
+#                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+#                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+#                - Host: orderer2.demo.com
+#                  Port: 5052
+#                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+#                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+#                - Host: orderer3.demo.com
+#                  Port: 5053
+#                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+#                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+#                - Host: orderer4.demo.com
+#                  Port: 5054
+#                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+#                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
             Addresses:
                 - orderer0.demo.com:5050
-                - orderer1.demo.com:5051
-                - orderer2.demo.com:5052
-                - orderer3.demo.com:5053
-                - orderer4.demo.com:5054
+#                - orderer1.demo.com:5051
+#                - orderer2.demo.com:5052
+#                - orderer3.demo.com:5053
+#                - orderer4.demo.com:5054
             Organizations:
-                - *OrdererOrg
+            - *OrdererOrg
             Capabilities:
                 <<: *OrdererCapabilities
         Application:
             <<: *ApplicationDefaults
             Organizations:
-                - <<: *OrdererOrg
+            - <<: *OrdererOrg
         Consortiums:
             SampleConsortium:
                 Organizations:
-                    - *Org0
-
+                - *Org0
