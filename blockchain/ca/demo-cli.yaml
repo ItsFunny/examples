@@ -1,0 +1,37 @@
+# cli节点
+version: '2'
+
+services:
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools:1.4.4
+    tty: true
+    stdin_open: true
+    environment:
+      - SYS_CHANNEL=sysdemochannel
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer1.demo.com:9051
+      - CORE_PEER_LOCALMSPID=DemoOrgMSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/var/hyperledger/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/var/hyperledger/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/var/hyperledger/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/var/hyperledger/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    extra_hosts:
+      - "orderer0.demo.com:192.168.65.2"
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/chaincode
+      - ./artifacts:/opt/gopath/src/github.com/hyperledger/fabric/artifacts
+      - ./crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/tls:/var/hyperledger/tls
+      - ./crypto-config/peerOrganizations/demo.com/peers/peer1.demo.com/msp:/var/hyperledger/msp
+      - ./crypto-config/peerOrganizations/demo.com/users/admin0/:/opt/gopath/src/github.com/hyperledger/fabric/peer/admin
+#  invalid IP address in add-host: ""
+
+#  /bin/bash -c "echo -e '\ndocker.for.mac.host.internal orderer0.demo.com' >> /etc/hosts"

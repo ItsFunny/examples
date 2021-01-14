@@ -1,0 +1,41 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+
+services:
+  tlsca:
+    image: hyperledger/fabric-ca:1.4.4
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=tlsca.org1.demo.com
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.demo.com-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=${ORG1TLSCA_FABRIC_CA_SERVER_CA_KEYFILE}
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
+      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/tls/peer/server.crt
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/tls/peer/server.key
+      - FABRIC_CA_SERVER_TLS_CLIENTAUTH_TYPE
+      - FABRIC_CA_SERVER_TLS_CERTFILES
+      - FABRIC_CA_SERVER_CFG_AFFILIATIONS_ALLOWREMOVE=true
+      - FABRIC_CA_SERVER_CFG_IDENTITIES_ALLOWREMOVE=true
+      # TODO below env variable added to test Compatibility mode - remove when Fabric v1.3 is not supported anymore
+      - FABRIC_CA_SERVER_COMPATIBILITY_MODE_V1_3=false
+    ports:
+      - "7054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org1.demo.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/priv_sk -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/org1.demo.com/ca/:/etc/hyperledger/fabric-ca-server-config
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/ca.org1.demo.com/tls:/etc/hyperledger/tls/peer
+      - ./crypto-config/peerOrganizations/tls.demo.com/tlsca:/etc/hyperledger/tlsca
+    container_name: ca_peerOrg1
+    networks:
+      demo:
+
+
+
+networks:
+  demo:
+    driver: bridge

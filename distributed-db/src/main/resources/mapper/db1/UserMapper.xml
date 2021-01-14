@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.test.dao.user.db1.UserDao">
+
+	<insert id="insert" parameterType="com.test.model.User">
+		insert into ${tableName}
+		values (#{userId},#{userName})
+	</insert>
+
+
+	<select id="selectByExample"
+		parameterType="com.test.model.example.UserExample"
+		resultType="com.test.model.User">
+		select * from ${tableName} order by
+		user_id asc
+		limit
+		#{start},#{end}
+	</select>
+	<select id="countByExample" resultType="java.lang.Long"
+		parameterType="com.test.model.example.UserExample">
+		select count(1) from ${tableName}
+	</select>
+
+</mapper>

@@ -1,0 +1,84 @@
+version: '2'
+
+networks:
+  demo:
+services:
+  orderer:
+    container_name: orderer.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: orderer-base
+    environment:
+      - FABRIC_LOGGING_SPEC=INFO
+    ports:
+      - "5050:7050"
+    volumes:
+      - ./artifacts:/var/hyperledger/configtx
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/tls:/var/hyperledger/orderer/tls
+    networks:
+      demo:
+
+  orderer1:
+    container_name: orderer1.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: orderer-base
+    ports:
+      - "5051:7050"
+    volumes:
+      - ./artifacts:/var/hyperledger/configtx
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls:/var/hyperledger/orderer/tls
+    networks:
+      demo:
+
+  orderer2:
+    container_name: orderer2.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: orderer-base
+    ports:
+      - "5052:7050"
+    volumes:
+      - ./artifacts:/var/hyperledger/configtx
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls:/var/hyperledger/orderer/tls
+    networks:
+      demo:
+
+
+#  orderer3:
+#    container_name: orderer3.demo.com
+#    extends:
+#      file: ./base/peer-base.yaml
+#      service: orderer-base
+#    ports:
+#      - "5053:7050"
+#    volumes:
+#      - ./artifacts:/var/hyperledger/configtx
+#      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+#      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/msp:/var/hyperledger/orderer/msp
+#      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls:/var/hyperledger/orderer/tls
+#    networks:
+#      demo:
+#  orderer4:
+#    container_name: orderer4.demo.com
+#    extends:
+#      file: ./base/peer-base.yaml
+#      service: orderer-base
+#    ports:
+#      - "5054:7050"
+#    volumes:
+#      - ./artifacts:/var/hyperledger/configtx
+#      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+#      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/msp:/var/hyperledger/orderer/msp
+#      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls:/var/hyperledger/orderer/tls
+#      - ./crypto-config/ordererOrganizations/demo.com/tlsca:/var/hyperledger/tlsca
+##      - /tmp/hyperledger/production/orderer4:/var/hyperledger/production
+#    networks:
+#      demo:
+

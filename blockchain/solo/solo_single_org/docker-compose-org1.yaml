@@ -1,0 +1,124 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+volumes:
+  peer0.org1.demo.com:
+  peer1.org1.demo.com:
+  ca_peerOrg1:
+  cli:
+networks:
+  demo:
+services:
+  ca1:
+    image: hyperledger/fabric-ca:1.4.4
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.org1.demo.com
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.demo.com-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/priv_sk
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
+      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/tls/peer/server.crt
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/tls/peer/server.key
+      - FABRIC_CA_SERVER_TLS_CLIENTAUTH_TYPE
+      - FABRIC_CA_SERVER_TLS_CERTFILES
+      - FABRIC_CA_SERVER_CFG_AFFILIATIONS_ALLOWREMOVE=true
+      - FABRIC_CA_SERVER_CFG_IDENTITIES_ALLOWREMOVE=true
+    #      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+    #      - FABRIC_CA_SERVER_TLS_ENABLED=true
+    #      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.demo.com-cert.pem
+    #      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/priv_sk
+      - FABRIC_CA_SERVER_PORT=7054
+    ports:
+      - "7054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org1.demo.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/priv_sk -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/org1.demo.com/ca/:/etc/hyperledger/fabric-ca-server-config
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/ca.org1.demo.com/tls:/etc/hyperledger/tls/peer
+      - ./crypto-config/peerOrganizations/tls.demo.com/tlsca:/etc/hyperledger/tls
+    container_name: ca_peerOrg1
+    networks:
+      demo:
+
+  Org1Peer0:
+    container_name: peer0.org1.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer0.org1.demo.com
+      - CORE_PEER_ADDRESS=peer0.org1.demo.com:8051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.org1.demo.com:8052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.org1.demo.com:8061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.demo.com:8051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "8051:8051"
+      - "8052:8052"
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+  Org1Peer1:
+    container_name: peer1.org1.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: peer-base
+    networks:
+      demo:
+    environment:
+      - CORE_PEER_ID=peer1.org1.demo.com
+      - CORE_PEER_ADDRESS=peer1.org1.demo.com:8061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.org1.demo.com:8062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.demo.com:8051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.org1.demo.com:8061
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "8061:8061"
+      - "8062:8062"
+    volumes:
+      - /var/run/:/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+
+
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools:1.4.4
+    tty: true
+    stdin_open: true
+    environment:
+      - SYS_CHANNEL=$SYS_CHANNEL
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.org1.demo.com:8051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.demo.com/users/Admin@org1.demo.com/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    extra_hosts:
+      - orderer0.demo.com:192.168.1.101
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./chaincodes:/opt/gopath/src/github.com/chaincode
+      - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+      - ./artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/artifacts
+    networks:
+      demo:
+

@@ -1,0 +1,180 @@
+
+---
+Organizations:
+    - &OrdererOrg
+        Name: OrdererOrg
+        ID: OrdererMSP
+        MSPDir: crypto-config/orderOrganizations/demo.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('OrdererMSP.member')"
+            Writers:
+                Type: Signature
+                Rule: "OR('OrdererMSP.member')"
+            Admins:
+                Type: Signature
+                Rule: "OR('OrdererMSP.admin')"
+    - &DemoOrg
+        Name: DemoOrgMSP
+        ID: DemoOrgMSP
+        MSPDir: crypto-config/peerOrganizations/demo.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('DemoOrgMSP.admin', 'DemoOrgMSP.peer', 'DemoOrgMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('DemoOrgMSP.admin', 'DemoOrgMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('DemoOrgMSP.admin')"
+        AnchorPeers:
+            - Host: peer1.demo.com
+              Port: 9051
+
+Capabilities:
+    Channel: &ChannelCapabilities
+        V1_4_3: true
+        V1_3: false
+        V1_1: false
+
+    Orderer: &OrdererCapabilities
+        V1_4_2: true
+        V1_1: false
+
+    Application: &ApplicationCapabilities
+        V1_4_2: true
+        V1_3: false
+        V1_2: false
+        V1_1: false
+
+Application: &ApplicationDefaults
+
+    Organizations:
+
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+
+    Capabilities:
+        <<: *ApplicationCapabilities
+Orderer: &OrdererDefaults
+
+    OrdererType: solo
+
+    Addresses:
+        - orderer0.demo.com:7050
+
+    BatchTimeout: 2s
+
+    BatchSize:
+
+        MaxMessageCount: 10
+        AbsoluteMaxBytes: 99 MB
+        PreferredMaxBytes: 512 KB
+    Organizations:
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+        BlockValidation:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+
+Channel: &ChannelDefaults
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+    Capabilities:
+        <<: *ChannelCapabilities
+
+Profiles:
+    SoloOrdererGenesis:
+        <<: *ChannelDefaults
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *OrdererOrg
+            Capabilities:
+                <<: *OrdererCapabilities
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                    - *DemoOrg
+    DemoChannel:
+        Consortium: SampleConsortium
+        <<: *ChannelDefaults
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *DemoOrg
+            Capabilities:
+                <<: *ApplicationCapabilities
+    OrdererRaftGenesis:
+        <<: *ChannelDefaults
+        Capabilities:
+            <<: *ChannelCapabilities
+        Orderer:
+            <<: *OrdererDefaults
+            OrdererType: etcdraft
+            EtcdRaft:
+                Consenters:
+                - Host: orderer0.vlink.link
+                  Port: 7050
+                  ClientTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer0.vlink.link/tls/server.crt
+                - Host: orderer2.vlink.link
+                  Port: 7050
+                  ClientTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt
+                - Host: orderer2.vlink.link
+                  Port: 7050
+                  ClientTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer2.vlink.link/tls/server.crt
+                - Host: orderer3.vlink.link
+                  Port: 7050
+                  ClientTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer3.vlink.link/tls/server.crt
+                - Host: orderer4.vlink.link
+                  Port: 7050
+                  ClientTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt
+                  ServerTLSCert: crypto-config/ordererOrganizations/vlink.link/orderers/orderer4.vlink.link/tls/server.crt
+            Addresses:
+                - orderer0.vlink.link:7050
+                - orderer1.vlink.link:7050
+                - orderer2.vlink.link:7050
+                - orderer3.vlink.link:7050
+                - orderer4.vlink.link:7050
+            Organizations:
+            - *OrdererOrg
+            Capabilities:
+                <<: *OrdererCapabilities
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+            - <<: *OrdererOrg
+        Consortiums:
+            SampleConsortium:
+                Organizations:
+                - *DemoOrg

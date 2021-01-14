@@ -1,0 +1,19 @@
+# ca-order 服务器,用于控制orderer节点
+version: '2'
+volumes:
+  orderer0.demo.com:
+services:
+  order.ca.demo.com:
+    container_name: orderer.ca.demo.com
+    image: hyperledger/fabric-ca:1.4.4
+    command: sh -c 'fabric-ca-server start -d -b admin:adminpw'
+    environment:
+      - FABRIC_CA_SERVER_HOME=/tmp/hyperledger/fabric-ca
+      - FABRIC_CA_SERVER_TLS_ENABLED=true
+      - FABRIC_CA_SERVER_CSR_CN=ca-order
+      - FABRIC_CA_SERVER_CSR_HOSTS=0.0.0.0
+      - FABRIC_CA_SERVER_DEBUG=true
+    volumes:
+      - /Users/joker/go/src/examples/blockchain/ca/crypto-config/caOrganizations/ca-order:/tmp/hyperledger/fabric-ca
+    ports:
+      - 7053:7054

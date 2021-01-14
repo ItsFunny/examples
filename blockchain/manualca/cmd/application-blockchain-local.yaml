@@ -1,0 +1,28 @@
+goPath: /Users/joker/go
+cryptVersion: 1
+configPath: /Users/joker/go/src/examples/blockchain/manualca/cmd/blockchain-config-local.yaml
+channels:
+  - channelId: demochannel
+    needListOnBlockEvent: true
+    channelConfigPath: /Users/joker/go/src/examples/blockchain/manualca/artifacts/demochannel.tx
+    orders:
+      - ordererId: orderer0.demo.com
+        ordererAddress: orderer0.demo.com
+        ordererPort: 5050
+    organizations:
+      - organizationId: Org0MSP
+        users:
+          - userName: 'User1'
+            admin: false
+          - userName: 'Admin'
+            admin: true
+        peer:
+          endorserPeers:
+            - address: peer1.demo.com
+              port: 11051
+              chainCodes:
+                - chainCodeId: usercc
+                  chainCodePath: examples/blockchain/manualca/chaincodes
+                  needUpdate: false
+        ca:
+          caName: 'org.ca.demo.com'

@@ -1,0 +1,85 @@
+version: '3'
+services:
+  master-1:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-master-1
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.11
+    ports:
+      - 3379:6379
+      - 13379:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master1/redis.conf:/etc/redis/redis.conf
+    command: redis-server /etc/redis/redis.conf
+  master-2:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-master-2
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.12
+    ports:
+      - 3380:6379
+      - 13380:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master2/redis.conf:/etc/redis/redis.conf
+  master-3:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-master-3
+    command: redis-server /etc/redis/redis.conf
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.13
+    ports:
+      - 3381:6379
+      - 13381:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/master3/redis.conf:/etc/redis/redis.conf
+  slave-1:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-slave-1
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.21
+    ports:
+      - 5379:6379
+      - 15379:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/slave1/redis.conf:/etc/redis/redis.conf
+#    command: redis-server /etc/redis/redis.conf --slaveof 47.94.40.8 3379
+    command: redis-server /etc/redis/redis.conf
+  slave-2:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-slave-2
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.22
+    ports:
+      - 5380:6379
+      - 15380:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/slave2/redis.conf:/etc/redis/redis.conf
+#    command: redis-server /etc/redis/redis.conf --slaveof 47.94.40.8 3380
+    command: redis-server /etc/redis/redis.conf
+  slave-3:
+    image: jokerlvccc/redis505:v1
+    container_name: redis-slave-3
+    networks:
+      redis-net:
+        ipv4_address: 172.29.0.23
+    ports:
+      - 5381:6379
+      - 15381:16379
+    volumes:
+      - /Users/joker/go/src/examples/redis-docker/docker_redis_cluster/slave3/redis.conf:/etc/redis/redis.conf
+#    command: redis-server /etc/redis/redis.conf --slaveof 47.94.40.8 3381
+    command: redis-server /etc/redis/redis.conf
+
+networks:
+  redis-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.29.0.0/16
+

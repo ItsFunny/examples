@@ -1,0 +1,15 @@
+version: '2'
+services:
+  orderer:
+    container_name: orderer0.demo.com
+    extends:
+      file: ./docker-container-base/peer-base.yaml
+      service: orderer-base
+    ports:
+      - "7050:7050"
+    volumes:
+      - ./artifacts:/var/hyperledger/configtx
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls:/var/hyperledger/orderer/tls
+      - ./crypto-config/ordererOrganizations/demo.com/tlsca:/var/hyperledger/tlsca

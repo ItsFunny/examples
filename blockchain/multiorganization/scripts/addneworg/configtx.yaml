@@ -1,0 +1,19 @@
+---
+Organizations:
+  - &Org6
+    Name: Org6MSP
+    ID: Org6MSP
+    MSPDir: /Users/joker/go/src/examples/blockchain/multiorganization/scripts/addneworg/crypto-config/peerOrganizations/org6.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin', 'Org6MSP.peer', 'Org6MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin', 'Org6MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin')"
+    AnchorPeers:
+      - Host: peer0.org6.com
+        Port: 16051

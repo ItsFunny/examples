@@ -1,0 +1,24 @@
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: demo.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer0
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.demo.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peer0
+      - Hostname: peer1
+      - Hostname: ca
+    Users:
+      Count: 1
+  - Name: TlsOrg
+    Domain: tls.demo.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: ca
+    Users:
+      Count: 1

@@ -1,0 +1,69 @@
+version: '2'
+services:
+  Org1Peer0:
+    container_name: peer0.org1.demo.com
+    extends:
+      file: ./docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer0.org1.demo.com
+      - CORE_PEER_ADDRESS=peer0.org1.demo.com:7051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.org1.demo.com:7052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.org1.demo.com:7061
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.demo.com:7051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "7051:7051"
+      - "7052:7052"
+    volumes:
+      - /var/run/:/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer0.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org1.demo.com/tlsca:/etc/hyperledger/orgs/org1.demo.com/tlsca
+  Org1Peer1:
+    container_name: peer1.org1.demo.com
+    extends:
+      file: ./docker-container-base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer1.org1.demo.com
+      - CORE_PEER_ADDRESS=peer1.org1.demo.com:7061
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7061
+      - CORE_PEER_CHAINCODEADDRESS=peer1.org1.demo.com:7062
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7062
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.demo.com:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.org1.demo.com:7061
+      - CORE_PEER_LOCALMSPID=Org1MSP
+    ports:
+      - "7061:7061"
+      - "7062:7062"
+    volumes:
+      - /var/run/:/var/run/
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer1.org1.demo.com/tls:/etc/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org1.demo.com/tlsca:/etc/hyperledger/orgs/org1.demo.com/tlsca
+
+#  Org1Peer2:
+#    container_name: peer2.org1.demo.com
+#    extends:
+#      file: ../docker-container-base/peer-base.yaml
+#      service: peer-base
+#    environment:
+#      - CORE_PEER_ID=peer2.org1.demo.com
+#      - CORE_PEER_ADDRESS=peer2.org1.demo.com:7071
+#      - CORE_PEER_LISTENADDRESS=0.0.0.0:7071
+#      - CORE_PEER_CHAINCODEADDRESS=peer2.org1.demo.com:7072
+#      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7072
+#      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.demo.com:7051
+#      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer2.org1.demo.com:7071
+#      - CORE_PEER_LOCALMSPID=Org1MSP
+#    ports:
+#      - "7071:7071"
+#      - "7072:7072"
+#    volumes:
+#      - /var/run/:/var/run/
+#      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer2.org1.demo.com/msp:/var/hyperledger/fabric/msp
+#      - ./crypto-config/peerOrganizations/org1.demo.com/peers/peer2.org1.demo.com/tls:/var/hyperledger/fabric/tls
+#      - ./crypto-config/peerOrganizations/org1.demo.com/tlsca:/var/hyperledger/orgs/org1.demo.com/tlsca

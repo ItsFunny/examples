@@ -1,0 +1,34 @@
+# ca-tls 服务器,用于控制所有的组织之间的交流
+version: '2'
+
+services:
+  orderer0.demo.com:
+    container_name: orderer0.demo.com
+    image: hyperledger/fabric-orderer:1.4.4
+    environment:
+      - FABRIC_LOGGING_SPEC=DEBUG
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orderer/orderer.genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrdererMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/var/hyperledger/orderer/msp
+      # enabled TLS
+      - ORDERER_GENERAL_TLS_ENABLED=true
+      # tls-ca server 颁发的给该client的私钥,既keystore下的文件
+      - ORDERER_GENERAL_TLS_PRIVATEKEY=/var/hyperledger/orderer/tls/server.key
+      # tls-ca server 颁发的该客户端的签名过后的私钥 ,既 signcerts下的 pem文件
+      - ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orderer/tls/server.crt
+      # tls-ca server的公钥 既然 ca-cert.pem
+      - ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orderer/tls/ca.crt]
+      - ORDERER_KAFKA_TOPIC_REPLICATIONFACTOR=1
+      - ORDERER_KAFKA_VERBOSE=true
+    #      - ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY=/var/hyperledger/orderer/tls/keystore/key.pem
+    #      - ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE=/var/hyperledger/orderer/tls/signcerts/cert.pem
+    #      - ORDERER_GENERAL_CLUSTER_ROOTCAS=[/var/hyperledger/orderer/tls/tlscacerts/tls-0-0-0-0-7052.pem]
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/orderOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/orderOrganizations/demo.com/orderers/orderer0.demo.com/tls:/var/hyperledger/orderer/tls
+    ports:
+      - 7050:7050
+    command: orderer

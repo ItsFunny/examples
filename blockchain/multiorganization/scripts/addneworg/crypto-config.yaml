@@ -1,0 +1,9 @@
+PeerOrgs:
+  - Name: org6
+    Domain: org6.com
+    EnableNodeOUs: true
+    Specs:
+    Template:
+      Count: 2
+    Users:
+      Count: 1

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  kibana:
+    image: kibana:6.4.0
+    container_name: kibana
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    environment:
+      - "elasticsearch.hosts=http://es:9200" #设置访问elasticsearch的地址
+      - TZ=Asia/Shanghai
+    ports:
+      - 5601:5601

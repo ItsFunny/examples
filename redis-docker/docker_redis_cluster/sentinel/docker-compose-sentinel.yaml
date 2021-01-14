@@ -1,0 +1,45 @@
+version: '3'
+services:
+  sentinel-1:
+    image: jokerlvccc/redis505:v1
+    container_name: sentinel1
+    networks:
+      redis-net:
+      ipv4_address: 172.29.0.41
+    ports:
+      - 26379:26379
+    volumes:
+      - ./sentinel1.conf:/usr/local/etc/redis/sentinel.conf
+    command: redis-sentinel /usr/local/etc/redis/sentinel.conf
+
+  sentinel-2:
+    image: jokerlvccc/redis505:v1
+    container_name: sentinel1
+    networks:
+      redis-net:
+      ipv4_address: 172.29.0.41
+    ports:
+      - 26380:26379
+    volumes:
+      - ./sentinel2.conf:/usr/local/etc/redis/sentinel.conf
+    command: redis-sentinel /usr/local/etc/redis/sentinel.conf
+
+  sentinel-3:
+    image: jokerlvccc/redis505:v1
+    container_name: sentinel1
+    networks:
+      redis-net:
+      ipv4_address: 172.29.0.41
+    ports:
+      - 26381:26379
+    volumes:
+      - ./sentinel3.conf:/usr/local/etc/redis/sentinel.conf
+    command: redis-sentinel /usr/local/etc/redis/sentinel.conf
+
+networks:
+  redis-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.29.0.0/16
+

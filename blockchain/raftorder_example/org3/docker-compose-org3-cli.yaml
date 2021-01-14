@@ -1,0 +1,97 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+volumes:
+  peer0.org3.demo.com:
+  peer1.org3.demo.com:
+
+networks:
+  order-raft:
+
+services:
+
+  peer0.org3.demo.com:
+    container_name: peer0.org3.demo.com
+    extends:
+      file: ../containers/base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer0.org3.demo.com
+      - CORE_PEER_ADDRESS=peer0.org3.demo.com:21051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:21051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.org3.demo.com:21052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:21052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.org3.demo.com:22051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org3.demo.com:21051
+      - CORE_PEER_LOCALMSPID=Org3MSP
+    volumes:
+        - /var/run/:/host/var/run/
+        - ./artifacts/crypto-config/peerOrganizations/org3.demo.com/peers/peer0.org3.demo.com/msp:/etc/hyperledger/fabric/msp
+        - ./artifacts/crypto-config/peerOrganizations/org3.demo.com/peers/peer0.org3.demo.com/tls:/etc/hyperledger/fabric/tls
+#        - peer0.org3.demo.com:/var/hyperledger/production
+    ports:
+      - 21051:21051
+    networks:
+      - order-raft
+
+  peer1.org3.demo.com:
+    container_name: peer1.org3.demo.com
+    extends:
+      file: ../containers/base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID=peer1.org3.demo.com
+      - CORE_PEER_ADDRESS=peer1.org3.demo.com:22051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:22051
+      - CORE_PEER_CHAINCODEADDRESS=peer1.org3.demo.com:22052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:22052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org3.demo.com:21051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.org3.demo.com:22051
+      - CORE_PEER_LOCALMSPID=Org3MSP
+    volumes:
+        - /var/run/:/host/var/run/
+        - ./artifacts/crypto-config/peerOrganizations/org3.demo.com/peers/peer1.org3.demo.com/msp:/etc/hyperledger/fabric/msp
+        - ./artifacts/crypto-config/peerOrganizations/org3.demo.com/peers/peer1.org3.demo.com/tls:/etc/hyperledger/fabric/tls
+#        - peer1.org3.demo.com:/var/hyperledger/production
+    ports:
+      - 22051:22051
+    networks:
+      - order-raft
+
+
+  Org3cli:
+    container_name: Org3cli
+    image: hyperledger/fabric-tools:1.4.4
+    tty: true
+    stdin_open: true
+    environment:
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - FABRIC_LOGGING_SPEC=INFO
+#      - FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_ID=Org3cli
+      - CORE_PEER_ADDRESS=peer0.org3.demo.com:21051
+      - CORE_PEER_LOCALMSPID=Org3MSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.demo.com/peers/peer0.org3.demo.com/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.demo.com/peers/peer0.org3.demo.com/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.demo.com/peers/peer0.org3.demo.com/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.demo.com/users/Admin@org3.demo.com/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    volumes:
+        - /var/run/:/host/var/run/
+        - ../chaincodes/:/opt/gopath/src/github.com/chaincode
+        - ./artifacts/crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+#        - ./crypto-config/peerOrganizations/org1.demo.com:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.demo.com
+#        - ./crypto-config/peerOrganizations/org2.demo.com:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.demo.com
+#        - ./scripts:/opt/gopath/src/github.com/hyperledger/fabric/peer/scripts/
+    depends_on:
+      - peer0.org3.demo.com
+      - peer1.org3.demo.com
+    networks:
+      - order-raft

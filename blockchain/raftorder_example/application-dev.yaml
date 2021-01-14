@@ -1,0 +1,26 @@
+blockchain:
+  goPath: /Users/joker/go
+  cryptVersion: 1
+  configPath: /Users/joker/go/src/examples/blockchain/raftorder_example/blockchain-config.yaml
+  channels:
+    - channelId: demochannel
+      channelConfigPath: /Users/joker/go/src/examples/blockchain/raftorder_example/artifacts/demo.tx
+      orders:
+        - ordererId: orderer0.demo.com
+          ordererAddress: orderer0.demo.com
+          ordererPort: 7050
+        - ordererId: orderer1.demo.com
+          ordererAddress: orderer1.demo.com
+          ordererPort: 7060
+      organizations:
+        - organizationId: Org0MSP
+          organizationAdmin: admin
+          users:
+            - User1
+          peers:
+            - anchorPeers:
+                - address: peer0.demo.com
+                  port: 8051
+              chainCodes:
+                - chainCodeId: democc
+                  chainCodePath: examples/blockchain/raftorder_example/chaincodes

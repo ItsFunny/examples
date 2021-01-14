@@ -1,0 +1,28 @@
+
+# ---------------------------------------------------------------------------
+# "OrdererOrgs" - Definition of organizations managing orderer nodes
+# ---------------------------------------------------------------------------
+OrdererOrgs:
+  - Name: Orderer
+    Domain: demo.com
+    EnableNodeOUs: false
+    Specs:
+      - Hostname: orderer
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  - Name: UserOrg
+    Domain: user.demo.com
+    EnableNodeOUs: false
+    Template:
+      Count: 2
+    Users:
+      Count: 2
+  - Name: CoinOrg
+    Domain: coin.demo.com
+    EnableNodeOUs: false
+    Template:
+      Count: 2
+    Users:
+      Count: 2

@@ -1,0 +1,24 @@
+version: '2'
+volumes:
+  orderer0.demo.com:
+
+services:
+  orderer0.demo.com:
+    container_name: orderer0.demo.com
+    extends:
+      file: ./base/peer-base.yaml
+      service: orderer-base
+    networks:
+      demo:
+    volumes:
+      - ./artifacts/orderer.genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/msp:/var/hyperledger/orderer/msp
+      - ./crypto-config/ordererOrganizations/demo.com/orderers/orderer0.demo.com/tls/:/var/hyperledger/orderer/tls
+    ports:
+      - 7050:7050
+
+
+
+networks:
+  demo:
+    driver: bridge

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package server;
+// 服务端定义
+service Server {
+    // 服务端返馈信息方法
+    rpc RPCRequestForVote (RPCRequestVoteReq) returns (RPCRequestVoteResp) {
+    }
+}
+// 请求投票
+message RPCRequestVoteReq {
+    int64 term = 1;
+    int32 lastLogIndex = 2;
+    int64 lastLogTerm = 3;
+}
+// 服务端响应信息
+message RPCRequestVoteResp {
+    int64 term=1;
+    bool voteGranted=2;
+}

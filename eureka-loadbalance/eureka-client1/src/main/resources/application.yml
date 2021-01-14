@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+eureka:
+  service:
+    url: 'http://localhost:8088/myeureka/'
+    clientId: 1
+  client:
+    instance:
+      register: true
+    hostname: eureka-client-1
+

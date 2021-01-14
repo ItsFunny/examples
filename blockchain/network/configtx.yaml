@@ -1,0 +1,245 @@
+---
+Organizations:
+  - &OrdererOrg
+      Name: OrdererMSP
+      ID: OrdererMSP
+      MSPDir: crypto-config/ordererOrganizations/demo.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('OrdererMSP.member')"
+        Writers:
+          Type: Signature
+          Rule: "OR('OrdererMSP.member')"
+        Admins:
+          Type: Signature
+          Rule: "OR('OrdererMSP.admin')"
+  - &Org1
+      Name: Org1MSP
+      ID: Org1MSP
+      MSPDir: crypto-config/peerOrganizations/org1.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('Org1MSP.admin', 'Org1MSP.peer', 'Org1MSP.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('Org1MSP.admin', 'Org1MSP.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('Org1MSP.admin')"
+      AnchorPeers:
+        - Host: peer0.org1.com
+          Port: 11051
+
+  - &Org2
+      Name: Org2MSP
+      ID: Org2MSP
+      MSPDir: crypto-config/peerOrganizations/org2.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('Org2MSP.admin', 'Org2MSP.peer', 'Org2MSP.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('Org2MSP.admin', 'Org2MSP.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('Org2MSP.admin')"
+      AnchorPeers:
+        - Host: peer0.org2.com
+          Port: 12051
+
+
+  - &Org3
+      Name: Org3MSP
+      ID: Org3MSP
+      MSPDir: crypto-config/peerOrganizations/org3.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('Org3MSP.admin', 'Org3MSP.peer', 'Org3MSP.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('Org3MSP.admin', 'Org3MSP.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('Org3MSP.admin')"
+      AnchorPeers:
+        - Host: peer0.org3.com
+          Port: 13051
+
+  - &Org4
+      Name: Org4MSP
+      ID: Org4MSP
+      MSPDir: crypto-config/peerOrganizations/org4.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('Org4MSP.admin', 'Org4MSP.peer', 'Org4MSP.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('Org4MSP.admin', 'Org4MSP.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('Org4MSP.admin')"
+      AnchorPeers:
+        - Host: peer0.org4.com
+          Port: 14051
+
+  - &Org5
+      Name: Org5MSP
+      ID: Org5MSP
+      MSPDir: crypto-config/peerOrganizations/org5.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('Org5MSP.admin', 'Org5MSP.peer', 'Org5MSP.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('Org5MSP.admin', 'Org5MSP.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('Org5MSP.admin')"
+      AnchorPeers:
+        - Host: peer0.org5.com
+          Port: 15051
+
+
+
+Capabilities:
+  Channel: &ChannelCapabilities
+    V1_4_3: true
+    V1_3: false
+    V1_1: false
+
+  Orderer: &OrdererCapabilities
+    V1_4_2: true
+    V1_1: false
+
+  Application: &ApplicationCapabilities
+    V1_4_2: true
+    V1_3: false
+    V1_2: false
+    V1_1: false
+
+Application: &ApplicationDefaults
+
+  Organizations:
+
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ApplicationCapabilities
+Orderer: &OrdererDefaults
+
+  OrdererType: solo
+  Addresses:
+    - orderer0.demo.com:5050
+  BatchTimeout: 2s
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    BlockValidation:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ChannelCapabilities
+
+Profiles:
+  DemoChannel:
+    Consortium: SampleConsortium
+    <<: *ChannelDefaults
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *Org1
+        - *Org2
+        - *Org3
+        - *Org4
+        - *Org5
+      Capabilities:
+        <<: *ApplicationCapabilities
+  OrdererRaftGenesis:
+    <<: *ChannelDefaults
+    Capabilities:
+      <<: *ChannelCapabilities
+    Orderer:
+      <<: *OrdererDefaults
+      OrdererType: etcdraft
+      EtcdRaft:
+        Consenters:
+        - Host: orderer.demo.com
+          Port: 5050
+          ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/tls/server.crt
+          ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/tls/server.crt
+        - Host: orderer1.demo.com
+          Port: 5051
+          ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+          ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+        - Host: orderer2.demo.com
+          Port: 5052
+          ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+          ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+      #                - Host: orderer3.demo.com
+      #                  Port: 5053
+      #                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+      #                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+      #                - Host: orderer4.demo.com
+      #                  Port: 5054
+      #                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+      #                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+      Addresses:
+        - orderer.demo.com:5050
+        - orderer1.demo.com:5051
+        - orderer2.demo.com:5052
+      #                - orderer3.demo.com:5053
+      #                - orderer4.demo.com:5054
+      Organizations:
+      - *OrdererOrg
+      Capabilities:
+        <<: *OrdererCapabilities
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - <<: *OrdererOrg
+    Consortiums:
+      SampleConsortium:
+        Organizations:
+          - *Org1
+          - *Org2
+          - *Org3
+          - *Org4
+          - *Org5
