@@ -2,7 +2,6 @@ version: '2'
 networks:
   demo:
 services:
-
   peer0.org1:
     container_name: peer0.org1.com
     extends:
