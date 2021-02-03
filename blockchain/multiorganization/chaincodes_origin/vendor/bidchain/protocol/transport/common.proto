@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "transport";
+option java_package = "cn.bidsun.metadata.common.protodao";
+
+// 通用错误返回结果
+message CommonResponse {
+   int32 code = 1;
+   string desc = 2;
+   bytes ret = 3;
+}

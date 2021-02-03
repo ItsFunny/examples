@@ -270,7 +270,7 @@ services:
     command: /bin/bash
     volumes:
       - /var/run/:/host/var/run/
-      - ./chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/chaincode
+      - ./chaincode:/opt/gopath/src/bidchain/chaincode
       - ./crypto-config/peerOrganizations/org1.com/peers/peer1.org1.com/tls:/var/hyperledger/fabric/tls
       - ./crypto-config/peerOrganizations/org1.com/users/Admin@org1.com/msp:/var/hyperledger/fabric/msp
       - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
@@ -279,6 +279,7 @@ services:
     networks:
       demo:
     extra_hosts:
+<<<<<<< Updated upstream
       - "peer0.org1.com:172.224.2.2"
       - "peer0.org2.com:172.224.2.2"
       - "peer0.org3.com:172.224.2.2"
@@ -300,3 +301,26 @@ services:
       - "orderer2.demo.com:172.224.2.2"
       - "orderer3.demo.com:172.224.2.2"
       - "orderer4.demo.com:172.224.2.2"
+=======
+      - "peer0.org1.com:47.103.60.250"
+      - "peer0.org2.com:47.103.60.250"
+      - "peer0.org3.com:47.103.60.250"
+      - "peer0.org4.com:47.103.60.250"
+      - "peer0.org5.com:47.103.60.250"
+      - "peer0.org6.com:47.103.60.250"
+      - "peer0.org7.com:47.103.60.250"
+      - "peer0.org8.com:47.103.60.250"
+      - "peer0.org9.com:47.103.60.250"
+      - "peer1.org1.com:47.103.60.250"
+      - "peer1.org2.com:47.103.60.250"
+      - "peer1.org3.com:47.103.60.250"
+      - "peer1.org4.com:47.103.60.250"
+      - "peer1.org5.com:47.103.60.250"
+      - "peer1.org6.com:47.103.60.250"
+      - "peer1.org7.com:47.103.60.250"
+      - "orderer.demo.com:47.103.60.250"
+      - "orderer1.demo.com:47.103.60.250"
+      - "orderer2.demo.com:47.103.60.250"
+      - "orderer3.demo.com:47.103.60.250"
+      - "orderer4.demo.com:47.103.60.250"
+>>>>>>> Stashed changes

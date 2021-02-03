@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option go_package = "store";
+import "google/protobuf/wrappers.proto";
+import "crypto_message.proto";
+
+// 标段
+message StoreBidSection {
+    message PublicInfo {
+        // 平台id
+        string platformId = 1;
+        // 招标项目编号
+        string tenderProjectCode = 2;
+        // 标段（包）编号
+        string bidSectionCode = 3;
+        // 标段（包）名称
+        string bidSectionName = 4;
+        // 标段(包)建立时间
+        google.protobuf.StringValue createTime = 5;
+        // 统一交易标识码
+        string unifiedDealCode = 6;
+        // 交易系统标识码
+        string platformCode = 7;
+        // 公共服务平台标识码
+        string pubServicePlatCode = 8;
+    }
+    PublicInfo publicInfo = 1;
+    StoreEncryptedMirrorData encryptedMirrorData = 2;
+}

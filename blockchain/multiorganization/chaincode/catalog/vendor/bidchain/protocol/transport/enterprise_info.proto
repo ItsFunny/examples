@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+option go_package = "transport";
+option java_package = "cn.bidsun.metadata.common.protodao";
+import "google/protobuf/timestamp.proto";
+import "Enterprise.proto";
+import "crypto_message.proto";
+
+// 副本企业信息
+message EnterpriseInfo {
+    message EncryptedMirrorDataInfoPair {
+        string title = 1;
+        EncryptedMirrorData data = 2;
+    }
+
+    // 基本信息
+    PublicInfo publicInfo = 1;
+    // 副本加密字段信息
+    repeated EncryptedMirrorDataInfoPair encryptedMirrorList = 2;
+    // 平台信息
+    string platformId = 3;
+    // 组织结构代码(作为企业的唯一id)
+    string orgCode = 4;
+    // 平台id
+}
+
+// 添加企业信息对应的输入信息
+message AddEnterpriseInfoRequest {
+    repeated EnterpriseInfo infoList = 1;
+}
+
+// 添加企业信息的响应信息
+message AddEnterpriseInfoResponse {
+    message info {
+        string enterpriseMirrorId = 1;
+        string enterpriseId = 2;
+    }
+    // enterpriseMirrorId: enterpriseId
+    repeated info infoList = 1;
+    // map<string, string> respMap = 1;
+}
+
+// 添加企业时发出的事件
+// 事件名称: addNewEnterprises
+message EnterpriseInfoEvent {
+    repeated EnterpriseInfo infoList = 1;
+}
+
+// 获取某些企业所有最新副本信息 时
+// 获取某些企业所有历史副本信息
+message GetEnterpriseInfoRequest {
+    repeated string enterpriseIds = 1;
+}
+
+// 获取某些企业所有最新副本信息
+// 获取某些企业所有历史部分信息
+message GetEnterpriseInfoResponse {
+    message info {
+        // 企业id
+        string enterpriseId = 1;
+        // 企业信息
+        repeated EnterpriseResponseInfo enterpriseInfos = 2;
+    }
+    repeated info infos = 1;
+}
+
+message EnterpriseResponseInfo {
+    // 企业信息
+    EnterpriseInfo enterpriseInfo = 1;
+    // 更新时间
+    google.protobuf.Timestamp updateTime = 2;
+    // 交易id
+    string txId = 4;
+}
+

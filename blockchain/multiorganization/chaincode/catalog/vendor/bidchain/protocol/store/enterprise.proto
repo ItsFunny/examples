@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+option go_package = "store";
+
+import "google/protobuf/wrappers.proto";
+
+message StorePublicInfo{
+    //企业副主键
+    string enterpriseMirrorId =1;
+    //企业注册类型
+    StoreEnumEnterpriseType enterpriseType =2;
+    //企业名称
+    string enterpriseName = 3;
+    //曾用名
+    google.protobuf.StringValue enterpriseFormerName = 4;
+    //传真
+    google.protobuf.StringValue enterpriseFax = 5;
+    //邮箱
+    google.protobuf.StringValue enterpriseEmail = 6;
+    //联系电话
+    google.protobuf.StringValue enterprisePhone = 7;
+    //网站
+    google.protobuf.StringValue enterpriseWebsite = 8;
+    //简介
+    google.protobuf.StringValue enterpriseIntruduction =9;
+    //邮政编码
+    google.protobuf.StringValue enterpriseZipCode = 10;
+    //单位联系地址
+    google.protobuf.StringValue enterpriseAddress = 11;
+    //国别 http://www.nsfc.gov.cn/publish/portal0/tab274/
+    google.protobuf.StringValue enterpriseCuntryCode =12;
+    //注册区域
+    google.protobuf.StringValue enterpriseLocationCode = 13;
+    //行业分类 法人机构行业代码
+    google.protobuf.StringValue enterpriseIndustryCategory = 14;
+    //单位经济性质
+    google.protobuf.StringValue enterpriseInvestmentType =15;
+    //企业id
+    string enterpriseId =16;
+    //注册省
+    google.protobuf.StringValue enterpriseRegisterProvince = 17;
+    //注册市
+    google.protobuf.StringValue enterpriseRegisterCity =18;
+    int64 mask = 19;
+}
+
+
+
+enum StoreEnumEnterpriseType{
+    DEFAULT  = 0;
+    TENDEREE  = 1;  //招标人
+    TENDEREE_POXY_ORG = 2;  //招标代理机构
+    BIDDER =3;   //投标人
+    PURCHASER =4;     //采购人
+    PURCHASER_POXY_ORG =5;      //采购代理机构
+    SUPPLIER =6;      //供应商
+    TRANSFEROR =7;  //出让人
+    ASSIGNEE =8;         //受让人
+    WINNER =9;         //受让人
+    OTHER = 99;        //其他类型
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "transport";
+option java_package = "cn.bidsun.metadata.common.protodao";
+
+message ResponseHeader {
+    int32 errorCode = 1;
+    string errorDesc = 2;
+}

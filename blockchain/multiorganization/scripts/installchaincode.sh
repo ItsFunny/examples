@@ -29,7 +29,11 @@ do
         portIndex=`expr ${portIndex} + ${up} `
         echo -e ">>>>>>>>>>>>>>>>>>peer:peer${peerIndex}.org${i}.com:${portIndex} 开始安装chaincode>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
         export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org${i}.com/users/Admin@org${i}.com/msp  CORE_PEER_ADDRESS=peer${peerIndex}.org${i}.com:${portIndex} CORE_PEER_LOCALMSPID=Org${i}MSP CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org${i}.com/peers/peer${peerIndex}.org${i}.com/tls/ca.crt
-        peer chaincode install -n democc -v 1.0 -p github.com/hyperledger/fabric/chaincode/
+	for file in `ls ${GOPATH}/src/bidchain/chaincode/`
+	do
+   	   echo "peer chaincode install -n democc -v 1.0 -p bidchain/chaincode/${file}"
+	   peer chaincode install -n democc -v 1.0 -p bidchain/chaincode/${file}
+	done
         echo -e  "<<<<<<<<<<<<<<<<<peer:peer${peerIndex}.org${i}.com:${portIndex} 结束安装chaincode<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n\n"
     done
     portIndex=10000

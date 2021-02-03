@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "transport";
+option java_package="cn.bidsun.metadata.common.protodao";
+import "response_header.proto";
+
+message TestResponse {
+    ResponseHeader header = 1;
+    string id = 2;
+    string name = 3;
+}

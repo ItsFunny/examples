@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message ErrResult {
+    int32 errCode = 1;
+    string errDesc = 2;
+    bytes data = 3;
+}
+
+// 返回一次请求中的所有错误
+// 总的错误码就需要另外设置了
+message ErrResultList {
+    repeated ErrResult errResultList = 1;
+}

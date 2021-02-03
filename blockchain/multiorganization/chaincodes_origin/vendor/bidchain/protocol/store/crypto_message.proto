@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option go_package = "store";
+
+
+// 密文信息
+message StoreCryptoMessage {
+    // 平台id
+    string platformId = 1;
+    // 密文id(上传数据的时候不用填, msgid等于msgData的hash值
+    string msgId = 2;
+    // 加密前hash
+    bytes hashBeforeEncrypt = 3;
+    // 加密方法
+    int32 cryptMethod = 4;
+    // 加密信封信息
+    bytes cryptoEnvelopeMsg = 5;
+    // 数据类型(文件或者密文信息)
+    StoreCryptoDataType dataType = 6;
+    // 密文信息(如果是文件则是文件hash)
+    bytes msgData = 7;
+    int64 mask = 8;
+}
+
+// 副本加密字段信息
+message StoreEncryptedMirrorData {
+    message summaryInfoPair {
+        string key = 1;
+        bytes hash = 2;
+    }
+    string msgId = 1;     // 加密信息的hash(通过此可以hash可查找对应的数据)
+    // 字段名称 对应的值的hash值
+    repeated  summaryInfoPair summaryInfoList = 2; // 概要信息
+    // 摘要map的hash值
+    bytes summaryInfoListHash = 3;
+    int64 mask = 4;
+}
+
+// 密文类型
+enum StoreCryptoDataType {
+    CRYPTO_MESSAGE = 0;
+    FILE = 1;
+}

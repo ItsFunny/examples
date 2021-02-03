@@ -1,0 +1,5 @@
+{
+  "LogLevel": "INFO",
+  "IpfsClusterConfigPath": "ipfs_cluster_config.json",
+  "IpfsClusterLocalConfigPath": "ipfs_cluster_local_config.json"
+}
