@@ -1,8 +1,0 @@
-例子:
-进入当.proto文件所在文件夹
-protoc -I=. --go_out=D:\go\src crypto_message.proto
-其中, D:\go为当前的GOPATH
-
-protoc -I=. --go_out=D:\gopath\src crypto_message.proto
-
-protoc -I=. --java_out=D:\bidsun_server\bidsun-metadata\bidsun-metadata-common\src\main\java packet.proto
