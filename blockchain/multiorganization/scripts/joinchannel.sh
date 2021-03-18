@@ -54,4 +54,20 @@ do
         portIndex=10000
     done
 done
+
+
+for (( i=0; i<${channelLimit}; i++ ))
+do
+    for (( j=0; j<${limit}; j++ ))
+    do
+        orgUp=`expr 1000 \* ${j} `
+        orgUp=`expr ${orgUp} + 51 `
+
+         echo "组织 [Org${j}MSP 指定anchorpeer中"
+        CHANNEL_NAME=demochannel${i}
+        export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org${j}.com/users/Admin@org${j}.com/msp  CORE_PEER_ADDRESS=peer0.org${j}.com:1${j}051 CORE_PEER_LOCALMSPID=Org${j}MSP CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org${j}.com/peers/peer0.org${j}.com/tls/ca.crt
+        peer channel update -o orderer.demo.com:5050 -c ${CHANNEL_NAME} -f ../peer/artifacts/org${j}mspanchors.tx --tls --cafile ${ORDERER_CA}
+    done
+done
+
 ./scripts/installchaincode.sh ${1} ${2} ${3}

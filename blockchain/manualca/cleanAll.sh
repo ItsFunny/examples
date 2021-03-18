@@ -2,7 +2,7 @@
 
 docker-compose --project-name demo -f ./network/order/docker-compose-order.yaml down
 
-docker-compose --project-name demo -f ./network/peer/docker-compose-vlink-local-simple.yaml down
+docker-compose --project-name demo -f ./network/peer/docker-compose-local-simple.yaml down
 
 docker-compose -f ./network/tls/order-ca.yaml -f ./network/tls/order-ca.yaml -f ./network/tls/tls-ca.yaml down
 
