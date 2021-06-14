@@ -1,0 +1,187 @@
+---
+Organizations:
+  - &OrdererOrg
+    Name: OrdererMSP
+    ID: OrdererMSP
+    MSPDir: crypto-config/ordererOrganizations/demo.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('OrdererMSP.admin')"
+  {%for node in nodes%}
+  - &Org{{node.index}}
+    Name: {{node.name}}
+    ID: {{node.mspId}}
+    MSPDir: crypto-config/peerOrganizations/{{node.domain}}/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('{{node.mspId}}.admin', '{{node.mspId}}.peer', '{{node.mspId}}.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('{{node.mspId}}.admin', '{{node.mspId}}.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('{{node.mspId}}.admin')"
+    AnchorPeers:
+      - Host: {{node.anchorPeer.host}}
+        Port: {{node.anchorPeer.port}}
+  {%endfor%}
+
+
+
+Capabilities:
+  Channel: &ChannelCapabilities
+    V1_4_3: true
+    V1_3: false
+    V1_1: false
+
+  Orderer: &OrdererCapabilities
+    V1_4_2: true
+    V1_1: false
+
+  Application: &ApplicationCapabilities
+    V1_4_2: true
+    V1_3: false
+    V1_2: false
+    V1_1: false
+
+Application: &ApplicationDefaults
+
+  Organizations:
+
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ApplicationCapabilities
+Orderer: &OrdererDefaults
+  OrdererType: solo
+  Addresses:
+    - orderer.demo.com:5050
+  BatchTimeout: 2s
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    BlockValidation:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ChannelCapabilities
+
+Profiles:
+  OrdererSoloGenesis:
+    <<: *ChannelDefaults
+    Orderer:
+      <<: *OrdererDefaults
+      Organizations:
+        - *OrdererOrg
+      Capabilities:
+        <<: *OrdererCapabilities
+    Consortiums:
+      SampleConsortium:
+        Organizations:
+          {%for node in nodes%}
+          - *Org{{node.index}}
+          {%endfor%}
+  OrdererRaftGenesis:
+    <<: *ChannelDefaults
+    Capabilities:
+      <<: *ChannelCapabilities
+    Orderer:
+      <<: *OrdererDefaults
+      OrdererType: etcdraft
+      EtcdRaft:
+        Consenters:
+          - Host: orderer.demo.com
+            Port: 5050
+            ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/tls/server.crt
+            ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer.demo.com/tls/server.crt
+          - Host: orderer1.demo.com
+            Port: 5051
+            ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+            ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer1.demo.com/tls/server.crt
+          - Host: orderer2.demo.com
+            Port: 5052
+            ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+            ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer2.demo.com/tls/server.crt
+      #                - Host: orderer3.demo.com
+      #                  Port: 5053
+      #                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+      #                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer3.demo.com/tls/server.crt
+      #                - Host: orderer4.demo.com
+      #                  Port: 5054
+      #                  ClientTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+      #                  ServerTLSCert: crypto-config/ordererOrganizations/demo.com/orderers/orderer4.demo.com/tls/server.crt
+      Addresses:
+        - orderer.demo.com:5050
+        - orderer1.demo.com:5051
+        - orderer2.demo.com:5052
+      #                - orderer3.demo.com:5053
+      #                - orderer4.demo.com:5054
+      Organizations:
+        - *OrdererOrg
+      Capabilities:
+        <<: *OrdererCapabilities
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - <<: *OrdererOrg
+    Consortiums:
+      SampleConsortium:
+        Organizations:
+          {%for node in nodes%}
+          - *Org{{node.index}}
+          {%endfor%}
+
+
+  {%for channel in channels%}
+  DemoChannel{{channel.index}}:
+    Consortium: SampleConsortium
+    <<: *ChannelDefaults
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        {%for node in nodes%}
+        - *Org{{node.index}}
+        {%endfor%}
+      Capabilities:
+        <<: *ApplicationCapabilities
+  {%endfor%}

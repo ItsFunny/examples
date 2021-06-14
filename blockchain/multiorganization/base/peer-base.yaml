@@ -5,7 +5,8 @@ services:
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=multiorganization_demo
-      - FABRIC_LOGGING_SPEC=INFO
+#      - FABRIC_LOGGING_SPEC=INFO
+      - FABRIC_LOGGING_SPEC=DEBUG
       - CORE_CHAINCODE_BUILDER=hyperledger/fabric-ccenv:1.4.4
       - CORE_PEER_TLS_ENABLED=true
       - CORE_PEER_GOSSIP_USELEADERELECTION=true
@@ -43,7 +44,8 @@ services:
   orderer-base:
     image: hyperledger/fabric-orderer:1.4.4
     environment:
-      - FABRIC_LOGGING_SPEC=INFO
+#      - FABRIC_LOGGING_SPEC=INFO
+      - FABRIC_LOGGING_SPEC=DEBUG
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
       - ORDERER_GENERAL_LISTENPORT=7050
       - ORDERER_GENERAL_GENESISMETHOD=file

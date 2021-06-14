@@ -1,0 +1,80 @@
+version: '2'
+networks:
+  demo:
+services:
+  {%for org in orgs%}
+  {%for node in org.nodes%}
+  {{node.name}}:
+    container_name: {{node.name}}
+    extends:
+      file: ./base/peer-base.yaml
+      service: peer-base
+    environment:
+      - CORE_PEER_ID={{node.name}}
+      - CORE_PEER_ADDRESS={{node.name}}:{{node.port}}
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:{{node.port}}
+      - CORE_PEER_CHAINCODEADDRESS={{node.name}}:{{node.chaincodePort}}
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:{{node.chaincodePort}}
+      - CORE_PEER_GOSSIP_BOOTSTRAP={{node.bootstrap}}
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT={{node.name}}:{{node.port}}
+      - CORE_PEER_LOCALMSPID={{org.mspId}}
+    ports:
+      - "{{node.port}}:{{node.port}}"
+      - "{{node.chaincodePort}}:{{node.chaincodePort}}"
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./crypto-config/peerOrganizations/{{org.name}}/peers/{{node.name}}/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/{{org.name}}/peers/{{node.name}}/tls:/etc/hyperledger/fabric/tls
+    #      - /tmp/hyperledger/production/peer0:/var/hyperledger/production
+    networks:
+      demo:
+  {%endfor%}
+  {%endfor%}
+  {%for info in infos%}
+
+  {%endfor%}
+
+
+  cli:
+    container_name: cli
+    image: jokerlvccc/fabric-tools:1.4.4
+    tty: true
+    stdin_open: true
+    environment:
+      - SYS_CHANNEL=sysdemochannel
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.org1.com:11051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/var/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/var/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/var/hyperledger/fabric/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/var/hyperledger/fabric/msp
+      - DEBUG_WARNING_LOGGABLE=false
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/chaincode
+      - ./crypto-config/peerOrganizations/org1.com/peers/peer0.org1.com/tls:/var/hyperledger/fabric/tls
+      - ./crypto-config/peerOrganizations/org1.com/users/Admin@org1.com/msp:/var/hyperledger/fabric/msp
+      - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+      - ./artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/artifacts
+      - ./scripts:/opt/gopath/src/github.com/hyperledger/fabric/peer/scripts
+    networks:
+      demo:
+    extra_hosts:
+      {%for org in orgs%}
+      {%for node in org.nodes%}
+      - "{{node.name}}:{{dockerHostIp}}"
+      {%endfor%}
+      {%endfor%}
+      - "orderer.demo.com:{{dockerHostIp}}"
+      - "orderer1.demo.com:{{dockerHostIp}}"
+      - "orderer2.demo.com:{{dockerHostIp}}"
+      - "orderer3.demo.com:{{dockerHostIp}}"
+      - "orderer4.demo.com:{{dockerHostIp}}"

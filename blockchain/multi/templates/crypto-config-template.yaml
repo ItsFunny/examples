@@ -1,0 +1,20 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: demo.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer
+      - Hostname: orderer1
+      - Hostname: orderer2
+
+PeerOrgs:
+  {% for node in nodes %}
+  - Name: {{node.name}}
+    Domain: {{node.domain}}
+    EnableNodeOUs: true
+    Specs:
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  {% endfor %}

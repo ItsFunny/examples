@@ -24,6 +24,8 @@ services:
       - "orderer2.demo.com:172.224.2.2"
       - "orderer3.demo.com:172.224.2.2"
       - "orderer4.demo.com:172.224.2.2"
+      - "peer0.org1.com:172.224.2.2"
+      - "peer0.org2.com:172.224.2.2"
     command: peer node start
 
 
@@ -52,6 +54,8 @@ services:
       - ORDERER_GENERAL_CLUSTER_ROOTCAS=[/var/hyperledger/orderer/tls/ca.crt]
     extra_hosts:
       - "orderer0.demo.com:172.224.2.2"
+      - "peer0.org1.com:172.224.2.2"
+      - "peer0.org2.com:172.224.2.2"
       - "orderer1.demo.com:172.224.2.2"
       - "orderer2.demo.com:172.224.2.2"
       - "orderer3.demo.com:172.224.2.2"
