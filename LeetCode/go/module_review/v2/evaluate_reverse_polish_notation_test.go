@@ -8,8 +8,18 @@
 */
 package v2
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func Test_evalRPN(t *testing.T) {
-	evalRPN([]string{"4","13","5","/","+"})
+	evalRPN([]string{"4", "13", "5", "/", "+"})
+}
+
+func Test_Slice(t *testing.T) {
+	bytes := []int{0, 1, 2, 3, 4, 5}
+	fmt.Println(bytes[:3])
+
+	fmt.Println(bytes[1:6])
 }

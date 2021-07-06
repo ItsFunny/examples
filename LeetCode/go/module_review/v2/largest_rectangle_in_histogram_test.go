@@ -17,3 +17,10 @@ func Test_largestRectangleArea(t *testing.T) {
 	fmt.Println(largestRectangleArea([]int{2,1,5,6,2,3}))
 }
 
+
+func Test_sLICE(t *testing.T){
+	arr:=[]int{991,29123,123,33,145}
+	for v:=range arr{
+		fmt.Println(v)
+	}
+}

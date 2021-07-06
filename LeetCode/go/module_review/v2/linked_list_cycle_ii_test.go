@@ -14,7 +14,11 @@ import (
 )
 
 func Test_detectCycle(t *testing.T) {
-	node:=CreateNodeBy(3,2,0,-4)
+	node := CreateNodeBy(3, 2, 0, -4)
 	cycle := detectCycle(node)
 	fmt.Println(cycle)
+}
+
+func TestOther(t *testing.T) {
+	fmt.Println(2 ^  2)
 }

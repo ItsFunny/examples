@@ -13,9 +13,18 @@ import (
 	"testing"
 )
 
-func Test_aaa(t *testing.T){
+func Test_aaa(t *testing.T) {
 	sum := maxPathSum(&TreeNode{
 		Val: -3,
 	})
 	fmt.Println(sum)
+}
+
+func Test_bb(t *testing.T) {
+	fmt.Println(4 ^ 5)
+}
+
+func TestCc(t *testing.T) {
+	a := 1
+	println((a + 1) & a)
 }

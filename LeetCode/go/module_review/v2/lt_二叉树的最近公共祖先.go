@@ -27,6 +27,3 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	return rightRoot
 }
 
-func lowestCommonAncestorDFS(root *TreeNode) *TreeNode {
-
-}
