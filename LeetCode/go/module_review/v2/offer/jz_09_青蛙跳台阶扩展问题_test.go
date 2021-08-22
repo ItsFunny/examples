@@ -10,6 +10,7 @@ package offer
 
 import (
 	"bytes"
+	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -78,4 +79,14 @@ func Test_Print(t *testing.T) {
 	str2 = string(newFile2)
 	fmt.Println(str1)
 	fmt.Println(str2)
+}
+
+func Test_asd(t *testing.T) {
+	str := "PP+BAwEBCEJsb2NrTXNnAf+CAAEDAQdDaGFpbklkAQwAAQpMYXN0SGVpZ2h0AQQAAQVCYXRjaAH/iAAAACH/hwIBARJbXSpjb21tb24uRW52ZWxvcGUB/4gAAf+EAAB1/4MDAQL/hAABBgEHUGF5bG9hZAEKAAEJU2lnbmF0dXJlAQoAAQlFeHRyYUluZm8BCgABFFhYWF9Ob1Vua2V5ZWRMaXRlcmFsAf+GAAEQWFhYX3VucmVjb2duaXplZAEKAAENWFhYX3NpemVjYWNoZQEEAAAAFf+FAwEBCXN0cnVjdCB7fQH/hgAAAP6gNP+CAQ5zeXNkZW1vY2hhbm5lbAIBAf6f0A"
+	// bs := []byte(str)
+	// fmt.Println(string(bs))
+	decodeString, _ := base64.StdEncoding.DecodeString(str)
+	// fmt.Println(err)
+	fmt.Println(string(decodeString))
+
 }

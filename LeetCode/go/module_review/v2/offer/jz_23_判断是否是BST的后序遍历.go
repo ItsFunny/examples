@@ -8,42 +8,23 @@
 */
 package offer
 
-// func VerifySquenceOfBST(sequence []int) bool {
-// 	// write code here
-// }
-// func smallVerifySquenceOfBST(rootIndex int, sequence []int) bool {
-// 	if rootIndex == 0 {
-// 		return true
-// 	}
-// 	newRootIndex := -1
-// 	for i := 0; i < rootIndex; i++ {
-// 		if sequence[i] > sequence[rootIndex] {
-// 			return false
-// 		}
-// 		if sequence[i] < sequence[rootIndex] {
-// 			newRootIndex = i
-// 		}
-// 	}
-//
-// 	return true
-// }
-// func verifySquenceOfBST(rootIndex int, sequence []int) bool {
-// 	var lastSmallIndex int
-// 	for i := 0; i < rootIndex; i++ {
-// 		if sequence[i] > sequence[rootIndex] {
-// 			return false
-// 		}
-// 	}
-// 	for i := rootIndex; i < len(sequence); i++ {
-// 		if sequence[i] < sequence[rootIndex] {
-// 			return false
-// 		}
-// 	}
-// 	for index, v := range sequence {
-// 		if v <= sequence[rootIndex] {
-// 			lastSmallIndex = index
-// 			rootIndex = index
-// 			break
-// 		}
-// 	}
-// }
+func VerifySquenceOfBST(sequence []int) bool {
+	if len(sequence)==0{
+		return false
+	}
+	return verifySquenceOfBST(sequence, 0, len(sequence)-1)
+}
+
+func verifySquenceOfBST(sequence []int, start, end int) bool {
+	if start >= end {
+		return true
+	}
+	leftRootIndex := start
+	for ; leftRootIndex <= end && sequence[leftRootIndex] < sequence[end]; leftRootIndex++ {}
+	for i := leftRootIndex; i <= end; i++ {
+		if sequence[i] < sequence[end] {
+			return false
+		}
+	}
+	return verifySquenceOfBST(sequence, start, leftRootIndex-1) && verifySquenceOfBST(sequence, leftRootIndex, end-1)
+}
