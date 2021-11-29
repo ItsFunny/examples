@@ -16,10 +16,11 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 		return nil
 	}
 	// 判断是否到了当前需要判断的节点
+	// 如果自身是root 节点,则直接返回root
 	if root == p || root == q {
 		return root
 	}
-	// 分
+	// 分: 获取左右节点的root 节点
 	left := lowestCommonAncestor(root.Left, p, q)
 	right := lowestCommonAncestor(root.Right, p, q)
 

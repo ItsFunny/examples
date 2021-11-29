@@ -10,9 +10,14 @@ package offer
 
 import (
 	"fmt"
+	"math"
 	"testing"
 )
 
 func Test_Duplicate(t *testing.T) {
 	fmt.Println(duplicate([]int{2, 1, 3, 1, 4}))
+}
+
+func Test_123(t *testing.T) {
+	fmt.Println(math.MaxInt32)
 }

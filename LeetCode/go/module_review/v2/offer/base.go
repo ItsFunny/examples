@@ -9,9 +9,10 @@
 package offer
 
 import "strconv"
+
 type RandomListNode struct {
-	Label int
-	Next *RandomListNode
+	Label  int
+	Next   *RandomListNode
 	Random *RandomListNode
 }
 
@@ -72,4 +73,11 @@ type Node struct {
 type GraphNode struct {
 	Val       int
 	Neighbors []*GraphNode
+}
+
+type LNode struct {
+	Val   int
+	Left  *LNode
+	Right *LNode
+	Next  *LNode
 }
