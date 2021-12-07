@@ -8,6 +8,10 @@
 */
 package v2
 
+// 谨记:
+//  1.返回的都是根节点: preorderer[0]
+//  2.先序是根左右,先根节点,
+//  3.
 func buildTree(preorder []int, inorder []int) *TreeNode {
 	if len(preorder)==0 || len(inorder)==0{
 		return nil

@@ -31,6 +31,7 @@ func jumpFloor2(number int) int {
 	return a
 }
 
+// 关键是: dp[n]=dp[n-1]+dp[n-2]
 func jumpFloor3(number int) int {
 	dp := make([]int, number)
 	if number==1{

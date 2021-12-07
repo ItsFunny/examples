@@ -23,6 +23,7 @@ func pow(value float64, count int) float64 {
 		return 1.0
 	}
 	ret:=pow(value,count>>1)
+	// 判断奇偶数
 	if count&1 > 0 {
 		return ret*ret*value
 	}

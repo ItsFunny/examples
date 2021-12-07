@@ -7,7 +7,7 @@
 # @Attention :
 */
 package offer
-
+// 动态规划,与 fiberN类似,f(n)=f(n-1)+f(n-2)
 func rectCover(number int) int {
 	if number <= 2 {
 		return number

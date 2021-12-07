@@ -11,6 +11,7 @@ package v2
 
 import "strconv"
 
+// 关键: 使用栈来实现
 func evalRPN(tokens []string) int {
 	if len(tokens)==0{
 		return 0

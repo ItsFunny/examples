@@ -18,8 +18,10 @@ func minNumberInRotateArray(rotateArray []int) int {
 	for start+1 < end {
 		mid := start + (end-start)>>1
 		if rotateArray[mid] > rotateArray[end] {
+			// 说明翻转的地方在右边,所以需要start移动
 			start = mid
 		} else if rotateArray[mid] <= rotateArray[end] {
+			// 说明当前mid已经在翻转里了,所以往左移动即可
 			end = mid
 		}
 	}

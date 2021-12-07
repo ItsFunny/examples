@@ -9,6 +9,8 @@
 */
 package v2
 
+// 用栈实现队列
+// 关键是: 一个栈专门用于push,剩下的一个栈,专门用于pop
 type MyQueue struct {
 	pushStack []int
 	popStack  []int

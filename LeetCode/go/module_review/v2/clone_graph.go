@@ -7,7 +7,7 @@
 # @Attention :
 */
 package v2
-
+// 关键: 利用map ,key为对象的指针地址
 func cloneGraph(node *GraphNode) *GraphNode {
 	if node == nil {
 		return nil

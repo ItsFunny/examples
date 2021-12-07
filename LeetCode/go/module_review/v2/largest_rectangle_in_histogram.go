@@ -32,6 +32,7 @@ package v2
 // }
 //
 
+// 在一维数组中对每一个数找到第一个比自己小的元素。这类“在一维数组中找第一个满足某种条件的数”的场景就是典型的单调栈应用场景。
 func largestRectangleArea(heights []int) int {
 	if len(heights) == 0 {
 		return 0
@@ -48,6 +49,7 @@ func largestRectangleArea(heights []int) int {
 		for len(stack) != 0 && cur <= heights[stack[len(stack)-1]] {
 			// 开始计算之前的高度
 			// 在栈中的元素,都是要比当前元素 >= 的,并且, 是必定递增的形式
+			// 弹出比当前高的下标
 			top := stack[len(stack)-1]
 			stack = stack[:len(stack)-1]
 			h:=heights[top]
