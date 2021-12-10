@@ -8,6 +8,7 @@
 */
 package hot100
 
+// 关键是通过一个map存储剩余的值即可,如果存在,直接返回
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for index, v := range nums {
