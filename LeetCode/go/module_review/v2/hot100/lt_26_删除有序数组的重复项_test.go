@@ -16,3 +16,11 @@ import (
 func Test_removeDuplicates(t *testing.T) {
 	fmt.Println(removeDuplicates([]int{1, 2, 3}))
 }
+func TestCloseCh(t *testing.T){
+	ch:=make(chan struct{},1)
+	v,ok:=<-ch
+	fmt.Println(v)
+	fmt.Println(ok)
+	fmt.Println(len(ch))
+	fmt.Println(cap(ch))
+}
