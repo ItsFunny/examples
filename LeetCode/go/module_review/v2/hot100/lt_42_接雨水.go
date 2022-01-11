@@ -19,6 +19,7 @@ func trap(height []int) int {
 		leftMax = trapMax(leftMax, height[left])
 		rightMax = trapMax(rightMax, height[right])
 		// 注意这一步: ,匹配的是max,可以认为是使得得出,左右两边有低谷
+		// 然后移动的时候,要往更高的地方移动
 		if leftMax < rightMax {
 			ret += leftMax - height[left]
 			left++
