@@ -11,9 +11,48 @@ package hot100
 import (
 	"fmt"
 	"testing"
+	"time"
 )
 
 func Test_myAtoi(t *testing.T) {
 	fmt.Println(myAtoi("9223372036854775808"))
 	fmt.Println(1<<31 - 1)
+}
+
+type WatchMessage interface {
+	GetKey() []byte
+	GetValue() string
+	GetType() uint32
+}
+
+func TestA(t *testing.T) {
+	ret := []WatchMessage{}
+	ret = append(ret, nil)
+	for _, v := range ret {
+		fmt.Println(v.GetValue(), v.GetKey(), v.GetType())
+	}
+}
+
+func TestRouting(t *testing.T) {
+	c := make(chan error, 1)
+	go func() {
+		for {
+			select {
+			case v, ok := <-c:
+				fmt.Println(v, ok)
+				if !ok {
+					fmt.Println("done")
+					return
+				}
+			}
+		}
+	}()
+
+	go func() {
+		time.Sleep(time.Second * 5)
+		c <- nil
+		time.Sleep(time.Second * 3)
+		close(c)
+	}()
+	select {}
 }

@@ -23,3 +23,4 @@ func firstMissingPositive(nums []int) int {
 	}
 	return len(nums)+1
 }
+

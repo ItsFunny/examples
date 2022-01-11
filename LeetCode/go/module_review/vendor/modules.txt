@@ -9,5 +9,12 @@ github.com/pmezard/go-difflib/difflib
 ## explicit
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
+# github.com/tidwall/gjson v1.12.1
+## explicit
+github.com/tidwall/gjson
+# github.com/tidwall/match v1.1.1
+github.com/tidwall/match
+# github.com/tidwall/pretty v1.2.0
+github.com/tidwall/pretty
 # gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 gopkg.in/yaml.v3
