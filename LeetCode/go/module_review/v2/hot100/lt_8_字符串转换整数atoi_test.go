@@ -56,3 +56,7 @@ func TestRouting(t *testing.T) {
 	}()
 	select {}
 }
+
+func TestPrint(t *testing.T){
+	fmt.Println(0xc000400b60)
+}

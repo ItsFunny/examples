@@ -25,7 +25,7 @@ func trap(height []int) int {
 			left++
 		} else {
 			ret += rightMax - height[right]
-			right++
+			right--
 		}
 	}
 	return ret
