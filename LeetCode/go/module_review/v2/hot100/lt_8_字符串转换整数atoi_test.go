@@ -58,5 +58,7 @@ func TestRouting(t *testing.T) {
 }
 
 func TestPrint(t *testing.T){
-	fmt.Println(0xc000400b60)
+	//9223372036854775708
+	//1000000000000000
+	fmt.Println(1<<63-100)
 }

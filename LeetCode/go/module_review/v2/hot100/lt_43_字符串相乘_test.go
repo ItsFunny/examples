@@ -20,12 +20,12 @@ func Test_asd(t *testing.T) {
 	h1 := make([]int, 0)
 	for i := 0; i < 100000; i++ {
 		go func() {
-			for i := 0; i <  math.MaxInt64; i++ {
+			for i := 0; i < math.MaxInt64; i++ {
 				h1 = append(h1, i)
 			}
 		}()
 		go func() {
-			for i := 0; i <  math.MaxInt64; i++ {
+			for i := 0; i < math.MaxInt64; i++ {
 				h1 = append(h1, i)
 			}
 		}()
@@ -74,5 +74,12 @@ func Test_Arrs(t *testing.T) {
 //}
 
 func Test_multiply(t *testing.T) {
-	fmt.Println(multiply("9","9"))
+	fmt.Println(multiply("9", "9"))
+}
+func TestFileLoad(t *testing.T) {
+	//bs, err := ioutil.ReadFile("/Users/lvcong/go/src/github.com/okex/exchain/dev/client/contracts/counter/counter.abi")
+	//require.NoError(t, err)
+	//fmt.Println(hex.EncodeToString(bs))
+
+	//fmt.Println(int64(0xde0b6b3a76400000))
 }
