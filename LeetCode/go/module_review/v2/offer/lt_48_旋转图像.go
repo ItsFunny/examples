@@ -16,7 +16,7 @@ func rotate(matrix [][]int) {
 	if len(matrix) == 0 {
 		return
 	}
-	// 以中轴线进行翻转
+	// 以对角线进行翻转
 	row := len(matrix)
 	cow := len(matrix[0])
 	for i := 0; i < row; i++ {

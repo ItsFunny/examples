@@ -18,3 +18,11 @@ func Test_threeSumClosest(t *testing.T) {
 	ints = append(ints, 0, 2, 1, -3)
 	fmt.Println(threeSumClosest(ints, 1))
 }
+
+func TestPrintArray(t *testing.T) {
+	arr := getArray()
+	fmt.Println(len(arr))
+}
+func getArray() []int {
+	return nil
+}
