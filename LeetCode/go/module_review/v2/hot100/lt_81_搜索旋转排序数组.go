@@ -17,7 +17,7 @@ func search81(nums []int, target int) bool {
 				left = mid + 1
 			}
 		} else {
-			// 表明处于不正常区间,则此时,从mid-right 区间判断
+			// 表明处于不正常区间,则此时,从mid-right 区间判断,因为该区间内有序
 			if target <= nums[right] && target > nums[mid] {
 				left = mid + 1
 			} else {
