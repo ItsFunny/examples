@@ -21,7 +21,7 @@ func subsetsWithDup(nums []int) [][]int {
 		// 如果之前的数没有被选择
 		if !chosePre && index > 0 && nums[index-1] == nums[index] {
 			// 并且紧邻的两个数相等
-			// 则直接return
+			// 则直接returns
 			return
 		}
 		temp = append(temp, nums[index])
@@ -30,5 +30,6 @@ func subsetsWithDup(nums []int) [][]int {
 		temp = temp[:len(temp)-1]
 	}
 	dfs(false, 0)
+	//
 	return ret
 }
